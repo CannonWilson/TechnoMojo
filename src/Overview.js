@@ -1,4 +1,7 @@
 import {useState, useEffect} from 'react'
+import Module from './Module.js'
+import {lessonPlan} from './data/lessonPlan.js'
+import './Overview.css'
 
 export default function Overview() {
 	
@@ -43,12 +46,23 @@ export default function Overview() {
 	*/
 	const [progressArray, setProgressArray] = useState([])
 	
-	// When the user clicks on a new lesson that they have not accessed before, their progress array will be updated to include the lesson by that name..
+	// When the user clicks on a new lesson that they have not accessed before, their progress array will be updated to include the lesson by that name.
 	
 	useEffect( () => {
 		
 		async function retrieveUserProgress() {
-			
+			try {
+				const username = localStorage.getItem('username')
+				console.log('username from local', username)
+				const response = await fetch('http://localhost:43023/api/userProgress?username='+username)
+				const json = await response.json()
+				setProgressArray(json)
+			}
+			catch(err) { // above code will fail if the localStorage fails to get the user's username or if the database fails to find the user
+				
+				document.getElementById('retrieveUserProgressError').textContent = "There was a verification error. Please return to the sign in page and enter your information again. Cookies are used to store your username, so this page will not work if you are in a private window or if you have cleared this website's cookies."
+				console.error(err)
+			}
 		}
 		
 		retrieveUserProgress()
@@ -63,12 +77,15 @@ export default function Overview() {
 	
 	return (
 		<>
-			<div className="accordian">
-				
-				{progressArray.map(module => {
-					<Module />
-				})}
-				
+			<div className="overviewPageWrapper">
+				<p id="retrieveUserProgressError"></p>
+				<div className="accordian">
+					
+					{lessonPlan.map(module => 
+						<Module module={module} key={module.moduleName}/>
+					)}
+					
+				</div>
 			</div>
 		</>
 	)

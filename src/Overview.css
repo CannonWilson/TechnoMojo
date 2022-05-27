@@ -1,11 +1,21 @@
-.accordian {
+.overviewPageWrapper {
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.accordian-item {
-	
+.accordian {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.accordian-item-title {
-	
+#retrieveUserProgressError {
+	max-width: 80%;
+	text-align: center;
+	color: red;
 }

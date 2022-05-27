@@ -9,7 +9,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -19,7 +19,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -29,7 +29,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -47,7 +47,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -57,7 +57,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -67,7 +67,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -85,7 +85,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -95,7 +95,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -105,7 +105,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -123,7 +123,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -133,7 +133,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -143,7 +143,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -161,7 +161,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -171,7 +171,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -181,7 +181,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -199,7 +199,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -209,7 +209,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -219,7 +219,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -237,7 +237,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -247,7 +247,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -257,7 +257,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -275,7 +275,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -285,7 +285,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -295,7 +295,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -313,7 +313,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -323,7 +323,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -333,7 +333,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -351,7 +351,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -361,7 +361,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -371,7 +371,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -394,7 +394,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -404,7 +404,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -414,7 +414,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -432,7 +432,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -442,7 +442,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -452,7 +452,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -470,7 +470,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -480,7 +480,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -490,7 +490,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -508,7 +508,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -518,7 +518,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -528,7 +528,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -546,7 +546,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -556,7 +556,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -566,7 +566,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -584,7 +584,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -594,7 +594,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -604,7 +604,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -622,7 +622,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -632,7 +632,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -642,7 +642,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -660,7 +660,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -670,7 +670,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -680,7 +680,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -698,7 +698,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -708,7 +708,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -718,7 +718,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -736,7 +736,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -746,7 +746,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -756,7 +756,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -774,7 +774,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -784,7 +784,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -794,7 +794,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -812,7 +812,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -822,7 +822,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -832,7 +832,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -850,7 +850,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -860,7 +860,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -870,7 +870,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -888,7 +888,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -898,7 +898,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -908,7 +908,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -926,7 +926,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -936,7 +936,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -946,7 +946,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -964,7 +964,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -974,7 +974,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -984,7 +984,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1002,7 +1002,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1012,7 +1012,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1022,7 +1022,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1040,7 +1040,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1050,7 +1050,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1060,7 +1060,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1078,7 +1078,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1088,7 +1088,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1098,7 +1098,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1116,7 +1116,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1126,7 +1126,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1136,7 +1136,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1154,7 +1154,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1164,7 +1164,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1174,7 +1174,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1192,7 +1192,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1202,7 +1202,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1212,7 +1212,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1230,7 +1230,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1240,7 +1240,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1250,7 +1250,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1273,7 +1273,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1283,7 +1283,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1293,7 +1293,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1311,7 +1311,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1321,7 +1321,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1331,7 +1331,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1349,7 +1349,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1359,7 +1359,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1369,7 +1369,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1387,7 +1387,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1397,7 +1397,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1407,7 +1407,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1425,7 +1425,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1435,7 +1435,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1445,7 +1445,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1468,7 +1468,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1478,7 +1478,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1488,7 +1488,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1506,7 +1506,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1516,7 +1516,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1526,7 +1526,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1544,7 +1544,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1554,7 +1554,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1564,7 +1564,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1582,7 +1582,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1592,7 +1592,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1602,7 +1602,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1620,7 +1620,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1630,7 +1630,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1640,7 +1640,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1663,7 +1663,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1673,7 +1673,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1683,7 +1683,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1701,7 +1701,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1711,7 +1711,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1721,7 +1721,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1739,7 +1739,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1749,7 +1749,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1759,7 +1759,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1777,7 +1777,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1787,7 +1787,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1797,7 +1797,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1815,7 +1815,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1825,7 +1825,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1835,7 +1835,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1853,7 +1853,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1863,7 +1863,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1873,7 +1873,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1891,7 +1891,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1901,7 +1901,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1911,7 +1911,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1929,7 +1929,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1939,7 +1939,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1949,7 +1949,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1967,7 +1967,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1977,7 +1977,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -1987,7 +1987,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2005,7 +2005,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2015,7 +2015,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2025,7 +2025,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2043,7 +2043,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2053,7 +2053,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2063,7 +2063,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2081,7 +2081,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2091,7 +2091,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2101,7 +2101,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2119,7 +2119,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2129,7 +2129,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2139,7 +2139,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2162,7 +2162,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2172,7 +2172,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2182,7 +2182,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2200,7 +2200,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2210,7 +2210,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2220,7 +2220,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2238,7 +2238,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2248,7 +2248,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2258,7 +2258,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2276,7 +2276,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2286,7 +2286,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2296,7 +2296,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2314,7 +2314,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2324,7 +2324,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2334,7 +2334,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2352,7 +2352,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2362,7 +2362,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2372,7 +2372,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2390,7 +2390,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2400,7 +2400,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2410,7 +2410,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2428,7 +2428,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2438,7 +2438,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2448,7 +2448,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2466,7 +2466,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2476,7 +2476,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2486,7 +2486,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2504,7 +2504,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2514,7 +2514,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2524,7 +2524,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2547,7 +2547,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2557,7 +2557,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2567,7 +2567,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2585,7 +2585,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2595,7 +2595,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2605,7 +2605,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2623,7 +2623,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2633,7 +2633,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2643,7 +2643,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2661,7 +2661,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2671,7 +2671,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2681,7 +2681,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2699,7 +2699,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2709,7 +2709,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2719,7 +2719,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2737,7 +2737,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2747,7 +2747,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2757,7 +2757,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2780,7 +2780,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2790,7 +2790,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2800,7 +2800,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2818,7 +2818,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2828,7 +2828,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2838,7 +2838,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2856,7 +2856,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2866,7 +2866,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2876,7 +2876,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2894,7 +2894,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2904,7 +2904,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2914,7 +2914,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2937,7 +2937,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2947,7 +2947,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2957,7 +2957,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2975,7 +2975,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2985,7 +2985,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -2995,7 +2995,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3013,7 +3013,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3023,7 +3023,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3033,7 +3033,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3051,7 +3051,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3061,7 +3061,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3071,7 +3071,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3089,7 +3089,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3099,7 +3099,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3109,7 +3109,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3127,7 +3127,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3137,7 +3137,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3147,7 +3147,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3165,7 +3165,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3175,7 +3175,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3185,7 +3185,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3203,7 +3203,7 @@ export const lessonPlan = [
 				answerVideoUrl: "https://vimeo.com",
 				quiz: [
 					{
-						question: 'The first question: '
+						question: 'The first question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3213,7 +3213,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The second question: '
+						question: 'The second question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",
@@ -3223,7 +3223,7 @@ export const lessonPlan = [
 						correctAnswerIndex: 0
 					},
 					{
-						question: 'The third question: '
+						question: 'The third question: ',
 						answerChoices: [
 							"First answer choice",
 							"Second answer choice",

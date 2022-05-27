@@ -5,16 +5,6 @@ export default function SignIn() {
 	
 	const navigate = useNavigate();
 	
-	/*
-	TODO:
-	• Add localStorage so that users stay signed in
-	• Automatically redirect to the overview page if 
-	the user is already signed in
-	• Add functionality to the links in the title caption
-	• Edit url in signInUser function
-	• Make font sizes responsive
-	*/
-	
 	
 	/* The following function makes a GET request to the
 	backend to see if the user exists. If they exist, the
@@ -31,6 +21,7 @@ export default function SignIn() {
 			const response = await fetch(`http://localhost:43023/api/signIn?username=${usernameInput}&password=${passwordInput}`)
 			
 			if (response.ok) { // user was found, move to /overview
+				localStorage.setItem('username', usernameInput)
 				navigate('/overview');
 			}
 			else { // user not found

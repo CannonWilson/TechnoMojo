@@ -1,0 +1,20 @@
+.moduleWrapper {
+	width: 100%;
+	background-color: 
+}
+
+.moduleTitleWrapper {
+	background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid #bbb 3px;
+}
+
+.moduleTitle {
+	text-align: center;
+}
+
+.moduleContent {
+	
+}
