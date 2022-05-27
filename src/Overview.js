@@ -43,6 +43,8 @@ export default function Overview() {
 	*/
 	const [progressArray, setProgressArray] = useState([])
 	
+	// When the user clicks on a new lesson that they have not accessed before, their progress array will be updated to include the lesson by that name..
+	
 	useEffect( () => {
 		
 		async function retrieveUserProgress() {
