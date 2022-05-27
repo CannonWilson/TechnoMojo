@@ -1,0 +1,66 @@
+.signInTitle {
+	
+}
+
+.signInTitleCaption {
+	max-width: 40%;
+	text-align: center;
+}
+
+.signInPageWrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logInBox {
+	width: 60%;
+	background-color: #eaeaea;
+	height: 60%;
+	border-radius: 20px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.usernameBlock, .passwordBlock  {
+	display: flex;
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.passwordBlock {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#usernameLabel, #passwordLabel {
+	font-size: 20px;
+	width: 100px;
+}
+
+#usernameInputElem, #passwordInputElem {
+	font-size: 20px;
+	border-radius: 10px;
+	height: 40px;
+	width: 300px;
+	padding-left: 10px;
+}
+
+#logInButton {
+	min-width: 200px;
+	border-radius: 10px;
+	font-size: 25px;
+	padding: 10px;
+}
+
+#signInError {
+	color: red;
+}
