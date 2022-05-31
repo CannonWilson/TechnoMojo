@@ -1,5 +1,7 @@
 .lessonWrapper {
 	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .lessonCircle {
@@ -12,4 +14,8 @@
 	background-color: lightgray;
 	border-radius: 50%;
 	font-weight: bold;
+}
+
+.lessonName {
+	margin-left: 20px;
 }

@@ -1,0 +1,121 @@
+.lecturePageWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lecturePageContent {
+	width: 90%;
+	text-align: center;
+}
+
+#submissionTextArea {
+	height: 60vh;
+	width: 70%;
+	font-size: 18px;
+	resize: none;
+}
+
+.lectureSubmitBtn {
+	min-width: 200px;
+	border-radius: 10px;
+	font-size: 25px;
+	padding: 10px;
+}
+
+.quizWrapper {
+	display: grid;
+	width: 100%;
+	background-color: #efefef;
+	grid-template: 
+		".         questionHeader questionHeader ."
+		"leftArrow choice1        choice2        rightArrow"
+		"leftArrow choice3        choice4        rightArrow"
+		".         feedback       feedback       ."
+		".         submitBtn      submitBtn      ."
+		"dots      dots           dots           .";
+	grid-template-columns: 10% 40% 40% 10%;
+	grid-template-rows: 50px 150px 150px 30px 60px 10px;
+}
+
+.questionHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-area: questionHeader;
+}
+
+.choice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.choice:hover {
+	background-color: rgba(0, 227, 98, 0.2);
+}
+
+.clickedChoice {
+	background-color: rgba(0, 227, 98, 0.6);
+}
+
+.clickedChoice:hover {
+	background-color: rgba(0, 227, 98, 0.6);
+}
+
+.choice1 {
+	grid-area: choice1;
+}
+
+.choice2 {
+	grid-area: choice2;
+}
+
+.choice3 {
+	grid-area: choice3;
+}
+
+.choice4 {
+	grid-area: choice4;
+}
+
+.questionFeedback {
+	grid-area: feedback;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submitChoiceBtnWrapper {
+	display: flex;
+	grid-area: submitBtn;
+	justify-content: center;
+	align-items: center;
+	background-color: #efefef
+}
+
+.submitChoiceBtn {
+	max-width: 200px;
+	border-radius: 10px;
+	font-size: 25px;
+	padding: 10px;
+}
+
+.quizLeftArrow {
+	grid-area: leftArrow;
+}
+
+.quizRightArrow {
+	grid-area: rightArrow;
+}
+
+.quizLeftArrow, .quizRightArrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dots {
+	grid-area: dots;
+}

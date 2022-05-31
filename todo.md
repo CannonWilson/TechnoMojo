@@ -14,6 +14,7 @@ things easier to read
 
 • File organization, use more folders
 • Delete default tests
+• Add tests and comments
 
 ---
 
@@ -31,3 +32,12 @@ the user is already signed in
 /src/Overview.js:
 
 • Change url in retrieveUserProgress function
+
+---
+
+/src/Lecture.js:
+
+• Add dots at the bottom of the question carousel
+• Clean up CSS to remove redundant code by consolidating classes
+• Make data persist on the page if user clicks submit on the quiz or the textarea and then refreshes
+• Retrieve user's submitted code and completed quiz from the db if they have already completed the lecture

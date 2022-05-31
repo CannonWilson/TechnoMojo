@@ -8,22 +8,23 @@ export default function Module({module}) {
 	
 	function toggleModuleActive() {
 		setModuleActive(!moduleActive)
-		console.log('setModuleActive to ', moduleActive)
 	}
 	
 	return (
 		<>
-			<div className="moduleWrapper" onClick={toggleModuleActive}>
-				<div className="moduleTitleWrapper">
+			<div className="moduleWrapper">
+				<div className="moduleTitleWrapper" onClick={toggleModuleActive}>
 					<p>{module.moduleName}</p>
 				</div>
-				<div className={"moduleContent " + moduleActive ? "activeModule" : "hiddenModule"}>
-				
-					{/* If the module is active, show its lessons */}
-					{moduleActive ? module.lessons.map(lesson => 
-						<Lesson lesson={lesson} lessonIndex={module.lessons.indexOf(lesson)} key={lesson.lessonName}/>
-					) : null}
+				<div className="moduleContentWrapper">
+					<div className={"moduleContent"}>
 					
+						{/* If the module is active, show its lessons */}
+						{moduleActive ? module.lessons.map(lesson => 
+							<Lesson lesson={lesson} lessonIndex={module.lessons.indexOf(lesson)} moduleName={module.moduleName} key={lesson.lessonName}/>
+						) : null}
+						
+					</div>
 				</div>
 			</div>
 		</>

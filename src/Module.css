@@ -1,6 +1,6 @@
 .moduleWrapper {
 	width: 100%;
-	background-color: 
+	background-color: #efefef;
 }
 
 .moduleTitleWrapper {
@@ -15,6 +15,13 @@
 	text-align: center;
 }
 
+.moduleContentWrapper {
+	display: flex;
+	justify-content: center;
+}
+
 .moduleContent {
-	
+	display: flex;
+	flex-direction: column;
+	width: 60%;
 }

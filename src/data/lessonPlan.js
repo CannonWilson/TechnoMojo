@@ -4,9 +4,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Basic HTML',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -42,9 +45,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Intro to CSS',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -80,9 +86,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'The Box Model',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -118,9 +127,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Box Model Margins & Padding',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -156,9 +168,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Box Model Borders',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -194,9 +209,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Semantic HTML',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -232,9 +250,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Classes & IDs',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -270,9 +291,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Spans & DIVs',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -308,9 +332,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Centering',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -346,9 +373,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Background Images',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -389,9 +419,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Variables',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -427,9 +460,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Reassigning Values',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -465,9 +501,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Buttons',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -503,9 +542,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Click to Increment',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -541,9 +583,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Strings Part 1',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -579,9 +624,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Strings Part 2',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -617,9 +665,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Practice Time',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -655,9 +706,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'More Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -693,9 +747,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Even More Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -731,9 +788,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Blackjack Setup',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -769,9 +829,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Conditionals Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -807,9 +870,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Arrays Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -845,9 +911,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Objects & Functions',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -883,9 +952,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Sort the Pieces',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -921,9 +993,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Setting up our App',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -959,9 +1034,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'addEventListener Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -997,9 +1075,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'innerHTML Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1035,9 +1116,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Template Strings',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1073,9 +1157,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Discover It!',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1111,9 +1198,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Functions & Parameters',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1149,9 +1239,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Mooore Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1187,9 +1280,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Even Mooore Practice',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1225,9 +1321,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Emoji Maker 2000',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1268,9 +1367,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Margins & Padding',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1306,9 +1408,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'The Fashionable Harpsichord',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1344,9 +1449,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Compound Selectors',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1382,9 +1490,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Build your Own',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1420,9 +1531,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Robot Webpage',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1463,9 +1577,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Modals',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1501,9 +1618,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Making a Searchbar',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1539,9 +1659,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Searchbar Part 2',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1577,9 +1700,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'The Carousel',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1615,9 +1741,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "The World's Worst Dart Game",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1658,9 +1787,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Intro to Flexbox',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1696,9 +1828,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Layering Flexbox',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1734,9 +1869,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Advanced Flexbox',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1772,9 +1910,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Flex Direction',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1810,9 +1951,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Align & Justify",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1848,9 +1992,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Flexbox Practice",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1886,9 +2033,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Wrap & Gap",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1924,9 +2074,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "CSS Grid",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -1962,9 +2115,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Grid Templates",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2000,9 +2156,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Responsive Grids",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2038,9 +2197,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Media Queries",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2076,9 +2238,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Puzzle Practice",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2114,9 +2279,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Intro to Bootstrap",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2157,9 +2325,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'LOTR - Lego Style',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2195,9 +2366,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Using map()',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2233,9 +2407,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'An Aside about Functions',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2271,9 +2448,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Joining .map() and .fill()',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2309,9 +2489,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Constructor Functions",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2347,9 +2530,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Adding a Method on a Constructor",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2385,9 +2571,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Using Object.assign",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2423,9 +2612,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Reduce",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2461,9 +2653,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Arrow Functions",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2499,9 +2694,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Setting a Timer",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2542,9 +2740,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Your First API Call',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2580,9 +2781,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Pokemon API',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2618,9 +2822,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Intro to Express',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2656,9 +2863,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Middleware',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2694,9 +2904,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Request Queries",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2732,9 +2945,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: "Express Router",
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2775,9 +2991,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Find/Sort/Project',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2813,9 +3032,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Express Backend',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2851,9 +3073,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Insert',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2889,9 +3114,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Update/Delete',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2932,9 +3160,12 @@ export const lessonPlan = [
 		lessons: [
 			{
 				lessonName: 'Intro to React',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -2970,9 +3201,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'Props',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -3008,9 +3242,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'More Props',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -3046,9 +3283,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'useState',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -3084,9 +3324,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'useState with Props',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -3122,9 +3365,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'useEffect',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -3160,9 +3406,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'useEffect with Dependencies',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
@@ -3198,9 +3447,12 @@ export const lessonPlan = [
 			},
 			{
 				lessonName: 'React Router',
-				introVideoUrl: "https://vimeo.com",
-				codeSandBoxUrl: "https://codesandbox.io",
-				answerVideoUrl: "https://vimeo.com",
+				lessonDescription: "Default lesson description", 
+				exerciseDescription: "Default exercise description text",
+				submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+				introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+				codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark",
+				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
 						question: 'The first question: ',
