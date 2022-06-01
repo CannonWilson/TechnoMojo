@@ -7,8 +7,9 @@ export default function Lecture() {
 	
 	const [successMessage, setSuccessMessage] = useState("Nice! You got it right, please move on to the next question.")
 	const finishedQuizMessage = "Great job! You completed the quiz."
-	let isQuizComplete = false
+	const [isQuizComplete, setIsQuizComplete] = useState(false)
 	let isCodeSubmitted = false
+	
 	
 	/* The useSearchParams hook is used to get the value of 
 	the request queries called moduleName and lessonName. They 
@@ -22,8 +23,50 @@ export default function Lecture() {
 	const currentModule = lessonPlan.find(module => module.moduleName === moduleName)
 	const currentLesson = currentModule.lessons.find(lesson => lesson.lessonName === lessonName)
 	
-	function submitCodeButtonPressed() {
+	/* When the submit button is pressed, the user's input should be verified (the 
+	current code only checks that the textarea shoudln't be empty). Then, the
+	user's input is URL encoded and passed to the backend to be recorded 
+	in the database. */
+	const [submitErrorMessage, setSubmitErrorMessage] = useState("")
+	async function submitButtonPressed() {
 		
+		const userCode = encodeURIComponent(document.getElementById('submissionTextArea').value)
+		
+		if (!isQuizComplete && userCode.length === 0) {
+			setSubmitErrorMessage("You must type your code and complete the quiz before submitting.")
+			return
+		}
+		else if (userCode.length === 0) {
+			setSubmitErrorMessage("You must type your code before submitting.")
+		}
+		else if (!isQuizComplete) {
+			setSubmitErrorMessage("You must complete the quiz before submitting.")
+			return
+		}
+		setSubmitErrorMessage("") // clear out the error message if everything is complete
+
+		const requestOptions = {
+			method: 'PUT',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(
+				{
+					moduleName: currentModule.moduleName, 
+					lessonName: currentLesson.lessonName, 
+					userCode: userCode
+				})
+		}
+		const username = localStorage.getItem("username")
+		if (!username) {
+			setSubmitErrorMessage('You are not logged in. Please save your work by copying and pasting your code into some other application before returning to the home screen of this portal to sign in.')
+			throw 'User is not logged in'
+		}
+		const response = await fetch('http://localhost:43023/api/updateProgress?username=' + username, requestOptions)
+	}
+	
+	
+	// function triggered when the button under the textarea is pressed
+	function saveCodeButtonPressed() {
+		// TODO: implement this function
 	}
 	
 	//const [currentQuestion, setCurrentQuestion] = useState(currentLesson.quiz[0])
@@ -55,7 +98,7 @@ export default function Lecture() {
 	array changes */
 	useEffect(() => {
 		if (questionIndexesAnsweredCorrectly.length === currentLesson.quiz.length) {
-			isQuizComplete = true
+			setIsQuizComplete(true)
 			setSuccessMessage(finishedQuizMessage)
 			setQuestionFeedback(finishedQuizMessage)
 		}
@@ -158,7 +201,7 @@ export default function Lecture() {
 					<p>{currentLesson.submissionDescription}</p>
 					<textarea id="submissionTextArea" />
 					<div>
-						<button onClick={submitCodeButtonPressed}className="lectureSubmitBtn">Submit Code</button>
+						<button onClick={saveCodeButtonPressed} className="saveCodeBtn">Save Code</button>
 					</div>
 					
 					{/* Quiz section */}
@@ -185,7 +228,7 @@ export default function Lecture() {
 							{questionFeedback}
 						</div>
 						<div className="submitChoiceBtnWrapper">
-							<button className="submitChoiceBtn" onClick={submitChoiceButtonPressed}>Submit</button>
+							<button className="submitChoiceBtn" onClick={submitChoiceButtonPressed}>Save answer</button>
 						</div>
 						<div className="dots">
 							{/* TODO: put dots here */}
@@ -198,6 +241,12 @@ export default function Lecture() {
 						</div>
 					</div>
 					
+					
+					{/* Submit button */}
+					<div className="submitSection">
+						<p id="submitError">{submitErrorMessage}</p>
+						<button className="lectureSubmitBtn" onClick={submitButtonPressed}>Submit</button>
+					</div>
 				</div>
 			</div>
 		</>

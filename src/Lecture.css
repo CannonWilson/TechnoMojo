@@ -23,6 +23,13 @@
 	padding: 10px;
 }
 
+.saveCodeBtn {
+	min-width: 200px;
+	border-radius: 10px;
+	font-size: 25px;
+	padding: 10px;
+}
+
 .quizWrapper {
 	display: grid;
 	width: 100%;

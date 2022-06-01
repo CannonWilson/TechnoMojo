@@ -11,36 +11,14 @@ export default function Overview() {
 	The progress array has objects as items like this:
 	progressArray = [
 		{
-			moduleName: '01 - HTML & CSS',
-			lessons: [
-				{
-					lessonName: 'Basic HTML',
-					completed: false,
-					submittedCode: ""
-				},
-				{
-					lessonName: 'Intro to CSS',
-					completed: false,
-					submittedCode: ""
-				},
-				. . . (more lessons)
-			]
+		  moduleName: '01 - HTML & CSS',
+		  lessonName: 'Basic HTML',
+		  userCode: 'import%20%22.%2Fstyles.css%22%3B%0A%0Aexport%20default%20function%20App()%20%7B%0A%20%20return%20(%0A%20%20%20%20%3Cdiv%20className%3D%22App%22%3E%0A%20%20%20%20%20%20%3Ch1%3EHello%20CodeSandbox%3C%2Fh1%3E%0A%20%20%20%20%20%20%3Ch2%3EStart%20editing%20to%20see%20some%20magic%20happen!%3C%2Fh2%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20)%3B%0A%7D%0A'
 		},
 		{
-			moduleName: '02 - Basic Javascript',
-			lessons: [
-				{
-					lessonName: 'Variables',
-					completed: false,
-					submittedCode: ""
-				},
-				{
-					lessonName: 'Reassigning values',
-					completed: false,
-					submittedCode: ""
-				},
-				. . . (more lessons)
-			]
+		  moduleName: '01 - HTML & CSS',
+		  lessonName: 'Intro to CSS',
+		  userCode: 'import%20%22.%2Fstyles.css%22%3B%0A%0Aexport%20default%20function%20App()%20%7B%0A%20%20return%20(%0A%20%20%20%20%3Cdiv%20className%3D%22App%22%3E%0A%20%20%20%20%20%20%3Ch1%3EHello%20CodeSandbox%3C%2Fh1%3E%0A%20%20%20%20%20%20%3Ch2%3EStart%20editing%20to%20see%20some%20magic%20happen!%3C%2Fh2%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20)%3B%0A%7D%0A'
 		},
 	]
 	*/

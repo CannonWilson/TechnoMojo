@@ -2,6 +2,12 @@
 
 ---
 
+/server.js:
+
+• Add documentation to routes
+• Add try/catch block to handle when connection to db fails
+• Add more nuanced sendStatus behavior in '/api/updateProgress'
+
 /data/lessonPlan.js:
 
 • Break each 'lessons' array into its own file to make 
@@ -39,5 +45,6 @@ the user is already signed in
 
 • Add dots at the bottom of the question carousel
 • Clean up CSS to remove redundant code by consolidating classes
-• Make data persist on the page if user clicks submit on the quiz or the textarea and then refreshes
+• Make data persist on the page if user clicks submit on the quiz or the textarea and then refreshes (implement saveCodeButtonPressed function)
 • Retrieve user's submitted code and completed quiz from the db if they have already completed the lecture
+• Change fetch URI in submitCodeButtonPressed function
