@@ -2,6 +2,13 @@
 
 ---
 
+general:
+
+• Add more documentation, comments, and tests
+• Make the system more robust by adding cohort names to each student entry in the database
+
+---
+
 /server.js:
 
 • Add documentation to routes
@@ -48,3 +55,9 @@ the user is already signed in
 • Make data persist on the page if user clicks submit on the quiz or the textarea and then refreshes (implement saveCodeButtonPressed function)
 • Retrieve user's submitted code and completed quiz from the db if they have already completed the lecture
 • Change fetch URI in submitCodeButtonPressed function
+
+---
+
+/src/Admin.js:
+
+• Change fetch URI in retrieveStudentProgress

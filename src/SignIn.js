@@ -20,9 +20,14 @@ export default function SignIn() {
 
 			const response = await fetch(`http://localhost:43023/api/signIn?username=${usernameInput}&password=${passwordInput}`)
 			
-			if (response.ok) { // user was found, move to /overview
+			if (response.ok) { // user was found, move to /overview if they aren't an admin
 				localStorage.setItem('username', usernameInput)
-				navigate('/overview');
+				if (usernameInput !== "admin") {
+					navigate('/overview');
+				}
+				else {
+					navigate('/admin')
+				}
 			}
 			else { // user not found
 				errorElem.textContent = "No user found"

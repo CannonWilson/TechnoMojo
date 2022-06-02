@@ -8,18 +8,21 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+require('dotenv').config()
+
 const {MongoClient} = require('mongodb')
-const url = 'mongodb+srv://kwilson2:ZQKH6Ln1ZwpKVnxT@cluster0.pnvyu.mongodb.net/?retryWrites=true&w=majority'
+const url = process.env.MONGO_CONNECTION_URI
 const client = new MongoClient(url)
+
 
 app.get('/api/signIn', (req, res) => {
 	const usernameInput = req.query.username
 	const passwordInput = req.query.password
 	
 	async function checkUserInfo() {
-		
 		await client.connect()
 		const collection = client.db('technomojo').collection('test')
+		
 		const userInfoDoc = await collection.findOne({username: usernameInput, password: passwordInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.sendStatus(200)
@@ -27,7 +30,6 @@ app.get('/api/signIn', (req, res) => {
 		else { // userInfoDoc is null, user not found
 			res.sendStatus(404)
 		}
-		
 	}
 	
 	checkUserInfo()
@@ -39,9 +41,9 @@ app.get('/api/userProgress', (req, res) => {
 	const usernameInput = req.query.username
 	
 	async function checkUserInfo() {
-		
 		await client.connect()
 		const collection = client.db('technomojo').collection('test')
+		
 		const userInfoDoc = await collection.findOne({username: usernameInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			console.log('userInfoDoc', userInfoDoc)
@@ -51,7 +53,6 @@ app.get('/api/userProgress', (req, res) => {
 		else { // userInfoDoc is null, user not found
 			res.sendStatus(404)
 		}
-		
 	}
 	
 	checkUserInfo()
@@ -72,6 +73,7 @@ app.put('/api/updateProgress', (req, res) => {
 	async function updateProgress() {
 		await client.connect()
 		const collection = client.db('technomojo').collection('test')
+
 		const result = await collection.updateOne(
 			{
 				username: username, 
@@ -90,6 +92,21 @@ app.put('/api/updateProgress', (req, res) => {
 	}
 	
 	updateProgress()
+	
+})
+
+app.get('/api/allStudentProgress', (req, res) => {
+	
+	async function getStudentProgress() {
+		await client.connect()
+		const collection = client.db('technomojo').collection('test')
+		
+		const result = await collection.find().project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
+		await client.close()
+		res.send(result)
+	}
+	
+	getStudentProgress()
 	
 })
 
