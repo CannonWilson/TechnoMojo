@@ -1,0 +1,17 @@
+.summaryWrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.summaryLessonNameBtn {
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: lightgray;
+}
+
+.studentSummaryFlex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}

@@ -1,0 +1,25 @@
+.blockWrapper {
+	min-height: 50px;
+	min-width: 50px;
+	max-width: 300px;
+	border-radius: 10px;
+	border: solid lightgray 3px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px;
+}
+
+.blockUsername {
+	font-weight: bold;
+}
+
+.blockCode {
+	font-family: monospace;
+	text-align: left;
+	white-space: pre-wrap;
+	background-color: #fff;
+	border: solid #fafafa 3px;
+	padding: 5px;
+	border-radius: 5px;
+}

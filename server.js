@@ -56,8 +56,6 @@ app.get('/api/userProgress', (req, res) => {
 		// const collection = client.db('technomojo').collection('test')
 		const userInfoDoc = await collection.findOne({username: usernameInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
-			console.log('userInfoDoc', userInfoDoc)
-			console.log('sending userInfoDoc.progress', userInfoDoc.progress)
 			res.send(userInfoDoc.progress) // send progress array to frontend
 		}
 		else { // userInfoDoc is null, user not found
@@ -71,10 +69,6 @@ app.get('/api/userProgress', (req, res) => {
 })
 
 app.put('/api/updateProgress', (req, res) => {
-	console.log("reached the backend. Submitting code!")
-	console.log('req.body', req.body)
-	console.log('username: ', req.query.username)
-	
 	
 	const username = req.query.username
 	const module = req.body.moduleName
@@ -97,7 +91,6 @@ app.put('/api/updateProgress', (req, res) => {
 		if (result.modifiedCount === 0) { // nothing was modified, no array entry was found. Push a new entry onto the array instead
 			const insertResult = await collection.updateOne({username: username}, {$push: {progress: req.body}})
 		}
-		console.log('result on backend', result)
 		res.sendStatus(201)
 	}
 	

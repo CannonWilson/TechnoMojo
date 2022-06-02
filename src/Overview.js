@@ -30,7 +30,6 @@ export default function Overview() {
 		async function retrieveUserProgress() {
 			try {
 				const username = localStorage.getItem('username')
-				console.log('username from local', username)
 				const response = await fetch('http://localhost:4000/api/userProgress?username='+username)
 				const json = await response.json()
 				setProgressArray(json)
@@ -45,14 +44,7 @@ export default function Overview() {
 		retrieveUserProgress()
 		
 	}, [])
-	
-	useEffect( () => {
 		
-		console.log("progressArray in Overview.js", progressArray)
-		
-	}, [progressArray])
-	
-	
 	
 	return (
 		<>
@@ -61,7 +53,7 @@ export default function Overview() {
 				<div className="accordian">
 					
 					{lessonPlan.map(module => 
-						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} />
+						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} clearance="normal" />
 					)}
 					
 				</div>

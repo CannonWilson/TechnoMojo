@@ -1,10 +1,12 @@
 import {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
+import Module from './Module.js'
+import './Admin.css'
 
 export default function Admin() {
 	
 	const [lessonPlan, setLessonPlan] = useState(require('./data/lessonPlan.js'))
-	console.log('Dummy lessonPlan in Admin.js', lessonPlan)
+	
 	
 	// Move the user back to the sign in page if they aren't logged in as admin
 	const navigate = useNavigate()
@@ -104,8 +106,6 @@ export default function Admin() {
 							}
 						}
 					}
-	
-					console.log('lesson after modifications', lesson)
 				}
 			}
 		}
@@ -118,7 +118,13 @@ export default function Admin() {
 	
 	return(
 		<>
-			<div>{lessonPlan.map(module => module.moduleName)}</div>
+			<div className="adminPageWrapper">
+				<div className="accordian">
+					{lessonPlan.map(module => 
+						<Module module={module} clearance="admin" key={module.moduleName}/>
+					)}
+				</div>
+			</div>
 		</>
 	)
 }
