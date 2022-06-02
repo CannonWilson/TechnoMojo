@@ -1,4 +1,4 @@
-export const lessonPlan = [
+module.exports = [
 	{
 		moduleName: '01 - HTML & CSS',
 		lessons: [

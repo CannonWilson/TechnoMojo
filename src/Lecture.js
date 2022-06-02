@@ -1,7 +1,7 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
 import {useState, useEffect} from 'react'
-import {lessonPlan} from "./data/lessonPlan.js"
 import './Lecture.css'
+const lessonPlan = require("./data/lessonPlan.js")
 
 export default function Lecture() {
 	

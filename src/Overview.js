@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import Module from './Module.js'
-import {lessonPlan} from './data/lessonPlan.js'
 import './Overview.css'
+const lessonPlan = require('./data/lessonPlan.js')
 
 export default function Overview() {
 	
