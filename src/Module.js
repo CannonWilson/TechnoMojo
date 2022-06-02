@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Lesson from './Lesson.js'
 import './Module.css'
 
-export default function Module({module}) {
+export default function Module({module, progressArrayForThisModule}) {
 	
 	const [moduleActive, setModuleActive] = useState(false)
 	
@@ -21,7 +21,7 @@ export default function Module({module}) {
 					
 						{/* If the module is active, show its lessons */}
 						{moduleActive ? module.lessons.map(lesson => 
-							<Lesson lesson={lesson} lessonIndex={module.lessons.indexOf(lesson)} moduleName={module.moduleName} key={lesson.lessonName}/>
+							<Lesson lesson={lesson} lessonIndex={module.lessons.indexOf(lesson)} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
 						) : null}
 						
 					</div>

@@ -3168,34 +3168,34 @@ export const lessonPlan = [
 				answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 				quiz: [
 					{
-						question: 'The first question: ',
+						question: 'Which is the correct command to create a new React app called my-app?',
 						answerChoices: [
-							"First answer choice",
-							"Second answer choice",
-							"Third answer choice",
-							"Fourth answer choice"
+							"npx create react app my-app",
+							"npm install react",
+							"npx create-react-app my-app",
+							"npm create react app my-app"
 						],
-						correctAnswerIndex: 0
+						correctAnswerIndex: 2
 					},
 					{
-						question: 'The second question: ',
+						question: 'Which is the correct command to start the React local development server?',
 						answerChoices: [
-							"First answer choice",
-							"Second answer choice",
-							"Third answer choice",
-							"Fourth answer choice"
+							"npm run build",
+							"npm start",
+							"npm server",
+							"npx build"
 						],
-						correctAnswerIndex: 0
+						correctAnswerIndex: 1
 					},
 					{
-						question: 'The third question: ',
+						question: 'What is a reusable bit of code that returns React elements?',
 						answerChoices: [
-							"First answer choice",
-							"Second answer choice",
-							"Third answer choice",
-							"Fourth answer choice"
+							"Root",
+							"Class",
+							"View",
+							"Component"
 						],
-						correctAnswerIndex: 0
+						correctAnswerIndex: 3
 					}
 				]	
 			},

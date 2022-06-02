@@ -16,6 +16,10 @@
 	font-weight: bold;
 }
 
+.completed {
+	background-color: lightgreen;
+}
+
 .lessonName {
 	margin-left: 20px;
 }

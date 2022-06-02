@@ -1,9 +1,11 @@
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import {useState, useEffect} from 'react'
 import {lessonPlan} from "./data/lessonPlan.js"
 import './Lecture.css'
 
 export default function Lecture() {
+	
+	const navigate = useNavigate()
 	
 	const [successMessage, setSuccessMessage] = useState("Nice! You got it right, please move on to the next question.")
 	const finishedQuizMessage = "Great job! You completed the quiz."
@@ -28,6 +30,7 @@ export default function Lecture() {
 	user's input is URL encoded and passed to the backend to be recorded 
 	in the database. */
 	const [submitErrorMessage, setSubmitErrorMessage] = useState("")
+	
 	async function submitButtonPressed() {
 		
 		const userCode = encodeURIComponent(document.getElementById('submissionTextArea').value)
@@ -60,7 +63,15 @@ export default function Lecture() {
 			setSubmitErrorMessage('You are not logged in. Please save your work by copying and pasting your code into some other application before returning to the home screen of this portal to sign in.')
 			throw 'User is not logged in'
 		}
-		const response = await fetch('http://localhost:43023/api/updateProgress?username=' + username, requestOptions)
+		try {
+			const response = await fetch('http://localhost:43023/api/updateProgress?username=' + username, requestOptions)
+			// bring the user back to the /overview view if successful
+			if (response.ok) navigate('/overview')
+		}
+		catch(err) {
+			console.error(err)
+			setSubmitErrorMessage("Something went wrong. Please grab an instructor and we'll take a look.")
+		}
 	}
 	
 	

@@ -24,8 +24,7 @@ export default function Overview() {
 	*/
 	const [progressArray, setProgressArray] = useState([])
 	
-	// When the user clicks on a new lesson that they have not accessed before, their progress array will be updated to include the lesson by that name.
-	
+	// use useEffect to get user progress from the backend when the view loads
 	useEffect( () => {
 		
 		async function retrieveUserProgress() {
@@ -47,11 +46,13 @@ export default function Overview() {
 		
 	}, [])
 	
-	// use useEffect to get user progress from the backend
-	// then, pass the respective parts of the progress array down
-	// to the accordian items
-	// each accordian item will be a component that renders the
-	// correct lessons and the user's progress in the module
+	useEffect( () => {
+		
+		console.log("progressArray in Overview.js", progressArray)
+		
+	}, [progressArray])
+	
+	
 	
 	return (
 		<>
@@ -60,7 +61,7 @@ export default function Overview() {
 				<div className="accordian">
 					
 					{lessonPlan.map(module => 
-						<Module module={module} key={module.moduleName}/>
+						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} />
 					)}
 					
 				</div>
