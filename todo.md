@@ -55,9 +55,13 @@ the user is already signed in
 • Make data persist on the page if user clicks submit on the quiz or the textarea and then refreshes (implement saveCodeButtonPressed function)
 • Retrieve user's submitted code and completed quiz from the db if they have already completed the lecture
 • Change fetch URI in submitCodeButtonPressed function
+• Quiz changes to red on incorrect answers
+• Add styling on quiz
+• When you've completed the lecture, show some message instead of auto redirect
 
 ---
 
 /src/Admin.js:
 
 • Change fetch URI in retrieveStudentProgress
+• Consider using data structure other than arrays

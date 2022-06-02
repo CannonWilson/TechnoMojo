@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 43023
+const port = process.env.PORT || 4000
 
 const cors = require('cors')
 app.use(cors())
@@ -12,7 +12,16 @@ require('dotenv').config()
 
 const {MongoClient} = require('mongodb')
 const url = process.env.MONGO_CONNECTION_URI
+let collection
 const client = new MongoClient(url)
+
+client.connect(function(err) {
+  if(err) throw err;
+  
+  collection = client.db('technomojo').collection('test');
+  app.listen(port);
+  console.log('Listening on port ' + port);
+});
 
 
 app.get('/api/signIn', (req, res) => {
@@ -20,9 +29,9 @@ app.get('/api/signIn', (req, res) => {
 	const passwordInput = req.query.password
 	
 	async function checkUserInfo() {
-		await client.connect()
-		const collection = client.db('technomojo').collection('test')
-		
+
+		// await client.connect()
+		// const collection = client.db('technomojo').collection('test')
 		const userInfoDoc = await collection.findOne({username: usernameInput, password: passwordInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.sendStatus(200)
@@ -30,6 +39,7 @@ app.get('/api/signIn', (req, res) => {
 		else { // userInfoDoc is null, user not found
 			res.sendStatus(404)
 		}
+		
 	}
 	
 	checkUserInfo()
@@ -41,9 +51,9 @@ app.get('/api/userProgress', (req, res) => {
 	const usernameInput = req.query.username
 	
 	async function checkUserInfo() {
-		await client.connect()
-		const collection = client.db('technomojo').collection('test')
 		
+		// await client.connect()
+		// const collection = client.db('technomojo').collection('test')
 		const userInfoDoc = await collection.findOne({username: usernameInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			console.log('userInfoDoc', userInfoDoc)
@@ -53,6 +63,7 @@ app.get('/api/userProgress', (req, res) => {
 		else { // userInfoDoc is null, user not found
 			res.sendStatus(404)
 		}
+		
 	}
 	
 	checkUserInfo()
@@ -71,9 +82,8 @@ app.put('/api/updateProgress', (req, res) => {
 	const code = req.body.userCode
 	
 	async function updateProgress() {
-		await client.connect()
-		const collection = client.db('technomojo').collection('test')
-
+		// await client.connect()
+		// const collection = client.db('technomojo').collection('test')
 		const result = await collection.updateOne(
 			{
 				username: username, 
@@ -95,21 +105,17 @@ app.put('/api/updateProgress', (req, res) => {
 	
 })
 
+
 app.get('/api/allStudentProgress', (req, res) => {
 	
 	async function getStudentProgress() {
-		await client.connect()
-		const collection = client.db('technomojo').collection('test')
-		
+		// await client.connect()
+		// const collection = client.db('technomojo').collection('test')
+		// 
 		const result = await collection.find().project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
-		await client.close()
 		res.send(result)
 	}
 	
 	getStudentProgress()
 	
 })
-
-
-
-app.listen(port)

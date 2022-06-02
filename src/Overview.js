@@ -31,7 +31,7 @@ export default function Overview() {
 			try {
 				const username = localStorage.getItem('username')
 				console.log('username from local', username)
-				const response = await fetch('http://localhost:43023/api/userProgress?username='+username)
+				const response = await fetch('http://localhost:4000/api/userProgress?username='+username)
 				const json = await response.json()
 				setProgressArray(json)
 			}

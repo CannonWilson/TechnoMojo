@@ -18,7 +18,7 @@ export default function SignIn() {
 		
 		try {
 
-			const response = await fetch(`http://localhost:43023/api/signIn?username=${usernameInput}&password=${passwordInput}`)
+			const response = await fetch(`http://localhost:4000/api/signIn?username=${usernameInput}&password=${passwordInput}`)
 			
 			if (response.ok) { // user was found, move to /overview if they aren't an admin
 				localStorage.setItem('username', usernameInput)

@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-
+import {lessonPlan} from './data/lessonPlan.js'
 
 export default function Admin() {
 	
@@ -49,15 +49,57 @@ export default function Admin() {
 	// start by getting all of the progress arrays and corresponding usernames from backend
 	useEffect( () => {
 		
+		let userProgressObjArray // json is an array of objects where each object has username and progress fields
+		
 		async function retrieveStudentProgress() {
 			
-			const response = await fetch('http://localhost:43023/api/allStudentProgress')
-			const json = await response.json()
-			console.log('json', json)
-			
+			const response = await fetch('http://localhost:4000/api/allStudentProgress')
+			userProgressObjArray = await response.json() 
+			modifyLessonPlanToIncludeStudentProgress()
 		}
-		
+
 		retrieveStudentProgress()
+		
+		
+		/* Next, modify the lessonPlan array to include student progress. This
+		approach is taken because the lessonPlan array serves as the
+		'single source of truth' for all information about the curriculum. */
+		
+		/* Start by loop through all modules and the lesson array for each module, 
+		deleting the fields which we don't need from the lesson array. The following
+		array can be modified based on which fields will not be shown to the admin
+		user on the UI. */
+		function modifyLessonPlanToIncludeStudentProgress() {
+			const fieldsToDelete = ['lessonDescription', 'exerciseDescription', 'submissionDescription', 'introVideoUrl', 'codeSandBoxUrl', 'answerVideoUrl', 'quiz']
+			
+			for (const module of lessonPlan) {
+				for (const lesson of module.lessons) {
+					
+					for (const field of fieldsToDelete) delete lesson[field]
+					
+					/* Add all of the usernames and submitted code to a new
+					array inside of the lesson if that user has finished 
+					the given lesson */
+					for (const userProgressObj of userProgressObjArray) {
+						const found = userProgressObj.progress.find(item => item.lessonName === lesson.lessonName)
+						if (found) {
+							const usernameAndCodeForFinishedUser = {
+								username: userProgressObj.username,
+								submittedCode: found.userCode
+							}
+							if (lesson['studentProgress']) {
+								lesson['studentProgress'].push(usernameAndCodeForFinishedUser)
+							}
+							else {
+								lesson['studentProgress'] = [usernameAndCodeForFinishedUser]
+							}
+						}
+					}
+	
+					console.log('lesson after modifications', lesson)
+				}
+			}
+		}
 		
 	}, [] ) 
 

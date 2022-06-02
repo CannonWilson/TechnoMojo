@@ -64,7 +64,7 @@ export default function Lecture() {
 			throw 'User is not logged in'
 		}
 		try {
-			const response = await fetch('http://localhost:43023/api/updateProgress?username=' + username, requestOptions)
+			const response = await fetch('http://localhost:4000/api/updateProgress?username=' + username, requestOptions)
 			// bring the user back to the /overview view if successful
 			if (response.ok) navigate('/overview')
 		}
