@@ -17,10 +17,15 @@ export default function AdminLessonSummary({lesson}) {
 				
 				
 				{isActive && lesson.studentProgress ? 
-					<div className="studentSummaryFlex">
-						{lesson.studentProgress.map((usernameAndCode) => 
-							<AdminUserBlock username={usernameAndCode.username} code={usernameAndCode.submittedCode} key={usernameAndCode.username} />
-						)}
+					<div>
+						<p>Finished students: {lesson.studentProgress.map(usernameAndCode => 
+							<span className="adminFinishedStudents">{usernameAndCode.username}</span>)}
+						</p>
+						<div className="studentSummaryFlex">
+							{lesson.studentProgress.map((usernameAndCode) => 
+								<AdminUserBlock username={usernameAndCode.username} code={usernameAndCode.submittedCode} key={usernameAndCode.username} />
+							)}
+						</div>
 					</div>
 				: null}
 				
