@@ -1,5 +1,5 @@
 module.exports = {
-	moduleName: '09 - React',
+	moduleName: '08 - React',
 	lessons: [
 		{
 			lessonName: 'Intro to React',
@@ -8,7 +8,7 @@ module.exports = {
 			submissionDescription: "Paste the entire contents of App.js AND Hello.js that you wrote in the above sandbox into the textarea below. Please include some whitespace between your text for the different files. You have unlimited submissions, and only your latest submission will be recorded.",
 			introVideoUrl: "https://player.vimeo.com/video/718097592?h=cfd2203fa8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/01-intro-to-react-ylxz8z?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			answerVideoUrl: "https://player.vimeo.com/video/719242843?h=19844e7b43&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'What is a reusable bit of code that returns React elements?',
@@ -86,7 +86,7 @@ module.exports = {
 			submissionDescription: "Paste the entire contents of App.js AND Artist.js that you wrote in the above sandbox into the textarea below. Please include some whitespace between your text for the different files. You have unlimited submissions, and only your latest submission will be recorded.",
 			introVideoUrl: "https://player.vimeo.com/video/718097570?h=37c3242229&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-02-props-k5xzuk?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			answerVideoUrl: "https://player.vimeo.com/video/719242858?h=19fccc55a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following set of terms is used to describe the hierarchy of components inside React?',
@@ -135,7 +135,7 @@ module.exports = {
 			submissionDescription: "Paste the entire contents of App.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
 			introVideoUrl: "https://player.vimeo.com/video/718097628?h=95d40a820e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-03-usestate-cbz9si?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			answerVideoUrl: "https://player.vimeo.com/video/719242872?h=b756d419dd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following is true?',
@@ -190,7 +190,7 @@ setName='Cannon'`
 			submissionDescription: "Paste the entire contents of CounterDisplay.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
 			introVideoUrl: "https://player.vimeo.com/video/718462792?h=b6e059190f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-04-useeffect-0lt3ud?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			answerVideoUrl: "https://player.vimeo.com/video/719242887?h=b43ec81fc1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following describes why we would want to use the useEffect hook?',
@@ -255,7 +255,7 @@ setName='Cannon'`
 			submissionDescription: "Paste the entire contents of App.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
 			introVideoUrl: "https://player.vimeo.com/video/718097674?h=b5ed3b9b18&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-05-routing-i9io4q?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			answerVideoUrl: "https://player.vimeo.com/video/719242901?h=b3880f56c0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following commands do you need to run before you can work with React Router in your web app?',
