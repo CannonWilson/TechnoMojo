@@ -68,32 +68,78 @@ module.exports = {
 			answerVideoUrl: "https://player.vimeo.com/video/720403326?h=63f70d84ab&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
-					question: 'The first question: ',
+					question: 'Which of the following code snippets correctly imports express and creates a new Express application?',
 					answerChoices: [
-						"First answer choice",
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						`const express = require('express')
+app = express()`,
+						`import 'express' as express
+const app = express()`,
+						`const express = require('express')
+const app = express()`,
+						`import express from 'express'
+const app = express()`
 					],
-					correctAnswerIndex: 0
+					correctAnswerIndex: 2
 				},
 				{
-					question: 'The second question: ',
+					question: 'Which of the following code snippets creates a new route that responds to GET requests at the /pirates path by sending the string "Booty"?',
 					answerChoices: [
-						"First answer choice",
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						`app.post('/booty', (req, res) => {
+	res.redirect('/pirates')
+})`,
+						`app.get('/pirates', (req, res) => {
+	res.sendFile(__dirname + '/pirates.html')
+})`,
+						`app.get('/booty', (req, res) => {
+	res.send('Booty')
+})`,
+						`app.get('/pirates', (req, res) => {
+	res.send('Booty')
+})`
 					],
-					correctAnswerIndex: 0
+					correctAnswerIndex: 3
 				},
 				{
-					question: 'The third question: ',
+					question: 'Which of the following code snippets makes the Express application listen on port 8080 and console log "Server is now running" when the app starts up?',
 					answerChoices: [
-						"First answer choice",
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						"app.listen(80)",
+						"app.listen(8080, () => console.log('Server is now running'))",
+						`app.listen(8080, function()  => {
+	console.log("Server is now running")
+})`,
+						`app.listen(8080, function() {
+	console.log("Howdy")
+})`
+					],
+					correctAnswerIndex: 1
+				},
+				{
+					question: 'Which of the following types of data can be sent through an HTTP response?',
+					answerChoices: [
+						"Text",
+						"HTML and HTML files",
+						"HTTP status codes",
+						"All of the above"
+					],
+					correctAnswerIndex: 3
+				},
+				{
+					question: 'Retrieving the text portion of an HTTP response object is: ',
+					answerChoices: [
+						"Synchronous",
+						"Instant",
+						"Asynchronous",
+						"Falsey"
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: 'In this lesson, we: ',
+					answerChoices: [
+						"Used Express to serve up an HTML file. That HTML file has a linked JavaScipt file that we used to make a GET request to the project's backend.",
+						"Used Express to increase the security of our project by serving our files statically.",
+						"Created a GET request to an external API using the fetch keyword and placed the results on the screen using the .innerText property",
+						"None of the above"
 					],
 					correctAnswerIndex: 0
 				}
@@ -109,34 +155,129 @@ module.exports = {
 			answerVideoUrl: "https://player.vimeo.com/video/720403351?h=78c788cc3d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
-					question: 'The first question: ',
+					question: 'Which of the following lines of code makes a GET request to the "/hello" path and includes two parameters called firstName and lastName in the request query?',
 					answerChoices: [
-						"First answer choice",
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						"fetch(/hello/firstName=Cannon/lastName=Wilson)",
+						"fetch('/hello&firstName=Cannon&lastName=Wilson')",
+						"fetch('/hello?firstName=Cannon&lastName=Wilson')",
+						"fetch('hello?firstName=Cannon?lastName=Wilson')"
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: 'Given two existing JavaScript variables, phone and email, which of the following lines of code makes a GET request to the "/signup" path and correctly assigns the userPhone and userEmail request query parameters to the values of the two variables?',
+					answerChoices: [
+						"fetch(`/signup${phone}=userPhone${email}=userEmail`)",
+						"fetch(`/signup&userPhone={phone}&userEmail={email}`)",
+						"fetch(`/signup?email={userEmail}&phone={userPhone}`)",
+						"fetch(`/signup?userPhone=${phone}&userEmail=${email}`)"
+					],
+					correctAnswerIndex: 3
+				},
+				{
+					question: 'Given a GET request made to the URL "/getData?data=python", which of the following lines of code on the backend correctly creates a new JavaScript variable and assigns it based on the data request query parameter?',
+					answerChoices: [
+						"const userData = req.query.data",
+						"const userData = req.body.python",
+						"const userData = req.params.data",
+						"const userData = req.query.python",,
 					],
 					correctAnswerIndex: 0
 				},
 				{
-					question: 'The second question: ',
+					question: 'Which of the following HTML forms will create an HTTP POST request with a body of {"first": "Bilbo", "last": "Baggins"} when the user types Bilbo into the first field and Baggins into the second before clicking on the submit button?',
 					answerChoices: [
-						"First answer choice",
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						`<form action="/newUser" method="POST">
+	<input id="first" placeholder="first" />
+	<input id="last" placeholder="last" />
+	<button>Submit</button>
+</form>`,
+						`<form action="/newUser" method="POST">
+	<input src="first" placeholder="first" />
+	<input src="last" placeholder="last" />
+	<button>Submit</button>
+</form>`,
+						`<form action="/newUser" method="POST">
+	<input name="first" placeholder="first" />
+	<input name="last" placeholder="last" />
+	<button>Submit</button>
+</form>`,
+						`<form action="/newUser" method="POST">
+	<input id="Bilbo" placeholder="first" />
+	<input id="Baggins" placeholder="last" />
+	<button>Submit</button>
+</form>`,
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: 'The HTTP request body on the backend will be undefined unless you include which of the following lines of code?',
+					answerChoices: [
+						"app.use(express.urlencoded({extended: true}))",
+						"app.use(express.json())",
+						"app.use(express.static('req.body'))",
+						"app.use(express.router())",
 					],
 					correctAnswerIndex: 0
 				},
 				{
-					question: 'The third question: ',
+					question: 'By default, an HTML form with an action attribute of "/postData" and a method of "POST" once submitted will: ',
 					answerChoices: [
-						"First answer choice",
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						"Attempt to send the user to the /postData path",
+						"Create an HTTP POST request to the /postData path",
+						"Will be reset if the user is redirected back to their current page by the backend",
+						"All of the above",
 					],
-					correctAnswerIndex: 0
+					correctAnswerIndex: 3
+				},
+				{
+					question: 'Which of the following code snippets creates a valid POST request to "/signup"?',
+					answerChoices: [
+						"fetch('/signup')",
+						`const options = {
+	method: "POST",
+	header: "JSON",
+	body: JSON.stringify({id: 0, name: 'Bob'})
+}
+fetch('/signup', options)`,
+						`const data = {id: 0, name: 'Bob'}
+const options = {
+	method: "POST",
+	headers: {
+		"Content-Type": "application/json"
+	},
+	body: JSON.stringify(data)
+}
+fetch('/signup', options)`,
+						`const options = {
+	method: "POST",
+	headers: {
+		"Content-Type": "json"
+	},
+	body: JSON.stringify({id: 0, name: 'Bob'})
+}`,
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: 'If you include JSON data in the request body when making a POST request and have the same content type specified in the HTTP header, which of the following lines of code must you include on the backend?',
+					answerChoices: [
+						"app.use(express.router())",
+						"app.use(express.json())",
+						"app.use(express.static('req.body'))",
+						"app.use(express.urlencoded({extended: true}))",
+					],
+					correctAnswerIndex: 1
+				},
+				{
+					question: 'Which of the following is true: ',
+					answerChoices: [
+						"HTTP status codes between 200-299 signify a failed operation",
+						"HTTP responses have a .ok attribute that signify if the operation was successful",
+						"MDN does not have documentation for HTTP status codes",
+						"None of the above are true",
+					],
+					correctAnswerIndex: 1
 				}
 			]	
 		}
