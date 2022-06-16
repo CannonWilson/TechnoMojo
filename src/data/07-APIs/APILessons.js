@@ -280,6 +280,162 @@ fetch('/signup', options)`,
 					correctAnswerIndex: 1
 				}
 			]	
+		},
+		{
+			lessonName: 'Intro to MongoDB',
+			lessonDescription: "Learn how to create, read, update, and delete data with MonoDB Atlas, a cloud database service", 
+			exerciseDescription: "Create a new collection in your MongoDB Atlas cluster before starting this exercise. Next, go to app.js and write some code to connect to your database and create some functionality for signing up and signing in. Look at the comments in app.js for more details. You will need to open the sandbox in a browser tab and fork it in order to make edits.",
+			submissionDescription: "Paste the entire contents of app.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
+			introVideoUrl: "https://player.vimeo.com/video/720868862?h=d4de250fea&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			codeSandBoxUrl: "https://codesandbox.io/embed/apis-04-mongodb-p1dckl?fontsize=14&hidenavigation=1&theme=dark",
+			answerVideoUrl: "https://player.vimeo.com/video/721181947?h=9000aebafe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			quiz: [
+				{
+					question: 'Which of the following accurately describes the organizational hierarchy inside MongoDB Atlas?',
+					answerChoices: [
+						"A cluster can contain many databases, each database can contain many collections, and each collection can contain many documents/objects",
+						"A cluster can contain many collections, each collection can contain many databases, and each database can contain many documents/objects",
+						"A database can contain one cluster, that cluster can contain many collections, and each collection can contain many documents/objects",
+						"A database can contain many clusters, each cluster can contain many collections, and each collection can contain many documents/objects"
+					],
+					correctAnswerIndex: 0
+				},
+				{
+					question: 'Where can you find the example connection url to access your databases?',
+					answerChoices: [
+						"In the Database Access side panel",
+						"In the modal that appears after clicking the 'Connect' button under the Atlas tab",
+						"In the Network Access side panel",
+						"None of the above",
+					],
+					correctAnswerIndex: 1
+				},
+				{
+					question: "Which of the following commands will install the MongoDB node module into the project?",
+					answerChoices: [
+						"require('mongodb')",
+						"npx insall mongodb",
+						"curl https://mongodb.com",
+						"npm install mongodb"
+					],
+					correctAnswerIndex: 3
+				},
+				{
+					question: "Which of the following code snippets correctly creates a new MongoClient object?",
+					answerChoices: [
+						`const {client} = require('mongo')
+const url = mongodb+srv://<username>:<password>@cluster0.pnvyu.mongodb.net/?retryWrites=true&w=majority
+const MongoClient = client()`,
+						`const MongoClient = require('mongo')
+const url = "mongodb+srv://<username>:<password>@cluster0.pnvyu.mongodb.net/?retryWrites=true&w=majority"
+const client = new MongoClient(url)`,
+						`const {MongoClient} = require('mongodb')
+const url = "mongodb+srv://<username>:<password>@cluster0.pnvyu.mongodb.net/?retryWrites=true&w=majority"
+const client = new MongoClient(url)`,
+						`const {MongoClient} = require('mongo')
+const url = "mongodb+srv://<username>:<password>@cluster0.pnvyu.mongodb.net/?retryWrites=true&w=majority"
+const client = MongoClient(url)`,
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: "Which of the following code snippets correctly connects to an existing MongoClient instance named client and stores a reference to the desired collection in a JavaScript variable?",
+					answerChoices: [
+						`const collection
+client.connect(function() {
+	collection = client.db('my_database').collection('my_collection')
+}`,
+						`let collection
+client.connect(() => {
+	collection = client.db('my_database').collection('my_collection')
+}`,
+						`const collection
+client.connect(function() {
+	collection = client.db('my_database').collection('my_collection')
+}`,
+						`const collection
+client.connect(() => {
+	collection = client.collection('my_collection').db('my_collection')
+)`,
+					],
+					correctAnswerIndex: 1
+				},
+				{
+					question: "Which of the following is true about the result of a .find() operation?",
+					answerChoices: [
+						"It returns a MongoDB iterator object",
+						"By default, it will not include the _id field in any objects returned",
+						"It can be turned from a cursor object into an array with .toArray()",
+						"It cannot be sorted on the backend",
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: "Which of the following is true about .sort()?",
+					answerChoices: [
+						"It takes an object as an argument with keys specifying which field to sort by and either 1 for increasing/alphabetical order or -1 for decreasing/reverse alphabetical order",
+						"By default, it will not include the _id field in any objects returned",
+						"It alwaystakes place after .limit()",
+						"It can be invoked before .find()",
+					],
+					correctAnswerIndex: 0
+				},
+				{
+					question: "Which of the following routes correctly accesses the collection and performs the .insertOne() operation?",
+					answerChoices: [
+						`app.post('/new', async function(req, res) {
+	const result = await collection.insertOne(req.body)
+	if (result) res.sendStatus(200)
+	else res.sendStatus(500)
+})`,
+						`app.post('/new', async (req, res) => {
+	const result = await collection.insertOne(req.body)
+	if (result) res.sendStatus(200)
+	else res.sendStatus(500)
+})`,
+						`app.post('/new', (req, res) => {
+	async function insertToDB() {
+		const result = await collection.insertOne(req.body)
+		if (result) res.sendStatus(200)
+		else res.sendStatus(500)
+	}
+	insertToDB()
+)`,
+						"All of the above",
+					],
+					correctAnswerIndex: 3
+				},
+				{
+					question: "The .deleteOne function: ",
+					answerChoices: [
+						"Takes a MongoDB cursor object as an argument",
+						"Takes a filter/query as an argument",
+						"Will throw an error if an object that meets the filter/query is not found",
+						"Returns an object that includes a field called 'modifiedCount'",
+					],
+					correctAnswerIndex: 1
+				},
+				{
+					question: "Which of the following code snippets updates one document in the database that has a username field with a value of 'm0nk3yButt$' and updates its banned field to have a value of true?",
+					answerChoices: [
+						"collection.updateOne({username: 'm0nk3yButt$'}, {$set: banned: true})",
+						"collection.updateOne({username: 'm0nk3yButt$'}, {$update: {banned: true}})",
+						"collection.updateOne({username: 'm0nk3yButt$'}, {$set: {banned: true}})",
+						"collection.updateOne({username: 'm0nk3yButt$'}, $update: {banned: true}})",
+					],
+					correctAnswerIndex: 2
+				},
+				{
+					question: "How can you tell if a .deleteOne() or .updateOne() operation successfully deleted/updated a document in the collection?",
+					answerChoices: [
+						"The server will return a 404 error if a document is not found that meets the filter/query, so if your backend doesn't crash you successfully modified a document",
+						"The .acknowledged property of the operation's result will be false",
+						"The .deletedCount or .modifiedCount properties of the operation's result will be greater than 0",
+						".deleteOne() and .updateOne() will always delete/update a document",
+					],
+					correctAnswerIndex: 2
+				}
+			]	
 		}
 	]
 }
