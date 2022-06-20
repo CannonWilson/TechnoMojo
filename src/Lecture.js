@@ -67,7 +67,7 @@ export default function Lecture() {
 		}
 		try {
 			const response = await fetch('http://localhost:4000/api/updateProgress?username=' + username, requestOptions)
-			// show the answer modal if successful
+			// show the answer if successful
 			if (response.ok) {
 				setShowAnswer(true)
 			}

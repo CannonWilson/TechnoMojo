@@ -76,12 +76,10 @@ app.put('/api/updateProgress', (req, res) => {
 	const code = req.body.userCode
 	
 	async function updateProgress() {
-		// await client.connect()
-		// const collection = client.db('technomojo').collection('test')
+		
 		const result = await collection.updateOne(
 			{
 				username: username, 
-				"progress.moduleName": module,
 				"progress.lessonName": lesson
 			},
 			{
@@ -102,9 +100,6 @@ app.put('/api/updateProgress', (req, res) => {
 app.get('/api/allStudentProgress', (req, res) => {
 	
 	async function getStudentProgress() {
-		// await client.connect()
-		// const collection = client.db('technomojo').collection('test')
-		// 
 		const result = await collection.find().project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
 		res.send(result)
 	}

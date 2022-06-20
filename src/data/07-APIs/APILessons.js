@@ -47,7 +47,7 @@ module.exports = {
 					correctAnswerIndex: 0
 				},
 				{
-					question: "Create a new project and make a GET request to https://jsonplaceholder.typicode.com/posts/. Turn the API's response into JSON format. What is the length (accessible through the .length property) of the resulting JSON object?",
+					question: "Create a new project and make a GET request to 'https://jsonplaceholder.typicode.com/posts/'. Turn the API's response into JSON format. What is the length (accessible through the .length property) of the resulting JSON object?",
 					answerChoices: [
 						"10",
 						"100",
