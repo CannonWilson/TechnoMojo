@@ -1,7 +1,6 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
 import {useState, useEffect} from 'react'
 import './Lecture.css'
-import AnswerModal from './AnswerModal.js'
 const lessonPlan = require("./data/lessonPlan.js")
 
 export default function Lecture() {
@@ -13,10 +12,7 @@ export default function Lecture() {
 	const [isQuizComplete, setIsQuizComplete] = useState(false)
 	let isCodeSubmitted = false
 	
-	const [showAnswerModal, setShowAnswerModal] = useState(false)
-	function hideModalHelperFunction() {
-		setShowAnswerModal(false)
-	}
+	const [showAnswer, setShowAnswer] = useState(false)
 	
 	/* The useSearchParams hook is used to get the value of 
 	the request queries called moduleName and lessonName. They 
@@ -73,7 +69,7 @@ export default function Lecture() {
 			const response = await fetch('http://localhost:4000/api/updateProgress?username=' + username, requestOptions)
 			// show the answer modal if successful
 			if (response.ok) {
-				setShowAnswerModal(true)
+				setShowAnswer(true)
 			}
 		}
 		catch(err) {
@@ -194,7 +190,7 @@ export default function Lecture() {
 		<>
 			<div className="lecturePageWrapper">
 				<div className="lecturePageContent">
-				
+					
 					{/* Title section*/}
 					<div>
 						<h1>{currentLesson.lessonName}</h1>
@@ -267,7 +263,18 @@ export default function Lecture() {
 						<button className="lectureSubmitBtn" onClick={submitButtonPressed}>Submit</button>
 					</div>
 					
-					{showAnswerModal ? <AnswerModal hideModalHelperFunction={hideModalHelperFunction}/> : null}
+					{/* Answer section */}
+					{showAnswer ? 
+						<div>
+								<h1>Awesome job!</h1>
+								<p>You completed this lesson. The solution video is below. Please watch it and feel free to resubmit your code after watching.</p>
+							
+							
+							{/* Intro video */}
+							<div style={{padding:'56.25% 0 0 0',position:'relative'}}><iframe src={currentLesson.answerVideoUrl} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}} title="Strings"></iframe></div>
+						</div>
+						: null}
+					
 				</div>
 			</div>
 		</>
