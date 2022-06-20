@@ -98,9 +98,9 @@ app.put('/api/updateProgress', (req, res) => {
 
 
 app.get('/api/allStudentProgress', (req, res) => {
-	
+		
 	async function getStudentProgress() {
-		const result = await collection.find().project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
+		const result = await collection.find({cohort: req.query.cohort}).project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
 		res.send(result)
 	}
 	

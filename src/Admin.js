@@ -7,13 +7,18 @@ export default function Admin() {
 	
 	const [lessonPlan, setLessonPlan] = useState(require('./data/lessonPlan.js'))
 	
+	const cohorts = ['2021', '2022-01']
+	const [selectedCohort, setSelectedCohort] = useState(cohorts[0])
+	const [refreshAfterCohortChange, setRefreshAfterCohortChange] = useState(false) // a simple toggle to forcefully rerender the modules once a different cohort has been selected.
 	
 	// Move the user back to the sign in page if they aren't logged in as admin
 	const navigate = useNavigate()
 	useEffect( () => {
 		if (localStorage.getItem('username') !== process.env.REACT_APP_ADMIN_USERNAME) navigate('/')
 	}, [])
+
 	
+		
 	// want to construct an array that looks like this:
 	/* array = [
 		{
@@ -55,18 +60,17 @@ export default function Admin() {
 	*/
 	
 	
-	
-	
 	// start by getting all of the progress arrays and corresponding usernames from backend
 	useEffect( () => {
-		
+				
 		let userProgressObjArray // json is an array of objects where each object has username and progress fields
 		
 		async function retrieveStudentProgress() {
 			
-			const response = await fetch('http://localhost:4000/api/allStudentProgress')
+			const response = await fetch('http://localhost:4000/api/allStudentProgress?cohort=' + selectedCohort)
 			userProgressObjArray = await response.json() 
 			modifyLessonPlanToIncludeStudentProgress()
+			setRefreshAfterCohortChange(!refreshAfterCohortChange) // toggle the refresh to force the modules to rerender
 		}
 
 		retrieveStudentProgress()
@@ -88,40 +92,56 @@ export default function Admin() {
 					
 					for (const field of fieldsToDelete) delete lesson[field]
 					
+					/* Clear out the studentProgress array. This is necessary to clear out 
+					the array whenever the chosen cohort changes. */
+					lesson['studentProgress'] = []
+					
 					/* Add all of the usernames and submitted code to a new
 					array inside of the lesson if that user has finished 
-					the given lesson */
+					the given lesson. If they haven't finished the
+					given lesson, add an empty string for their 
+					submittedCode instead */
 					for (const userProgressObj of userProgressObjArray) {
 						const found = userProgressObj.progress.find(item => item.lessonName === lesson.lessonName)
+						let userCode = ""
 						if (found) {
-							const usernameAndCodeForFinishedUser = {
-								username: userProgressObj.username,
-								submittedCode: found.userCode
-							}
-							if (lesson['studentProgress']) {
-								lesson['studentProgress'].push(usernameAndCodeForFinishedUser)
-							}
-							else {
-								lesson['studentProgress'] = [usernameAndCodeForFinishedUser]
-							}
+							userCode = found.userCode
+						}
+						const usernameAndCodeForFinishedUser = {
+							username: userProgressObj.username,
+							submittedCode: userCode
+						}
+						
+						// Push onto the studentProgress array or create a new array for the lesson
+						if (lesson['studentProgress']) {
+							lesson['studentProgress'].push(usernameAndCodeForFinishedUser)
+						}
+						else {
+							lesson['studentProgress'] = [usernameAndCodeForFinishedUser]
 						}
 					}
 				}
 			}
 		}
-		
-	}, [] ) 
-
-	
-	
+				
+	}, [selectedCohort] ) 
 	
 	
 	return(
 		<>
 			<div className="adminPageWrapper">
+			
+				<p> Click on the dropdown below to select a cohort: </p>
+			
+				<select onChange={(event) => setSelectedCohort(event.target.value)} >
+					{cohorts.map((cohort) => (
+						<option value={cohort} key={cohort}>{cohort}</option>
+					))}
+				</select>
+							
 				<div className="accordian">
 					{lessonPlan.map(module => 
-						<Module module={module} clearance="admin" key={module.moduleName}/>
+						<Module module={module} clearance="admin" key={module.moduleName} refresh={refreshAfterCohortChange}/>
 					)}
 				</div>
 			</div>

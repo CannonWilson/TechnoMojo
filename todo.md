@@ -58,6 +58,7 @@ the user is already signed in
 • Quiz changes to red on incorrect answers
 • Add styling on quiz
 • When you've completed the lecture, show some message instead of auto redirect
+• Create modal that pops up once answer is submitted
 
 ---
 
