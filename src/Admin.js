@@ -11,7 +11,7 @@ export default function Admin() {
 	// Move the user back to the sign in page if they aren't logged in as admin
 	const navigate = useNavigate()
 	useEffect( () => {
-		if (localStorage.getItem('username') !== "admin") navigate('/')
+		if (localStorage.getItem('username') !== process.env.REACT_APP_ADMIN_USERNAME) navigate('/')
 	}, [])
 	
 	// want to construct an array that looks like this:

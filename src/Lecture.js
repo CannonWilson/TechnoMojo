@@ -1,6 +1,7 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
 import {useState, useEffect} from 'react'
 import './Lecture.css'
+import AnswerModal from './AnswerModal.js'
 const lessonPlan = require("./data/lessonPlan.js")
 
 export default function Lecture() {
@@ -12,6 +13,10 @@ export default function Lecture() {
 	const [isQuizComplete, setIsQuizComplete] = useState(false)
 	let isCodeSubmitted = false
 	
+	const [showAnswerModal, setShowAnswerModal] = useState(false)
+	function hideModalHelperFunction() {
+		setShowAnswerModal(false)
+	}
 	
 	/* The useSearchParams hook is used to get the value of 
 	the request queries called moduleName and lessonName. They 
@@ -41,6 +46,7 @@ export default function Lecture() {
 		}
 		else if (userCode.length === 0) {
 			setSubmitErrorMessage("You must type your code before submitting.")
+			return
 		}
 		else if (!isQuizComplete) {
 			setSubmitErrorMessage("You must complete the quiz before submitting.")
@@ -61,16 +67,18 @@ export default function Lecture() {
 		const username = localStorage.getItem("username")
 		if (!username) {
 			setSubmitErrorMessage('You are not logged in. Please save your work by copying and pasting your code into some other application before returning to the home screen of this portal to sign in.')
-			throw 'User is not logged in'
+			throw new Error('User is not logged in')
 		}
 		try {
 			const response = await fetch('http://localhost:4000/api/updateProgress?username=' + username, requestOptions)
-			// bring the user back to the /overview view if successful
-			if (response.ok) navigate('/overview')
+			// show the answer modal if successful
+			if (response.ok) {
+				setShowAnswerModal(true)
+			}
 		}
 		catch(err) {
 			console.error(err)
-			setSubmitErrorMessage("Something went wrong. Please grab an instructor and we'll take a look.")
+			setSubmitErrorMessage("Something went wrong on our end. Please grab an instructor and we'll take a look.")
 		}
 	}
 	
@@ -258,6 +266,8 @@ export default function Lecture() {
 						<p id="submitError">{submitErrorMessage}</p>
 						<button className="lectureSubmitBtn" onClick={submitButtonPressed}>Submit</button>
 					</div>
+					
+					{showAnswerModal ? <AnswerModal hideModalHelperFunction={hideModalHelperFunction}/> : null}
 				</div>
 			</div>
 		</>

@@ -22,7 +22,9 @@ export default function SignIn() {
 			
 			if (response.ok) { // user was found, move to /overview if they aren't an admin
 				localStorage.setItem('username', usernameInput)
-				if (usernameInput !== "admin") {
+				console.log('Sign in ok. UsernameInput: ', usernameInput)
+				console.log('Process.env.admin: ', process.env.REACT_APP_ADMIN_USERNAME)
+				if (usernameInput !== process.env.REACT_APP_ADMIN_USERNAME) {
 					navigate('/overview');
 				}
 				else {
