@@ -9,7 +9,7 @@ export default function AdminLessonSummary({lesson}) {
 	function summaryButtonClicked() {
 		setIsActive(!isActive)
 	}
-
+	
 	const finishedStudentsAndCode = lesson.studentProgress.filter(usernameAndCode => usernameAndCode.submittedCode !== "")
 	const unfinishedStudents = lesson.studentProgress.filter(usernameAndCode => usernameAndCode.submittedCode === "")
 	
