@@ -1,8 +1,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import SignIn from './SignIn.js'
-import Overview from './Overview.js'
-import Lecture from './Lecture.js'
-import Admin from './Admin.js'
+import SignIn from './views/sign_in/SignIn.js'
+import Overview from './views/overview/Overview.js'
+import Lecture from './views/lecture/Lecture.js'
+import Admin from './admin/Admin.js'
 import './App.css';
 
 function App() {

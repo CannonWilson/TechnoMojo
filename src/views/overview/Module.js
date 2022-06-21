@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Lesson from './Lesson.js'
-import AdminLessonSummary from './AdminLessonSummary.js'
+import AdminLessonSummary from '../../admin/AdminLessonSummary.js'
 import './Module.css'
 
 export default function Module({module, progressArrayForThisModule, clearance}) {

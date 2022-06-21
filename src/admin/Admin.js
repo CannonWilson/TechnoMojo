@@ -1,13 +1,13 @@
 import {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
-import Module from './Module.js'
+import Module from '../views/overview/Module.js' // TODO: modify and make an admin Module components
 import './Admin.css'
 
 export default function Admin() {
 	
-	const [lessonPlan, setLessonPlan] = useState(require('./data/lessonPlan.js'))
+	const [lessonPlan, setLessonPlan] = useState(require('../curriculum/lessonPlan.js'))
 	
-	const cohorts = ['2021', '2022-01']
+	const cohorts = ['2022-01', '2021']
 	const [selectedCohort, setSelectedCohort] = useState(cohorts[0])
 	const [refreshAfterCohortChange, setRefreshAfterCohortChange] = useState(false) // a simple toggle to forcefully rerender the modules once a different cohort has been selected.
 	
