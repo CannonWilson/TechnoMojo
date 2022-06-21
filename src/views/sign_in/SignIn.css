@@ -1,5 +1,5 @@
 .signInTitle {
-	
+	margin-top: 50px;
 }
 
 .signInTitleCaption {
@@ -9,7 +9,6 @@
 
 .signInPageWrapper {
 	width: 100%;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,6 +21,8 @@
 	height: 60%;
 	border-radius: 20px;
 	margin-top: 20px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,7 +39,7 @@
 
 .passwordBlock {
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 #usernameLabel, #passwordLabel {

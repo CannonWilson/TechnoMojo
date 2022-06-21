@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
-import AdminModule from './AdminModule.js' // TODO: modify and make an admin Module components
+import AdminModule from './AdminModule.js' 
 import './Admin.css'
+import Header from '../shared/Header.js'
 
 export default function Admin() {
 	
@@ -129,6 +130,7 @@ export default function Admin() {
 	
 	return(
 		<>
+			<Header leftText="← Back to sign in" rightText="Per-student summaries →" leftLink="/" rightLink="/"/>
 			<div className="adminPageWrapper">
 			
 				<p> Click on the dropdown below to select a cohort: </p>
@@ -141,7 +143,7 @@ export default function Admin() {
 							
 				<div className="accordian">
 					{lessonPlan.map(module => 
-						<AdminModule module={module} key={module.moduleName} refresh={refreshAfterCohortChange}/>
+						<AdminModule module={module} key={module.moduleName} refresh={refreshAfterCohortChange} />
 					)}
 				</div>
 			</div>

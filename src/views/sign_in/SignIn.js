@@ -1,5 +1,6 @@
 import "./SignIn.css"
 import {Link, useNavigate} from 'react-router-dom'
+import Header from '../../shared/Header.js'
 
 export default function SignIn() {
 	
@@ -47,6 +48,8 @@ export default function SignIn() {
 	
 	return (
 		<>
+			<Header leftText="" rightText="" leftLink="#" rightLink="#"/>
+			
 			<div className="signInPageWrapper">
 			
 				{/* Start title and caption */}

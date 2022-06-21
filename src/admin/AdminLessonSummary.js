@@ -21,8 +21,8 @@ export default function AdminLessonSummary({lesson}) {
 				
 				{isActive && lesson.studentProgress ? 
 					<div>
-						<p>Finished students: {finishedStudentsAndCode.map(usernameAndCode => 
-							<span className="adminFinishedStudents" key={usernameAndCode.username}>{usernameAndCode.username}</span>)}
+						<p><b>Finished:</b> {finishedStudentsAndCode.map(usernameAndCode => 
+							<span className="adminStudents" key={usernameAndCode.username}>{usernameAndCode.username}</span>)}
 						</p>
 						<div className="studentSummaryFlex">
 							{finishedStudentsAndCode.map((usernameAndCode) => {
@@ -32,8 +32,8 @@ export default function AdminLessonSummary({lesson}) {
 							})}
 						</div>
 						
-						<p>Unfinished students: {unfinishedStudents.map(usernameAndCode => 
-							<span className="adminFinishedStudents" key={usernameAndCode.username}>{usernameAndCode.username}</span>)}
+						<p><b>Unfinished:</b> {unfinishedStudents.map(usernameAndCode => 
+							<span className="adminStudents" key={usernameAndCode.username}>{usernameAndCode.username}</span>)}
 						</p>
 					</div>
 				: null}
