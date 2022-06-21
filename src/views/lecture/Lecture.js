@@ -83,16 +83,12 @@ export default function Lecture() {
 	function saveCodeButtonPressed() {
 		// TODO: implement this function
 	}
-	
-	//const [currentQuestion, setCurrentQuestion] = useState(currentLesson.quiz[0])
-	
+		
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-	
 	const [chosenChoiceIndex, setChosenChoiceIndex] = useState(null)
-	
 	const [questionIndexesAnsweredCorrectly, setQuestionIndexesAnsweredCorrectly] = useState([])
-	
 	const [currentQuestionAnsweredCorrectly, setCurrentQuestionAnsweredCorrectly] = useState(false)
+	const [questionFeedback, setQuestionFeedback] = useState("")
 	
 	function choiceClicked(choiceNumber) {
 		/* Only allow a new choice to be selected if the correct answer has not yet
@@ -106,7 +102,6 @@ export default function Lecture() {
 		}
 	}
 	
-	const [questionFeedback, setQuestionFeedback] = useState("")
 	
 	/* The following hook checks if the user has completed the quiz
 	whenever the length of the questionIndexesAnsweredCorrectly
@@ -121,6 +116,13 @@ export default function Lecture() {
 	
 	
 	function submitChoiceButtonPressed() {
+		
+		console.log('submit choice button pressed')
+		console.log("chosenChoiceIndex", chosenChoiceIndex)
+		console.log('questionIndexesAnsweredCorrectly', questionIndexesAnsweredCorrectly)
+		console.log('currentQuestionIndex', currentQuestionIndex)
+		console.log('currentQuestionAnsweredCorrectly', currentQuestionAnsweredCorrectly)
+		
 		/* do nothing if the user has not clicked on an answer 
 		choice or if the user has already submitted the correct
 		answer for this question */
@@ -174,15 +176,15 @@ export default function Lecture() {
 		}
 	}
 	
-	function quizLeftArrowPressed() {
-		let newIndex = (currentQuestionIndex - 1)
-		if (newIndex < 0) newIndex = currentLesson.quiz.length - 1 // wrap around to the very last index if needed
-		setCurrentQuestionIndex(newIndex)
-	}
 	
-	function quizRightArrowPressed() {
-		const newIndex = (currentQuestionIndex + 1) % currentLesson.quiz.length;
+	function arrowPressed(increment) {
+		let newIndex = (currentQuestionIndex + increment)
+		if (newIndex < 0) newIndex = currentLesson.quiz.length - 1 // wrap around to the very last index if needed
+		else newIndex = newIndex % currentLesson.quiz.length // wrap around to the first index if needed
 		setCurrentQuestionIndex(newIndex)
+		if (!questionIndexesAnsweredCorrectly.includes(newIndex)) {
+			setChosenChoiceIndex(null)
+		}
 	}
 	
 	
@@ -249,10 +251,10 @@ export default function Lecture() {
 							{/* TODO: put dots here */}
 						</div>
 						<div className="quizLeftArrow">
-							<svg onClick={quizLeftArrowPressed} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M20 44 0 24 20 4 22.8 6.85 5.65 24 22.8 41.15Z"/></svg>
+							<svg onClick={() => arrowPressed(-1)} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M20 44 0 24 20 4 22.8 6.85 5.65 24 22.8 41.15Z"/></svg>
 						</div>
 						<div className="quizRightArrow">
-							<svg onClick={quizRightArrowPressed} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M15.2 43.9 12.4 41.05 29.55 23.9 12.4 6.75 15.2 3.9 35.2 23.9Z"/></svg>
+							<svg onClick={() => arrowPressed(1)} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M15.2 43.9 12.4 41.05 29.55 23.9 12.4 6.75 15.2 3.9 35.2 23.9Z"/></svg>
 						</div>
 					</div>
 					
