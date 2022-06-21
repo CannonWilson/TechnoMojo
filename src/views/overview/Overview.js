@@ -36,7 +36,7 @@ export default function Overview() {
 			}
 			catch(err) { // above code will fail if the localStorage fails to get the user's username or if the database fails to find the user
 				
-				document.getElementById('retrieveUserProgressError').textContent = "There was a verification error. Please return to the sign in page and enter your information again. Cookies are used to store your username, so this page will not work if you are in a private window or if you have cleared this website's cookies."
+				document.getElementById('retrieveUserProgressError').textContent = "There was a verification error. Please return to the sign in page and enter your information again. Local storage is used to store your username, so this page will not work if you are in a private window or if you have cleared this website's data."
 				console.error(err)
 			}
 		}
@@ -53,7 +53,7 @@ export default function Overview() {
 				<div className="accordian">
 					
 					{lessonPlan.map(module => 
-						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} clearance="normal" />
+						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} />
 					)}
 					
 				</div>

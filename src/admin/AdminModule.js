@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import Lesson from './Lesson.js'
-import './Module.css'
+import AdminLessonSummary from './AdminLessonSummary.js'
+import './AdminModule.css'
 
 export default function Module({module, progressArrayForThisModule}) {
 	
@@ -19,9 +19,8 @@ export default function Module({module, progressArrayForThisModule}) {
 				<div className="moduleContentWrapper">
 					<div className={"moduleContent"}>
 					
-						{/* If the module is active and being shown to a normal user, show its corresponding Lesson components */}
 						{moduleActive ? module.lessons.map(lesson => 
-							<Lesson lesson={lesson} lessonIndex={module.lessons.indexOf(lesson)} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
+							<AdminLessonSummary lesson={lesson} key={lesson.lessonName} />
 						) : null}
 						
 					</div>

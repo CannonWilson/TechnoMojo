@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
-import Module from '../views/overview/Module.js' // TODO: modify and make an admin Module components
+import AdminModule from './AdminModule.js' // TODO: modify and make an admin Module components
 import './Admin.css'
 
 export default function Admin() {
@@ -141,7 +141,7 @@ export default function Admin() {
 							
 				<div className="accordian">
 					{lessonPlan.map(module => 
-						<Module module={module} clearance="admin" key={module.moduleName} refresh={refreshAfterCohortChange}/>
+						<AdminModule module={module} key={module.moduleName} refresh={refreshAfterCohortChange}/>
 					)}
 				</div>
 			</div>

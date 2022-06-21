@@ -1,0 +1,27 @@
+.moduleWrapper {
+	width: 100%;
+	background-color: #efefef;
+}
+
+.moduleTitleWrapper {
+	background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid #bbb 3px;
+}
+
+.moduleTitle {
+	text-align: center;
+}
+
+.moduleContentWrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.moduleContent {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
