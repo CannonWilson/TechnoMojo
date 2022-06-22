@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import AdminModule from './AdminModule.js' 
 import './Admin.css'
 import Header from '../shared/Header.js'
+import AdminStudentCard from './AdminStudentCard.js'
 
 export default function Admin() {
 	
@@ -133,11 +134,11 @@ export default function Admin() {
 			<Header leftText="← Back to sign in" rightText="Per-student summaries →" leftLink="/" rightLink="/"/>
 			<div className="adminPageWrapper">
 			
-				<p> Click on the dropdown below to select a cohort: </p>
+				<p className="cohortSelectText"> Click on the dropdown below to select a cohort: </p>
 			
-				<select onChange={(event) => setSelectedCohort(event.target.value)} >
+				<select className="adminCohortSelect" onChange={(event) => setSelectedCohort(event.target.value)} >
 					{cohorts.map((cohort) => (
-						<option value={cohort} key={cohort}>{cohort}</option>
+						<option className="adminCohortOption" value={cohort} key={cohort}>{cohort}</option>
 					))}
 				</select>
 							
@@ -146,6 +147,11 @@ export default function Admin() {
 						<AdminModule module={module} key={module.moduleName} refresh={refreshAfterCohortChange} />
 					)}
 				</div>
+				
+				<div className="adminStudentSection">
+					{lessonPlan[0].lessons[0].studentProgress !== undefined ? lessonPlan[0].lessons[0].studentProgress.map(usernameAndCode => <AdminStudentCard key={usernameAndCode.username} lessonPlan={lessonPlan} username={usernameAndCode.username}/>) : null}
+				</div>
+				
 			</div>
 		</>
 	)

@@ -1,10 +1,9 @@
 import {useState} from 'react'
 import AdminLessonSummary from './AdminLessonSummary.js'
 import './AdminModule.css'
-import { Transition, animated } from 'react-spring'
 
 
-export default function Module({module, progressArrayForThisModule}) {
+export default function AdminModule({module, progressArrayForThisModule}) {
 	
 	const [moduleActive, setModuleActive] = useState(false)
 	
@@ -12,41 +11,31 @@ export default function Module({module, progressArrayForThisModule}) {
 		setModuleActive(!moduleActive)
 	}
 	
-	
+	const mountedStyle = {
+	  animation: "inAnimation 400ms ease-in"
+	};
+	const unmountedStyle = {
+	  animation: "outAnimation 400ms ease-out",
+	  animationFillMode: "forwards"
+	};
 	
 	return (
 		<>
-			<div className="moduleWrapper">
-				<div className="moduleTitleWrapper" onClick={toggleModuleActive}>
-					<p className="moduleName">{module.moduleName}</p>
-					<div className="modulePlusMinus">{moduleActive ? "-" : "+"}</div>
+			<div className="adminModuleWrapper">
+				<div className="adminModuleTitleWrapper" onClick={toggleModuleActive} style={{backgroundColor: moduleActive ? "#efefef" : ""}}>
+					<p className="adminModuleName">{module.moduleName}</p>
+					<div className={moduleActive ? "adminPlusMinusRotated adminModulePlusMinus" : "adminModulePlusMinus"}>↓</div>
 				</div>
 				
-				<Transition
-					items={moduleActive}
-					from={{ opacity: 0, height: 0}}
-					enter={item => async (next, cancel) => {
-						await next({ height: "auto" })
-						await next({ opacity: 1 })
-					  }}
-					leave={item => async (next, cancel) => {
-						await next({ opacity: 0 })
-						await next({ height: 0 })
-					  }}
-					reverse={moduleActive}>
-					{(styles, item) =>
-					  item && <animated.div style={styles}className="moduleContentWrapper">
-						  <div className="moduleContent">
+				{moduleActive && <div className= "adminModuleContentWrapper" style={moduleActive ? mountedStyle : unmountedStyle}>
+					  <div className="adminModuleContent">
+					  
+						  {module.lessons.map(lesson => 
+							  <AdminLessonSummary lesson={lesson} key={lesson.lessonName} />
+						  )}
 						  
-							  {module.lessons.map(lesson => 
-								  <AdminLessonSummary lesson={lesson} key={lesson.lessonName} />
-							  )}
-							  
-						  </div>
-					  </animated.div>
-					}
-				  </Transition>
-				
+					  </div>
+				</div>}
 
 			</div>
 		</>
