@@ -131,7 +131,7 @@ export default function Admin() {
 	
 	return(
 		<>
-			<Header leftText="← Back to sign in" rightText="Per-student summaries →" leftLink="/" rightLink="/"/>
+			<Header leftText="← Back to sign in" rightText="View lessons as admin →" leftLink="/" rightLink="/overview"/>
 			<div className="adminPageWrapper">
 			
 				<p className="cohortSelectText"> Click on the dropdown below to select a cohort: </p>

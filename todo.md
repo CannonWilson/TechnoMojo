@@ -6,6 +6,8 @@ general:
 
 • Add more documentation, comments, and tests
 • Make the system more robust by adding cohort names to each student entry in the database
+• Make a shared Module component
+• Remove React Fragments where they aren't needed
 
 ---
 
@@ -45,6 +47,7 @@ the user is already signed in
 /src/Overview.js:
 
 • Change url in retrieveUserProgress function
+• Change link text and path in Header
 
 ---
 

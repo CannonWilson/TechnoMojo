@@ -3,15 +3,13 @@ import './Lesson.css'
 
 export default function Lesson({lesson, lessonIndex, moduleName, completed}) {
 	return (
-		<>
-			<div className="lessonWrapper">
+		<div className="lessonWrapper">
+			<Link className="lessonLink" to={`/lecture?moduleName=${encodeURIComponent(moduleName)}&lessonName=${encodeURIComponent(lesson.lessonName)}`}>
 				<div className={completed ? "lessonCircle completed" : "lessonCircle"}>
-					<p>{lessonIndex}</p>
+					{lessonIndex + 1}
 				</div>
-				<Link to={`/lecture?moduleName=${encodeURIComponent(moduleName)}&lessonName=${encodeURIComponent(lesson.lessonName)}`}>
-					<p className="lessonName">{lesson.lessonName}</p>
-				</Link>
-			</div>
-		</>
+				<p className="lessonName">{lesson.lessonName}</p>
+			</Link>
+		</div>
 	)
 }

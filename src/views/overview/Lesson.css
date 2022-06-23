@@ -1,7 +1,16 @@
 .lessonWrapper {
-	display: flex;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.lessonLink {
+	display: flex;
+	max-width: fit-content;
+	color: black;
+}
+
+.lessonLink:visited {
+	color: black;
 }
 
 .lessonCircle {
@@ -11,15 +20,30 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: lightgray;
+	background-color: #efefef;
 	border-radius: 50%;
 	font-weight: bold;
 }
 
+.lessonLink:hover .lessonCircle{
+	background-color: #dedede;
+}
+
 .completed {
-	background-color: lightgreen;
+	background-color: #0abe64;
+	color: white;
+}
+
+.lessonLink:hover .completed{
+	background-color: #08a858;
+}
+
+.lessonLink:hover .lessonName{
+	text-decoration: underline;
 }
 
 .lessonName {
 	margin-left: 20px;
+	font-size: 17px;
+	font-weight: bold;
 }

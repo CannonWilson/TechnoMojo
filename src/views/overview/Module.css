@@ -1,27 +1,85 @@
 .moduleWrapper {
 	width: 100%;
-	background-color: #efefef;
 }
 
 .moduleTitleWrapper {
-	background-color: lightgray;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	border: solid #bbb 3px;
+	border-bottom: solid 3px #dedede;
+	box-sizing: border-box;
+	cursor: pointer;
 }
 
-.moduleTitle {
-	text-align: center;
+.moduleTitleWrapper:hover {
+	background-color: #efefef;
 }
+
 
 .moduleContentWrapper {
 	display: flex;
 	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .moduleContent {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 85%;
+}
+
+.moduleName, .modulePlusMinus {
+	margin-left: 30px;
+}
+
+.moduleName {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.modulePlusMinus {
+	border-radius: 50%;
+	background: #bebebe;
+	color: white;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.plusMinusRotated {
+	transform:rotate(180deg); 
+	-webkit-transform:rotate(180deg); 
+	-moz-transform:rotate(180deg); 
+	-o-transform:rotate(180deg); 
+}
+
+@keyframes inAnimation {
+  0% {
+	opacity: 0;
+	visibility: hidden;
+  }
+  100% {
+	opacity: 1;
+	visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+	opacity: 1;
+  }
+  100% {
+	opacity: 0;
+	visibility: hidden;
+  }
 }

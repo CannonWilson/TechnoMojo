@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import Module from './Module.js'
 import './Overview.css'
+import Header from '../../shared/Header.js'
 const lessonPlan = require('../../curriculum/lessonPlan.js')
 
 export default function Overview() {
@@ -48,6 +49,8 @@ export default function Overview() {
 	
 	return (
 		<>
+			<Header leftText="← Back to sign in" rightText="" leftLink="/" rightLink="/"/>
+			
 			<div className="overviewPageWrapper">
 				<p id="retrieveUserProgressError"></p>
 				<div className="accordian">
