@@ -1,9 +1,10 @@
 import {useState} from 'react'
 import AdminLessonSummary from './AdminLessonSummary.js'
+import AdminStudentSummary from './AdminStudentSummary.js'
 import './AdminModule.css'
 
 
-export default function AdminModule({module, progressArrayForThisModule}) {
+export default function AdminModule({module, progressArrayForThisModule, from}) {
 	
 	const [moduleActive, setModuleActive] = useState(false)
 	
@@ -30,9 +31,13 @@ export default function AdminModule({module, progressArrayForThisModule}) {
 				{moduleActive && <div className= "adminModuleContentWrapper" style={moduleActive ? mountedStyle : unmountedStyle}>
 					  <div className="adminModuleContent">
 					  
-						  {module.lessons.map(lesson => 
+						  {!from && module.lessons.map(lesson => 
 							  <AdminLessonSummary lesson={lesson} key={lesson.lessonName} />
 						  )}
+						  
+						  {from === "studentModal" && 
+							  <AdminStudentSummary module={module} key={module.moduleName} />
+						  }
 						  
 					  </div>
 				</div>}

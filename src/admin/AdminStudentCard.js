@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import './AdminStudentCard.css'
+import AdminModule from './AdminModule.js'
 
 
 export default function AdminStudentCard({lessonPlan, username}) {
@@ -14,32 +15,45 @@ export default function AdminStudentCard({lessonPlan, username}) {
 		let totalLessons = 0
 		let completedLessons = 0
 		
-		/* moduleProgress will look like: 
+		/* moduleProgress will look like this for each student: 
 		[
 			{
 				moduleName: 'HTML',
-				finished: ['Basic HTML', 'Intro to CSS', . . . ],
-				unfinished: ['Box Model', 'Box Model Margins & Padding', . . . ],
+				lessons: [
+					{
+						lessonName: 'Basic HTML',
+						submittedCode: ''
+					},
+					{
+						lessonName: 'Intro to CSS', 
+						submittedCode: ''
+					},
+					. . . 
+				],
 				completionPercent: 0
 			},
 			. . . more modules
 		]
 		*/
-		
+				
 		for (const [moduleIndex, module]  of lessonPlan.entries()) {
 			
-			moduleProgress.push({moduleName: module.moduleName, finished: [], unfinished: [], completion: 0})
+			moduleProgress.push({moduleName: module.moduleName, lessons: [], completionPercent: 0})
 			
 			for (const lesson of module.lessons) {
 				totalLessons++
-				if (lesson.studentProgress.find(usernameAndCode => usernameAndCode.username === username && usernameAndCode.submittedCode !== "")) {
+				const foundCompletedLesson = lesson.studentProgress.find(usernameAndCode => usernameAndCode.username === username && usernameAndCode.submittedCode !== "")
+				if (foundCompletedLesson) {
 					completedLessons++
-					moduleProgress[moduleIndex].finished.push(lesson.lessonName)	
+					moduleProgress[moduleIndex].lessons.push({lessonName: lesson.lessonName, submittedCode: foundCompletedLesson.submittedCode})	
 				}
-				else moduleProgress[moduleIndex].unfinished.push(lesson.lessonName) 
+				else moduleProgress[moduleIndex].lessons.push({lessonName: lesson.lessonName, submittedCode: ""}) 
 			}
 			
-			moduleProgress[moduleIndex].completionPercent = Math.round(100 * moduleProgress[moduleIndex].finished.length / (moduleProgress[moduleIndex].finished.length + moduleProgress[moduleIndex].unfinished.length))
+			const numFinishedLessons = moduleProgress[moduleIndex].lessons.filter(lesson => lesson.submittedCode !== "").length
+			const numUnfinishedLessons = moduleProgress[moduleIndex].lessons.filter(lesson => lesson.submittedCode === "").length
+			
+			moduleProgress[moduleIndex].completionPercent = Math.round(100 * numFinishedLessons / (numFinishedLessons + numUnfinishedLessons))
 			
 		}
 		
@@ -48,20 +62,38 @@ export default function AdminStudentCard({lessonPlan, username}) {
 	
 	return (
 		<div className={isCardExpanded ? "adminCard adminCardSelected" : "adminCard"}>
-			<div className="adminCardHeader" onClick={() => setIsCardExpanded(!isCardExpanded)}> {username} {overallCompletion}%</div>
-			{isCardExpanded && <div className="adminModal" onClick={() => setIsCardExpanded(!isCardExpanded)}>
-				<div className="adminModalContent">
+			<div className="adminCardHeader" onClick={() => setIsCardExpanded(true)}> {username} - {overallCompletion}%</div>
+			{isCardExpanded && <div className="adminModal" onClick={() => setIsCardExpanded(false)}>
+				<div className="adminModalContent" onClick={(event) => event.stopPropagation()} >
+					<div className="adminModalHeader">
+						<div className="adminModalClose" >
+							<button className="adminModalCloseBtn" onClick={() => setIsCardExpanded(false)}>X</button>
+						</div>
+						<div className="adminModalUserInfo">
+							<h2 className="adminModalUsername">{username}</h2>
+							<h4 className="adminModalCompletion">Overall completion: {overallCompletion}%</h4>
+						</div>
+					</div>
+					<div className="accordian">
+						{moduleProgress.map(module => 
+							<AdminModule from="studentModal" module={module} key={module.moduleName} />
+						)}
+					</div>
+					
+
+					{/*
 					{moduleProgress.map(module => <div key={module.moduleName}>
-											
-							<p>{module.moduleName} {module.completionPercent}%</p>
-							<div> Finished:
-								{module.finished.map(lessonName => <span key={username + lessonName}>{lessonName}</span>)}
+							<p className="adminModalModuleHeader">{module.moduleName} - {module.completionPercent}%</p>
+							<div className="adminModalFinishedSection"> <span style={{textDecoration: 'underline'}}>Finished:</span>
+								{module.finished.map(lessonName => <span className="adminModalLesson" key={username + lessonName}>{lessonName}</span>)}
 							</div>
-							<div> Unfinished:
-								{module.unfinished.map(lessonName => <span key={username + lessonName}>{lessonName}</span>)}
+							<div className="adminModalUnfinishedSection"> <span style={{textDecoration: 'underline'}}>Unfinished:</span>
+								{module.unfinished.map(lessonName => <span className="adminModalLesson" key={username + lessonName}>{lessonName}</span>)}
 							</div>
+							<hr></hr>
 						</div>
 					) }
+					*/}
 				</div>
 			</div>
 			}

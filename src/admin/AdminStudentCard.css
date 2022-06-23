@@ -20,6 +20,7 @@
 	padding: 20px;
 	box-sizing: border-box;
 	cursor: pointer;
+	font-weight: bold;
 }
 
 .adminCardHeader:hover {
@@ -30,15 +31,76 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
+}
+
+.adminModalClose {
+	text-align: right;
+	width: 100%;
+	grid-area: close
+}
+
+.adminModalCloseBtn {
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.adminModalUserInfo {
+	grid-area: userInfo;
+	
 }
 
 .adminModalContent {
 	background: white;
 	border: solid 3px #dedede;
-	width: 80%;
+	width: 85%;
+	height: 80%;
+	padding: 40px;
+	border-radius: 10px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.adminModalHeader {
+	display: grid;
+	grid-template-areas: ". userInfo close";
+	grid-template-columns: 50px 1fr 50px;
+	width: 100%;
+	grid-auto-rows: auto;
+}
+
+.adminModalUsername {
+	text-align: center;
+}
+
+.adminModalLesson {
+	margin-left: 7px;
+}
+
+.adminModalModuleHeader {
+	font-weight: bold;
+}
+
+.adminModalCompletion {
+	text-align: center;
+}
+
+.adminModalFinishedSection {
+	margin-bottom: 5px;
+}
+
+.adminModalUnfinishedSection {
+	margin-bottom: 10px;
 }

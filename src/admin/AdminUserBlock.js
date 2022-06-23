@@ -1,12 +1,12 @@
 import {useEffect} from 'react'
 import "./AdminUserBlock.css"
 
-export default function AdminUserBlock({username, code}) {
+export default function AdminUserBlock({headerText, code}) {
 	
 	return (
 		<>
 			<div className="blockWrapper">
-				<p className="blockUsername">{username}</p>
+				<p className="blockHeader">{headerText}</p>
 				<p className="blockCode">{decodeURIComponent(code)}</p>
 			</div>
 		</>

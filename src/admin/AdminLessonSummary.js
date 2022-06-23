@@ -27,7 +27,7 @@ export default function AdminLessonSummary({lesson}) {
 						<div className="studentSummaryFlex">
 							{finishedStudentsAndCode.map((usernameAndCode) => {
 								if (usernameAndCode.submittedCode) {
-									return <AdminUserBlock username={usernameAndCode.username} code={usernameAndCode.submittedCode} key={usernameAndCode.username} />
+									return <AdminUserBlock headerText={usernameAndCode.username} code={usernameAndCode.submittedCode} key={usernameAndCode.username} />
 								}
 							})}
 						</div>
