@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react'
+import './AdminStudentCard.css'
+
 
 export default function AdminStudentCard({lessonPlan, username}) {
 	
@@ -17,7 +19,8 @@ export default function AdminStudentCard({lessonPlan, username}) {
 			{
 				moduleName: 'HTML',
 				finished: ['Basic HTML', 'Intro to CSS', . . . ],
-				unfinished: ['Box Model', 'Box Model Margins & Padding', . . . ]
+				unfinished: ['Box Model', 'Box Model Margins & Padding', . . . ],
+				completionPercent: 0
 			},
 			. . . more modules
 		]
@@ -25,7 +28,7 @@ export default function AdminStudentCard({lessonPlan, username}) {
 		
 		for (const [moduleIndex, module]  of lessonPlan.entries()) {
 			
-			moduleProgress.push({moduleName: module.moduleName, finished: [], unfinished: []})
+			moduleProgress.push({moduleName: module.moduleName, finished: [], unfinished: [], completion: 0})
 			
 			for (const lesson of module.lessons) {
 				totalLessons++
@@ -34,20 +37,23 @@ export default function AdminStudentCard({lessonPlan, username}) {
 					moduleProgress[moduleIndex].finished.push(lesson.lessonName)	
 				}
 				else moduleProgress[moduleIndex].unfinished.push(lesson.lessonName) 
-				
 			}
+			
+			moduleProgress[moduleIndex].completionPercent = Math.round(100 * moduleProgress[moduleIndex].finished.length / (moduleProgress[moduleIndex].finished.length + moduleProgress[moduleIndex].unfinished.length))
+			
 		}
 		
 		setOverallCompletion(Math.round(100*(completedLessons/totalLessons)))
 	}, [])
 	
 	return (
-		<>
-			<div onClick={() => setIsCardExpanded(!isCardExpanded)}> {username} {overallCompletion}%</div>
-			{isCardExpanded && <div>
+		<div className={isCardExpanded ? "adminCard adminCardSelected" : "adminCard"}>
+			<div className="adminCardHeader" onClick={() => setIsCardExpanded(!isCardExpanded)}> {username} {overallCompletion}%</div>
+			{isCardExpanded && <div className="adminModal" onClick={() => setIsCardExpanded(!isCardExpanded)}>
+				<div className="adminModalContent">
 					{moduleProgress.map(module => <div key={module.moduleName}>
 											
-							<p>{module.moduleName} {Math.round(100 * module.finished.length / (module.finished.length + module.unfinished.length))}%</p>
+							<p>{module.moduleName} {module.completionPercent}%</p>
 							<div> Finished:
 								{module.finished.map(lessonName => <span key={username + lessonName}>{lessonName}</span>)}
 							</div>
@@ -57,7 +63,8 @@ export default function AdminStudentCard({lessonPlan, username}) {
 						</div>
 					) }
 				</div>
+			</div>
 			}
-		</>
+		</div>
 	)
 }

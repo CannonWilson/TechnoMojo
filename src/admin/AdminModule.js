@@ -23,8 +23,8 @@ export default function AdminModule({module, progressArrayForThisModule}) {
 		<>
 			<div className="adminModuleWrapper">
 				<div className="adminModuleTitleWrapper" onClick={toggleModuleActive} style={{backgroundColor: moduleActive ? "#efefef" : ""}}>
-					<p className="adminModuleName">{module.moduleName}</p>
 					<div className={moduleActive ? "adminPlusMinusRotated adminModulePlusMinus" : "adminModulePlusMinus"}>↓</div>
+					<p className="adminModuleName">{module.moduleName}</p>
 				</div>
 				
 				{moduleActive && <div className= "adminModuleContentWrapper" style={moduleActive ? mountedStyle : unmountedStyle}>

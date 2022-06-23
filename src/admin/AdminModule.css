@@ -4,15 +4,15 @@
 
 .adminModuleTitleWrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	border-bottom: solid 3px #dedede;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 .adminModuleTitleWrapper:hover {
 	background-color: #efefef;
-	cursor: pointer;
 }
 
 .adminModuleContentWrapper {
@@ -28,7 +28,6 @@
 
 .adminModuleName, .adminModulePlusMinus {
 	margin-left: 30px;
-	margin-right: 30px;
 }
 
 .adminModuleName {

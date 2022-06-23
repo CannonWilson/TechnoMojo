@@ -1,0 +1,44 @@
+.adminCard {
+	border: solid 3px #dedede;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	flex-grow: 0;
+	min-width: 15%;
+}
+
+.adminCardSelected {
+	background-color: #efefef; 
+}
+
+.adminCardHeader {
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.adminCardHeader:hover {
+	background-color: #efefef;
+}
+
+.adminModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.adminModalContent {
+	background: white;
+	border: solid 3px #dedede;
+	width: 80%;
+}
