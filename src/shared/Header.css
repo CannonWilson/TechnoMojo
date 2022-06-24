@@ -10,12 +10,20 @@
 	box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 }
 
-.left-link {
+.left-link:visited, .right-link:visited {
+	color: black;
+}
+
+.left-link:hover, .right-link:hover {
+	text-decoration: underline;
+}
+
+.left-link-section {
 	margin-left: 30px;
 	text-align: left;
 }
 
-.right-link {
+.right-link-section {
 	margin-right: 30px;
 	text-align: right;
 }
@@ -28,7 +36,7 @@
 	justify-self: center;
 }
 
-.left-link, .right-link, .logo-section {
+.left-link-section, .right-link-section, .logo-section {
 	flex: 1;
 }
 

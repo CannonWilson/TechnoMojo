@@ -7,7 +7,8 @@ const lessonPlan = require("../../curriculum/lessonPlan.js")
 export default function Lecture() {
 	
 	const navigate = useNavigate()
-	
+	const [searchParams, setSearchParams] = useSearchParams()
+		
 	const [successMessage, setSuccessMessage] = useState("Nice! You got it right, please move on to the next question.")
 	const finishedQuizMessage = "Great job! You completed the quiz."
 	const [isQuizComplete, setIsQuizComplete] = useState(false)
@@ -20,22 +21,19 @@ export default function Lecture() {
 	are decoded and then used to lookup the correct video urls, 
 	quiz info, etc. from /src/data/lessonPlan.js */
 	
-	const [searchParams, setSearchParams] = useSearchParams();
 	const moduleName = decodeURIComponent(searchParams.get('moduleName'))
 	const lessonName = decodeURIComponent(searchParams.get('lessonName'))
 	const lessonsInCurrentModule = decodeURIComponent(searchParams.get('lessonsInCurrentModule'))
-	
-	console.log('LECTURE.JS RENDER')
-	console.log('moduleName: ', moduleName)
-	console.log('lessonName: ', lessonName)
-	console.log('lessonsInCurrentModule: ', lessonsInCurrentModule)
-
-	
 	const currentModule = lessonPlan.find(module => module.moduleName === moduleName)
 	const currentLesson = currentModule.lessons.find(lesson => lesson.lessonName === lessonName)
 	const currentLessonIndex = lessonsInCurrentModule.split('-').indexOf(currentLesson.lessonName)
 	const nextLessonName = currentLessonIndex === currentModule.lessons.length - 1 ? "" : currentModule.lessons[currentLessonIndex + 1].lessonName
 	const nextLessonLink = `/lecture?moduleName=${encodeURIComponent(moduleName)}&lessonName=${encodeURIComponent(nextLessonName)}&lessonsInCurrentModule=${encodeURIComponent(lessonsInCurrentModule)}`
+	
+	function openNextLesson() {
+		localStorage.setItem('reload', "true")
+		navigate(nextLessonLink)
+	}
 	
 	/* When the submit button is pressed, the user's input should be verified (the 
 	current code only checks that the textarea shoudln't be empty). Then, the
@@ -128,12 +126,6 @@ export default function Lecture() {
 	
 	function submitChoiceButtonPressed() {
 		
-		console.log('submit choice button pressed')
-		console.log("chosenChoiceIndex", chosenChoiceIndex)
-		console.log('questionIndexesAnsweredCorrectly', questionIndexesAnsweredCorrectly)
-		console.log('currentQuestionIndex', currentQuestionIndex)
-		console.log('currentQuestionAnsweredCorrectly', currentQuestionAnsweredCorrectly)
-		
 		/* do nothing if the user has not clicked on an answer 
 		choice or if the user has already submitted the correct
 		answer for this question */
@@ -198,51 +190,46 @@ export default function Lecture() {
 		}
 	}
 	
+	function refreshPageIfNeeded() {
+				
+		if (localStorage.getItem('reload') === "true") {
+			localStorage.setItem('reload', "false")
+			window.location.reload()
+		}
+	}
+	
 	
 	return (
 		<>
+		
 			{nextLessonName !== "" && 
-				<Header leftText="← Back to overview" rightText={"Next: " + nextLessonName + " →"} leftLink="/overview" rightLink={nextLessonLink} />
+				<Header handleReload={refreshPageIfNeeded} leftText="← Back to overview" rightText={"Next: " + nextLessonName + " →"} leftLink="/overview" rightLink={nextLessonLink} />
 			}
 			
 			{nextLessonName === "" &&
-				<Header leftText="← Back to overview" rightText="" leftLink="/overview" rightLink="#" />
+				<Header handleReload={refreshPageIfNeeded} leftText="← Back to overview" rightText="" leftLink="/overview" rightLink="#" />
 			}
+			
+		
+			
 			
 			<div className="lecturePageWrapper">
 				<div className="lecturePageContent">
 					
 					{/* Title section*/}
-					<div>
-						<h1>{currentLesson.lessonName}</h1>
-						<p>{currentLesson.lessonDescription}</p>
-					</div>
+					
+					<h1 className="lecturePrimaryTitle">{currentLesson.lessonName}</h1>
+					<p className="lecturePrimarySubtitle">{currentLesson.lessonDescription}</p>
 					
 					
 					{/* Intro video */}
 					<div style={{padding:'56.25% 0 0 0',position:'relative'}}><iframe src={currentLesson.introVideoUrl} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}} title="Strings"></iframe></div>
 					
-					{/* Exercise Section*/}
-					<h2>Exercise</h2>
-					<p>{currentLesson.exerciseDescription}</p>
-					<iframe src={currentLesson.codeSandBoxUrl}
-						 style={{width:'100%', height:'100vh', border:0, borderRadius: '4px', overflow: 'hidden'}}
-						 title="brave-archimedes-uo2ucj"
-						 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-						 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-					   ></iframe>
-					
-					{/* Submission section */}
-					<h2>Submit</h2>
-					<p>{currentLesson.submissionDescription}</p>
-					<textarea id="submissionTextArea" />
-					<div>
-						<button onClick={saveCodeButtonPressed} className="saveCodeBtn">Save Code</button>
-					</div>
+										
 					
 					{/* Quiz section */}
-					<h2>Quiz</h2>
-					<p>Please take this short quiz to demonstrate your understanding of this lesson's content. All questions are multiple-choice, and you can submit answers as many times as you need without being penalized for incorrect choices. You must select the correct answer on every question before you can proceed.</p>
+					<h2 className="lectureSecondaryTitle">Quiz</h2>
+					<p className="lectureSecondarySubtitle">Please take this short quiz to demonstrate your understanding of this lesson's content. All questions are multiple-choice, and you can submit answers as many times as you need without being penalized for incorrect choices. You must select the correct answer on every question before you can submit your code from the exercise below.</p>
 					<div className="quizWrapper">
 					
 						<div className="questionHeader">
@@ -277,6 +264,27 @@ export default function Lecture() {
 						</div>
 					</div>
 					
+										
+					
+					{/* Exercise Section*/}
+					<h2 className="lectureSecondaryTitle">Exercise</h2>
+					<p className="lectureSecondarySubtitle">{currentLesson.exerciseDescription}</p>
+					<iframe src={currentLesson.codeSandBoxUrl}
+						 style={{width:'100%', height:'100vh', border:0, borderRadius: '4px', overflow: 'hidden'}}
+						 title="brave-archimedes-uo2ucj"
+						 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+						 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+					   ></iframe>
+					   
+					   					
+					
+					{/* Code Submission section */}
+					<h2 className="lectureSecondaryTitle">Paste Your Code</h2>
+					<p className="lectureSecondarySubtitle">{currentLesson.submissionDescription}</p>
+					<textarea id="submissionTextArea" />
+					
+					
+					
 					
 					{/* Submit button */}
 					<div className="submitSection">
@@ -285,16 +293,19 @@ export default function Lecture() {
 					</div>
 					
 					{/* Answer section */}
-					{showAnswer ? 
-						<div>
-								<h1>Awesome job!</h1>
-								<p>You completed this lesson. The solution video is below. Please watch it and feel free to resubmit your code after watching.</p>
+					{showAnswer && 
+						<div className="answerSection">
+						
+							<h1 className="lecturePrimaryTitle">Awesome job!</h1>
+							<p className="lecturePrimarySubtitle">You completed this lesson. The solution video is below. Please watch it and feel free to resubmit your code after watching.</p>
 							
 							
 							{/* Intro video */}
 							<div style={{padding:'56.25% 0 0 0',position:'relative'}}><iframe src={currentLesson.answerVideoUrl} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}} title="Strings"></iframe></div>
+							
+							<button className="lectureSubmitBtn" onClick={openNextLesson}>Open next lesson</button>
 						</div>
-						: null}
+					}
 					
 				</div>
 			</div>
