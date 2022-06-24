@@ -33,6 +33,7 @@ export default function Overview() {
 				const username = localStorage.getItem('username')
 				const response = await fetch('http://localhost:4000/api/userProgress?username='+username)
 				const json = await response.json()
+				console.log('json progressarray', json)
 				setProgressArray(json)
 			}
 			catch(err) { // above code will fail if the localStorage fails to get the user's username or if the database fails to find the user
@@ -45,6 +46,19 @@ export default function Overview() {
 		retrieveUserProgress()
 		
 	}, [])
+	
+	const [completionPercent, setCompletionPercent] = useState("")
+	
+	useEffect(() => {
+		if (progressArray) { // if the progressArray has been received from the backend, calculate completion % so far
+			
+			let lessonCount = 0
+			lessonPlan.forEach(module => lessonCount += module.lessons.length)
+			let completedLessonCount = progressArray.length
+			setCompletionPercent(String(Math.round(100 * completedLessonCount / lessonCount)))
+			
+		}
+	}, [progressArray])
 		
 	
 	return (
@@ -52,6 +66,7 @@ export default function Overview() {
 			<Header leftText="← Back to sign in" rightText="" leftLink="/" rightLink="/"/>
 			
 			<div className="overviewPageWrapper">
+				<p className="overviewCompletion">Overall completion: {completionPercent}%</p>
 				<p id="retrieveUserProgressError"></p>
 				<div className="accordian">
 					

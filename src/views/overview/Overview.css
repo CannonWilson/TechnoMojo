@@ -7,7 +7,7 @@
 }
 
 .accordian {
-	width: 80%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,4 +19,10 @@
 	max-width: 80%;
 	text-align: center;
 	color: red;
+}
+
+.overviewCompletion {
+	margin-top: 70px;
+	font-size: 24px;
+	font-weight: bold;
 }

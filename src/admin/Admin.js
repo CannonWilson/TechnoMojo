@@ -142,7 +142,7 @@ export default function Admin() {
 					))}
 				</select>
 							
-				<div className="accordian">
+				<div className="adminAccordian">
 					{lessonPlan.map(module => 
 						<AdminModule module={module} key={module.moduleName} refresh={refreshAfterCohortChange} />
 					)}
