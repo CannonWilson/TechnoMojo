@@ -1,6 +1,7 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
 import {useState, useEffect} from 'react'
 import './Lecture.css'
+import Header from '../../shared/Header.js'
 const lessonPlan = require("../../curriculum/lessonPlan.js")
 
 export default function Lecture() {
@@ -22,9 +23,19 @@ export default function Lecture() {
 	const [searchParams, setSearchParams] = useSearchParams();
 	const moduleName = decodeURIComponent(searchParams.get('moduleName'))
 	const lessonName = decodeURIComponent(searchParams.get('lessonName'))
+	const lessonsInCurrentModule = decodeURIComponent(searchParams.get('lessonsInCurrentModule'))
+	
+	console.log('LECTURE.JS RENDER')
+	console.log('moduleName: ', moduleName)
+	console.log('lessonName: ', lessonName)
+	console.log('lessonsInCurrentModule: ', lessonsInCurrentModule)
+
 	
 	const currentModule = lessonPlan.find(module => module.moduleName === moduleName)
 	const currentLesson = currentModule.lessons.find(lesson => lesson.lessonName === lessonName)
+	const currentLessonIndex = lessonsInCurrentModule.split('-').indexOf(currentLesson.lessonName)
+	const nextLessonName = currentLessonIndex === currentModule.lessons.length - 1 ? "" : currentModule.lessons[currentLessonIndex + 1].lessonName
+	const nextLessonLink = `/lecture?moduleName=${encodeURIComponent(moduleName)}&lessonName=${encodeURIComponent(nextLessonName)}&lessonsInCurrentModule=${encodeURIComponent(lessonsInCurrentModule)}`
 	
 	/* When the submit button is pressed, the user's input should be verified (the 
 	current code only checks that the textarea shoudln't be empty). Then, the
@@ -190,6 +201,14 @@ export default function Lecture() {
 	
 	return (
 		<>
+			{nextLessonName !== "" && 
+				<Header leftText="← Back to overview" rightText={"Next: " + nextLessonName + " →"} leftLink="/overview" rightLink={nextLessonLink} />
+			}
+			
+			{nextLessonName === "" &&
+				<Header leftText="← Back to overview" rightText="" leftLink="/overview" rightLink="#" />
+			}
+			
 			<div className="lecturePageWrapper">
 				<div className="lecturePageContent">
 					

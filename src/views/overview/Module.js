@@ -18,6 +18,14 @@ export default function Module({module, progressArrayForThisModule}) {
 	  animationFillMode: "forwards"
 	};
 	
+	function LessonNamesInModule() {
+		let lessonNamesStr = ""
+		for (const lesson of module.lessons) {
+			lessonNamesStr += lesson.lessonName + "-"
+		}
+		return lessonNamesStr.slice(0, -1) // remove last dash from the end of the string
+	}
+	
 	return (
 		<>
 			<div className="moduleWrapper">
@@ -28,8 +36,8 @@ export default function Module({module, progressArrayForThisModule}) {
 				{moduleActive && <div className="moduleContentWrapper" style={moduleActive ? mountedStyle : unmountedStyle}>
 					<div className={"moduleContent"}>
 					
-						{module.lessons.map(lesson => 
-							<Lesson lesson={lesson} lessonIndex={module.lessons.indexOf(lesson)} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
+						{module.lessons.map((lesson, index) => 
+							<Lesson lesson={lesson} lessonIndex={index} lessonsInCurrentModule={LessonNamesInModule()} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
 						)}
 						
 					</div>
