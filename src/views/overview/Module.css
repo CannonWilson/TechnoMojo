@@ -16,9 +16,8 @@
 }
 
 
-.moduleContent {
+.module-content {
 	display: none;
-	visibility: hidden;
 	padding: 40px 10% 40px 10%;
 	justify-content: center;
 	flex-direction: column;
@@ -41,11 +40,11 @@
 	max-height: 40px;
 }
 
-.moduleName, .modulePlusMinus {
+.module-name, .module-plus-minus {
 	margin-left: 30px;
 }
 
-.moduleName {
+.module-name {
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -73,25 +72,4 @@
 	-webkit-transform:rotate(180deg); 
 	-moz-transform:rotate(180deg); 
 	-o-transform:rotate(180deg); 
-}
-
-@keyframes inAnimation {
-  0% {
-	opacity: 0;
-	visibility: hidden;
-  }
-  100% {
-	opacity: 1;
-	visibility: visible;
-  }
-}
-
-@keyframes outAnimation {
-  0% {
-	opacity: 1;
-  }
-  100% {
-	opacity: 0;
-	visibility: hidden;
-  }
 }

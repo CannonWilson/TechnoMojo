@@ -8,31 +8,31 @@ export default function Module({module, progressArrayForThisModule}) {
 	const [isModuleActive, setIsModuleActive] = useState(false)
 	
 	
-	/* The following style objects are used to control fade-in 
-	and fade-out animations written in './Module.css' 
-	whenever the module contents are shown/hidden */
-	const mountedStyle = {
-		animation: "inAnimation 400ms ease-in",
-	}
+	/* The progress array is converted into a string here 
+	in order to make it easy to check through the progress
+	array and see if a given lesson is completed. */
+	const [stringifiedProgress, setStringifiedProgress] = useState("")
 	
-	const unmountedStyle = {
-		animation: "outAnimation 400ms ease-out",
-		animationFillMode: "forwards",
-	}
+	useEffect(() => {
+		if (progressArrayForThisModule) setStringifiedProgress(JSON.stringify(progressArrayForThisModule))
+	}, [progressArrayForThisModule])
 	
+	
+	/* The following style objects are used to control  
+	expand and contract animations written in './Module.css' 
+	whenever the module contents are shown/hidden.
+	Transitions do not trigger on the first load. */
 	const [firstLoad, setFirstLoad] = useState(true)
 	
 	useEffect(() => {
 		
-		const moduleContent = document.getElementById(module.moduleName)
+		const moduleContent = document.getElementById(module.moduleName + "Content")
 		
 		if (isModuleActive) {
 			moduleContent.style.display = "flex"
-			moduleContent.style.visibility = "visible"
 			setTimeout(() => {
 				moduleContent.classList.remove('module-contracted')
 				moduleContent.classList.add('module-expanded')
-				
 			}, 0)
 		}
 		
@@ -41,7 +41,6 @@ export default function Module({module, progressArrayForThisModule}) {
 				moduleContent.classList.remove('module-expanded')
 				moduleContent.classList.add('module-contracted')
 				setTimeout(() => {
-					moduleContent.style.visibility = "hidden"
 					moduleContent.style.display = "none"
 				}, 300)
 			}
@@ -50,12 +49,16 @@ export default function Module({module, progressArrayForThisModule}) {
 		
 	}, [isModuleActive])
 	
+	
+	/* Returns a string of all the lessons in the current  
+	module separated by dashes. This string gets passed 
+	into the URL whenever a lesson is clicked in Lesson.js */
 	function GetLessonNamesInModule() {
 		let lessonNamesStr = ""
 		for (const lesson of module.lessons) {
 			lessonNamesStr += lesson.lessonName + "-"
 		}
-		return lessonNamesStr.slice(0, -1) // remove last dash from the end of the string
+		return lessonNamesStr.slice(0, -1)
 	}
 	
 	
@@ -69,19 +72,21 @@ export default function Module({module, progressArrayForThisModule}) {
 				
 				<div className={`module-plus-minus ${isModuleActive ? "plus-minus-rotated" : ""}`}>↓</div>
 				
-				<p className="moduleName">{module.moduleName}</p>
+				<p className="module-name">{module.moduleName}</p>
 				
 			</div>
 			{/* End title section */}
 			
 			
-			<div className="moduleContent module-contracted" id={module.moduleName}>
+			{/* Begin module content (lessons) */}
+			<div className="module-content module-contracted" id={module.moduleName + "Content"}>
 				
 				{module.lessons.map((lesson, index) => 
-					<Lesson lesson={lesson} lessonIndex={index} lessonsInCurrentModule={GetLessonNamesInModule()} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
+					<Lesson lesson={lesson} lessonIndex={index} lessonsInCurrentModule={GetLessonNamesInModule()} moduleName={module.moduleName} key={lesson.lessonName} completed={stringifiedProgress.includes(lesson.lessonName)}/>
 				)}
 					
 			</div>
+			{/* End module content (lessons) */}
 			
 		</div>
 	)
