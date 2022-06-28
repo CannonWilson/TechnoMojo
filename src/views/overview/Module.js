@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Lesson from './Lesson.js'
 import './Module.css'
 
@@ -20,6 +20,36 @@ export default function Module({module, progressArrayForThisModule}) {
 		animationFillMode: "forwards",
 	}
 	
+	const [firstLoad, setFirstLoad] = useState(true)
+	
+	useEffect(() => {
+		
+		const moduleContent = document.getElementById(module.moduleName)
+		
+		if (isModuleActive) {
+			moduleContent.style.display = "flex"
+			moduleContent.style.visibility = "visible"
+			setTimeout(() => {
+				moduleContent.classList.remove('module-contracted')
+				moduleContent.classList.add('module-expanded')
+				
+			}, 0)
+		}
+		
+		else {
+			if (!firstLoad) {
+				moduleContent.classList.remove('module-expanded')
+				moduleContent.classList.add('module-contracted')
+				setTimeout(() => {
+					moduleContent.style.visibility = "hidden"
+					moduleContent.style.display = "none"
+				}, 300)
+			}
+			else setFirstLoad(false)
+		}
+		
+	}, [isModuleActive])
+	
 	function GetLessonNamesInModule() {
 		let lessonNamesStr = ""
 		for (const lesson of module.lessons) {
@@ -34,10 +64,10 @@ export default function Module({module, progressArrayForThisModule}) {
 		
 			{/* Begin title section */}
 			<div className="module-title-wrapper" 
-				onClick={() => setIsModuleActive(!isModuleActive)} ß
+				onClick={() => setIsModuleActive(!isModuleActive)}
 				style={{backgroundColor: isModuleActive ? "#efefef" : ""}}>
 				
-				<div className={isModuleActive ? "plus-minus-rotated module-plus-minus" : "module-plus-minus"}>↓</div>
+				<div className={`module-plus-minus ${isModuleActive ? "plus-minus-rotated" : ""}`}>↓</div>
 				
 				<p className="moduleName">{module.moduleName}</p>
 				
@@ -45,16 +75,13 @@ export default function Module({module, progressArrayForThisModule}) {
 			{/* End title section */}
 			
 			
-			
-			{isModuleActive && <div className="moduleContentWrapper" style={isModuleActive ? mountedStyle : unmountedStyle}>
-				<div className={"moduleContent"}>
+			<div className="moduleContent module-contracted" id={module.moduleName}>
 				
-					{module.lessons.map((lesson, index) => 
-						<Lesson lesson={lesson} lessonIndex={index} lessonsInCurrentModule={GetLessonNamesInModule()} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
-					)}
+				{module.lessons.map((lesson, index) => 
+					<Lesson lesson={lesson} lessonIndex={index} lessonsInCurrentModule={GetLessonNamesInModule()} moduleName={module.moduleName} key={lesson.lessonName} completed={JSON.stringify(progressArrayForThisModule).includes(lesson.lessonName)}/>
+				)}
 					
-				</div>
-			</div>}
+			</div>
 			
 		</div>
 	)

@@ -16,17 +16,29 @@
 }
 
 
-.moduleContentWrapper {
-	display: flex;
+.moduleContent {
+	display: none;
+	visibility: hidden;
+	padding: 40px 10% 40px 10%;
 	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	flex-direction: column;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	transform-origin: 0 40px;
 }
 
-.moduleContent {
-	display: flex;
-	flex-direction: column;
-	width: 85%;
+.module-expanded {
+	transform: scaleY(1);
+	opacity: 1;
+	max-height: 700vh;
+}
+
+.module-contracted {
+	transform: scaleY(0);
+	opacity: 0;
+	max-height: 40px;
 }
 
 .moduleName, .modulePlusMinus {
