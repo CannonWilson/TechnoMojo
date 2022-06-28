@@ -1,27 +1,14 @@
-.overviewPageWrapper {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
 .accordian {
 	width: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	margin-bottom: 70px;
 }
 
-#retrieveUserProgressError {
+#retrieve-user-progress-error {
 	max-width: 80%;
 	text-align: center;
-	color: red;
 }
 
-.overviewCompletion {
+.overview-completion {
 	margin-top: 70px;
 	font-size: 24px;
 	font-weight: bold;

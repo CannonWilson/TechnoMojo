@@ -1,35 +1,27 @@
-.signInTitle {
-	margin-top: 50px;
+.sign-in-title {
+	margin-top: 70px;
+	font-size: 40px;
 }
 
-.signInTitleCaption {
+.sign-in-title-caption {
 	max-width: 40%;
+	margin-top: -5px;
 	text-align: center;
+	font-size: 18px;
 }
 
-.signInPageWrapper {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.logInBox {
+.log-in-box {
 	width: 60%;
-	background-color: #eaeaea;
+	background: #efefef;
+	border: solid #dedede 3px;
 	height: 60%;
 	border-radius: 20px;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
-.usernameBlock, .passwordBlock  {
+.username-block, .password-block  {
 	display: flex;
 	width: 60%;
 	justify-content: center;
@@ -37,17 +29,18 @@
 	column-gap: 20px;
 }
 
-.passwordBlock {
+.password-block {
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
 
-#usernameLabel, #passwordLabel {
+#username-label, #password-label {
 	font-size: 20px;
 	width: 100px;
+	font-weight: bold;
 }
 
-#usernameInputElem, #passwordInputElem {
+#username-input-elem, #password-input-elem {
 	font-size: 20px;
 	border-radius: 10px;
 	height: 40px;
@@ -55,13 +48,25 @@
 	padding-left: 10px;
 }
 
-#logInButton {
+/* Override .default-button styling to make
+login button bigger and darker */
+#log-in-button {
 	min-width: 200px;
 	border-radius: 10px;
-	font-size: 25px;
-	padding: 10px;
+	font-size: 22px;
+	background: #cfcfcf;
+	margin-top: 10px;
 }
 
-#signInError {
-	color: red;
+#log-in-button:hover {
+	background: #bfbfbf
+}
+
+
+#sign-in-error {
+	margin-bottom: 30px;
+}
+
+#sign-in-error:empty {
+	margin: 0;
 }

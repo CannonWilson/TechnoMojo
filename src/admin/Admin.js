@@ -132,7 +132,7 @@ export default function Admin() {
 	return(
 		<>
 			<Header leftText="← Back to sign in" rightText="" leftLink="/" rightLink="#"/>
-			<div className="adminPageWrapper">
+			<div className="adminPageWrapper flex-center">
 			
 				<p className="cohortSelectText"> Click on the dropdown below to select a cohort: </p>
 			

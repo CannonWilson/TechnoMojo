@@ -1,10 +1,11 @@
-import "./SignIn.css"
+import {useEffect} from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import Header from '../../shared/Header.js'
+import "./SignIn.css"
 
 export default function SignIn() {
 	
-	const navigate = useNavigate();
+	const navigate = useNavigate()
 	
 	
 	/* The following function makes a GET request to the
@@ -13,18 +14,16 @@ export default function SignIn() {
 	If the user does not exist, an error message is shown. */
 	async function signInUser() {
 		
-		const usernameInput = document.getElementById('usernameInputElem').value
-		const passwordInput = document.getElementById('passwordInputElem').value
-		const errorElem = document.getElementById('signInError')
+		const usernameInput = document.getElementById('username-input-elem').value
+		const passwordInput = document.getElementById('password-input-elem').value
+		const errorElem = document.getElementById('sign-in-error')
 		
 		try {
 
 			const response = await fetch(`http://localhost:4000/api/signIn?username=${usernameInput}&password=${passwordInput}`)
 			
-			if (response.ok) { // user was found, move to /overview if they aren't an admin
+			if (response.ok) { // user was found, move to /overview or /admin
 				localStorage.setItem('username', usernameInput)
-				console.log('Sign in ok. UsernameInput: ', usernameInput)
-				console.log('Process.env.admin: ', process.env.REACT_APP_ADMIN_USERNAME)
 				if (usernameInput !== process.env.REACT_APP_ADMIN_USERNAME) {
 					navigate('/overview');
 				}
@@ -43,41 +42,49 @@ export default function SignIn() {
 		}
 		
 	}
-
 		
 	
 	return (
 		<>
+		
+			{/* Start Header */}
 			<Header leftText="" rightText="" leftLink="#" rightLink="#"/>
+			{/* End Header */}
 			
-			<div className="signInPageWrapper">
+			
+			{/* Start sign in view wrapper */}
+			<div className="flex-center">
+			
 			
 				{/* Start title and caption */}
-				<h1 className="signInTitle">Sign in to continue</h1>
-				<p className="signInTitleCaption">It's members only beyond this point. If you want to get in touch, please <a>contact us</a>. If you're ready to start your coding journey with us, <a>sign up now</a>.
+				<h1 className="sign-in-title">Sign in to continue</h1>
+				<p className="sign-in-title-caption">It's members only beyond this point. If you want to get in touch, please <a>contact us</a>. If you're ready to start your coding journey with us, <a>sign up now</a>.
 				</p>
 				{/* End title and caption */}
 				
-				{/* Start login box */}
-				<div className="logInBox">
 				
-					<div className="usernameBlock">
-						<label htmlFor="usernameInput" id="usernameLabel">Username: </label>
-						<input name="usernameInput" id="usernameInputElem" placeholder="Username"/>
+				{/* Start login box */}
+				<div className="log-in-box flex-center">
+				
+					<div className="username-block">
+						<label htmlFor="username-input" id="username-label">Username: </label>
+						<input name="username-input" id="username-input-elem" placeholder="Username"/>
 					</div>
 					
-					<div className="passwordBlock">
-						<label htmlFor="passwordInput" id="passwordLabel">Password: </label>
-						<input name="passwordInput" id="passwordInputElem" placeholder="Password"/>
+					<div className="password-block">
+						<label htmlFor="password-input" id="password-label">Password: </label>
+						<input name="password-input" id="password-input-elem" placeholder="Password"/>
 					</div>
 					
-					<p id="signInError"></p>
+					<p className="default-error-msg" id="sign-in-error"></p>
 					
-					<button id="logInButton" onClick={signInUser}>Log in</button>
+					<button className="default-button" id="log-in-button" onClick={signInUser}>Log in</button>
 				</div>
 				{/* End login box */}
 				
+				
 			</div>
+			{/* End sign in view wrapper */}
 		</>
 	)
 }

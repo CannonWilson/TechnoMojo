@@ -29,18 +29,16 @@ things easier to read
 
 • File organization, use more folders
 • Delete default tests
+• Make font sizes responsive
 • Add tests and comments
 
 ---
 
 /src/SignIn.js:
 
-• Add localStorage so that users stay signed in
-• Automatically redirect to the overview page if 
-the user is already signed in
 • Add functionality to the links in the title caption
 • Edit url in signInUser function
-• Make font sizes responsive
+• Make links work to sign up for a cohort or contact us
 
 ---
 

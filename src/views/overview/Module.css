@@ -1,8 +1,8 @@
-.moduleWrapper {
+.module-wrapper {
 	width: 100%;
 }
 
-.moduleTitleWrapper {
+.module-title-wrapper {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -11,7 +11,7 @@
 	cursor: pointer;
 }
 
-.moduleTitleWrapper:hover {
+.module-title-wrapper:hover {
 	background-color: #efefef;
 }
 
@@ -38,7 +38,7 @@
 	font-weight: bold;
 }
 
-.modulePlusMinus {
+.module-plus-minus {
 	border-radius: 50%;
 	background: #bebebe;
 	color: white;
@@ -56,7 +56,7 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.plusMinusRotated {
+.plus-minus-rotated {
 	transform:rotate(180deg); 
 	-webkit-transform:rotate(180deg); 
 	-moz-transform:rotate(180deg); 
