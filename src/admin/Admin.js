@@ -1,13 +1,13 @@
+import Header from '../shared/Header.js'
+import Module from '../shared/Module.js' 
+import AdminStudentCard from './AdminStudentCard.js'
 import {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
-import AdminModule from './AdminModule.js' 
 import './Admin.css'
-import Header from '../shared/Header.js'
-import AdminStudentCard from './AdminStudentCard.js'
 
 export default function Admin() {
 	
-	const [lessonPlan, setLessonPlan] = useState(require('../curriculum/lessonPlan.js'))
+	const lessonPlan = require('../curriculum/lessonPlan.js')
 	
 	const cohorts = ['2022-01', '2021']
 	const [selectedCohort, setSelectedCohort] = useState(cohorts[0])
@@ -131,28 +131,45 @@ export default function Admin() {
 	
 	return(
 		<>
+			
+			{/* Begin Header */}
 			<Header leftText="← Back to sign in" rightText="" leftLink="/" rightLink="#"/>
-			<div className="adminPageWrapper flex-center">
+			{/* End Header */}
 			
-				<p className="cohortSelectText"> Click on the dropdown below to select a cohort: </p>
 			
-				<select className="adminCohortSelect" onChange={(event) => setSelectedCohort(event.target.value)} >
-					{cohorts.map((cohort) => (
-						<option className="adminCohortOption" value={cohort} key={cohort}>{cohort}</option>
+			{/* Begin wrapper */}
+			<div className="admin-page-wrapper flex-center">
+			
+				{/* Begin cohort selection section */}
+				<p className="cohort-select-text"> Click on the dropdown below to select a cohort: </p>
+			
+				<select className="admin-cohort-select" onChange={(event) => setSelectedCohort(event.target.value)}>
+					{cohorts.map(cohort => (
+						<option value={cohort} key={cohort}>{cohort}</option>
 					))}
 				</select>
-							
-				<div className="adminAccordian">
+				{/* End cohort selection section*/}
+				
+				
+				{/* Begin accordian */}
+				<div className="admin-accordian flex-center">
 					{lessonPlan.map(module => 
-						<AdminModule module={module} key={module.moduleName} refresh={refreshAfterCohortChange} />
+						<Module module={module} key={module.moduleName} refresh={refreshAfterCohortChange} from="admin"/>
 					)}
 				</div>
+				{/* End accordian */}
 				
-				<div className="adminStudentSection">
-					{lessonPlan[0].lessons[0].studentProgress !== undefined ? lessonPlan[0].lessons[0].studentProgress.map(usernameAndCode => <AdminStudentCard key={usernameAndCode.username} lessonPlan={lessonPlan} username={usernameAndCode.username}/>) : null}
+				
+				{/* Begin student section */}
+				<div className="admin-student-section">
+					{lessonPlan[0].lessons[0].studentProgress && lessonPlan[0].lessons[0].studentProgress.map(usernameAndCode => 
+						<AdminStudentCard key={usernameAndCode.username} lessonPlan={lessonPlan} username={usernameAndCode.username}/>
+					)}
 				</div>
+				{/* End student section */}
 				
 			</div>
+			{/* End wrapper */}
 		</>
 	)
 }

@@ -1,4 +1,4 @@
-.adminCard {
+.admin-card {
 	border: solid 3px #dedede;
 	border-radius: 5px;
 	display: flex;
@@ -10,11 +10,7 @@
 	min-width: 15%;
 }
 
-.adminCardSelected {
-	background-color: #efefef; 
-}
-
-.adminCardHeader {
+.admin-card-header {
 	text-align: center;
 	width: 100%;
 	padding: 20px;
@@ -23,11 +19,11 @@
 	font-weight: bold;
 }
 
-.adminCardHeader:hover {
+.admin-card-header:hover {
 	background-color: #efefef;
 }
 
-.adminModal {
+.admin-modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -40,26 +36,7 @@
 	z-index: 1;
 }
 
-.adminModalClose {
-	text-align: right;
-	width: 100%;
-	grid-area: close
-}
-
-.adminModalCloseBtn {
-	cursor: pointer;
-	background: none;
-	border: none;
-	font-size: 40px;
-	font-weight: bold;
-}
-
-.adminModalUserInfo {
-	grid-area: userInfo;
-	
-}
-
-.adminModalContent {
+.admin-modal-content {
 	background: white;
 	border: solid 3px #dedede;
 	width: 85%;
@@ -73,7 +50,7 @@
 
 }
 
-.adminModalHeader {
+.admin-modal-header {
 	display: grid;
 	grid-template-areas: ". userInfo close";
 	grid-template-columns: 50px 1fr 50px;
@@ -81,7 +58,25 @@
 	grid-auto-rows: auto;
 }
 
-.adminModalUsername {
+.admin-modal-close {
+	text-align: right;
+	width: 100%;
+	grid-area: close
+}
+
+.admin-modal-close-btn {
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.admin-modal-user-info {
+	grid-area: userInfo;
+}
+
+.admin-modal-username, .admin-modal-completion {
 	text-align: center;
 }
 
@@ -93,9 +88,6 @@
 	font-weight: bold;
 }
 
-.adminModalCompletion {
-	text-align: center;
-}
 
 .adminModalFinishedSection {
 	margin-bottom: 5px;

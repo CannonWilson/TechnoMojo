@@ -1,9 +1,15 @@
+import Lesson from '../views/overview/Lesson.js'
+import AdminLessonSummary from '../admin/AdminLessonSummary.js'
+import AdminStudentSummary from '../admin/AdminStudentSummary'
 import {useState, useEffect} from 'react'
-import Lesson from './Lesson.js'
 import './Module.css'
 
 
-export default function Module({module, progressArrayForThisModule}) {
+export default function Module({module, progressArrayForThisModule, from}) {
+	
+	
+	console.log('showing module at: ', from)
+	console.log('module: ', module)
 	
 	const [isModuleActive, setIsModuleActive] = useState(false)
 	
@@ -26,7 +32,7 @@ export default function Module({module, progressArrayForThisModule}) {
 	
 	useEffect(() => {
 		
-		const moduleContent = document.getElementById(module.moduleName + "Content")
+		const moduleContent = document.getElementById(module.moduleName + "Content" + from)
 		
 		if (isModuleActive) {
 			moduleContent.style.display = "flex"
@@ -65,7 +71,7 @@ export default function Module({module, progressArrayForThisModule}) {
 	return (
 		<div className="module-wrapper">
 		
-			{/* Begin title section */}
+			{/* Begin module header section */}
 			<div className="module-title-wrapper" 
 				onClick={() => setIsModuleActive(!isModuleActive)}
 				style={{backgroundColor: isModuleActive ? "#efefef" : ""}}>
@@ -75,13 +81,21 @@ export default function Module({module, progressArrayForThisModule}) {
 				<p className="module-name">{module.moduleName}</p>
 				
 			</div>
-			{/* End title section */}
+			{/* End module header section */}
 			
 			
 			{/* Begin module content (lessons) */}
-			<div className="module-content module-contracted" id={module.moduleName + "Content"}>
+			<div className="module-content module-contracted" id={module.moduleName + "Content" + from }>
+			
+				{from === "admin" && module.lessons.map(lesson => 
+				  	<AdminLessonSummary lesson={lesson} key={lesson.lessonName} />
+				)}
 				
-				{module.lessons.map((lesson, index) => 
+				{from === "adminModal" && 
+					<AdminStudentSummary module={module} key={module.moduleName} />
+				}
+				
+				{from === "overview" && module.lessons.map((lesson, index) => 
 					<Lesson lesson={lesson} lessonIndex={index} lessonsInCurrentModule={GetLessonNamesInModule()} moduleName={module.moduleName} key={lesson.lessonName} completed={stringifiedProgress.includes(lesson.lessonName)}/>
 				)}
 					

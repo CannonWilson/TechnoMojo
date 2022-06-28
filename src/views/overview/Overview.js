@@ -1,6 +1,6 @@
-import {useState, useEffect} from 'react'
-import Module from './Module.js'
+import Module from '../../shared/Module.js'
 import Header from '../../shared/Header.js'
+import {useState, useEffect} from 'react'
 import './Overview.css'
 const lessonPlan = require('../../curriculum/lessonPlan.js')
 
@@ -87,7 +87,7 @@ export default function Overview() {
 				<div className="accordian flex-center">
 					
 					{lessonPlan.map(module => 
-						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} />
+						<Module module={module} key={module.moduleName} progressArrayForThisModule={progressArray.filter(doc => doc.moduleName === module.moduleName)} from="overview" />
 					)}
 					
 				</div>
