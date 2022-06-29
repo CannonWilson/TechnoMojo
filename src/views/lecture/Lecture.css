@@ -1,80 +1,32 @@
-.lecturePageWrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.lecture-page-content {
 	margin-top: 30px;
-}
-
-.lecturePageContent {
 	width: 90%;
 	text-align: center;
 }
 
-.lectureSeparator {
-	margin-top: 50px;
-	margin-bottom: 130px;
-	width: 100%;
-	border-bottom: solid #dedede 3px;
-}
-
-.lecturePrimaryTitle {
+.lecture-primary-title {
 	font-size: 55px;
 }
 
-.lecturePrimarySubtitle {
+.lecture-primary-subtitle {
 	margin-top: -20px;
 	margin-bottom: 40px;
 	font-size: 18px;
 }
 
-.lectureSecondaryTitle {
+.lecture-secondary-title {
 	font-size: 35px;
 	margin-top: 130px;
 }
 
-.lectureSecondarySubtitle {
+.lecture-secondary-subtitle {
 	font-size: 18px;
 	margin-bottom: 40px;
 }
 
-#submissionTextArea {
-	height: 60vh;
-	width: 100%;
-	font-size: 18px;
-	resize: none;
-	border: solid #dedede 3px;
-}
 
-.lectureSubmitBtn {
-	margin-bottom: 40px;
-	margin-top: 40px;
-	min-width: 200px;
-	border-radius: 10px;
-	font-size: 25px;
-	padding: 10px;
-	font-weight: bold;
-	padding: 15px 25px 15px 25px;
-	border: none;
-	background: #efefef;
-	cursor: pointer;
-}
-
-.lectureSubmitBtn:hover {
-	background: #dedede
-}
-
-#submitError {
-	font-size: 15px;
-	font-weight: bold;
-	padding-top: 15px;
-}
-
-#submitError:empty {
-	padding: 0;
-	margin: 0;
-}
-
-.quizWrapper {
+/* Start quiz section */
+.quiz-wrapper {
 	display: grid;
 	width: 100%;
 	border-radius: 10px;
@@ -84,16 +36,12 @@
 		"leftArrow choice1        choice2        rightArrow"
 		"leftArrow choice3        choice4        rightArrow"
 		".         feedback       feedback       ."
-		".         submitBtn      submitBtn      ."
-		"dots      dots           dots           .";
+		".         submitBtn      submitBtn      .";
 	grid-template-columns: 10% 40% 40% 10%;
 	grid-auto-rows: auto;
 }
 
-.questionHeader {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.question-header {
 	grid-area: questionHeader;
 	padding: 30px;
 	font-size: 18px;
@@ -117,11 +65,11 @@
 	border: solid 3px  rgba(0, 227, 98, 0.6);
 }
 
-.clickedChoice {
+.clicked-choice {
 	background-color: rgba(0, 227, 98, 0.6);
 }
 
-.clickedChoice:hover {
+.clicked-choice:hover {
 	background-color: rgba(0, 227, 98, 0.6);
 }
 
@@ -141,60 +89,65 @@
 	grid-area: choice4;
 }
 
-.questionFeedback {
+.question-feedback {
 	grid-area: feedback;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	padding-top: 30px;
 	font-size: 15px;
 	font-weight: bold;
 }
 
-.questionFeedback:empty {
+.question-feedback:empty {
 	padding: 0px;
 }
 
-.submitChoiceBtnWrapper {
-	display: flex;
+.submit-choice-btn-wrapper {
 	grid-area: submitBtn;
-	justify-content: center;
-	align-items: center;
 	padding: 30px;
 }
 
-.submitChoiceBtn {
-	font-weight: bold;
-	font-size: 20px;
-	padding: 15px 25px 15px 25px;
-	border-radius: 5px;
-	border: none;
-	background: #efefef;
-	cursor: pointer;
+.submit-choice-btn {
+	font-size: 20px !important;
+	padding: 15px 25px 15px 25px !important;
 }
 
-.submitChoiceBtn:hover {
-	background: #dedede
-}
-
-.quizLeftArrow {
+.quiz-left-arrow {
 	grid-area: leftArrow;
 }
 
-.quizRightArrow {
+.quiz-right-arrow {
 	grid-area: rightArrow;
 }
+/* End quiz section */
 
-.quizLeftArrow, .quizRightArrow {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+#submission-text-area {
+	height: 60vh;
+	width: 100%;
+	font-size: 18px;
+	resize: none;
+	border: solid #dedede 3px;
 }
 
-.dots {
-	grid-area: dots;
+#submit-error {
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 15px;
 }
 
-.answerSection {
+#submit-error:empty {
+	padding: 0;
+	margin: 0;
+}
+
+.lecture-submit-btn {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	min-width: 200px;
+	border-radius: 10px !important;
+	font-size: 25px !important;
+	padding: 15px 25px 15px 25px !important;
+}
+
+.answer-section {
 	margin-top: 90px;
 }
