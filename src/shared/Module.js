@@ -1,15 +1,10 @@
 import Lesson from '../views/overview/Lesson.js'
-import AdminLessonSummary from '../admin/AdminLessonSummary.js'
-import AdminStudentSummary from '../admin/AdminStudentSummary'
+import AdminSummary from '../admin/AdminSummary.js'
 import {useState, useEffect} from 'react'
 import './Module.css'
 
 
 export default function Module({module, progressArrayForThisModule, from}) {
-	
-	
-	console.log('showing module at: ', from)
-	console.log('module: ', module)
 	
 	const [isModuleActive, setIsModuleActive] = useState(false)
 	
@@ -88,11 +83,11 @@ export default function Module({module, progressArrayForThisModule, from}) {
 			<div className="module-content module-contracted" id={module.moduleName + "Content" + from }>
 			
 				{from === "admin" && module.lessons.map(lesson => 
-				  	<AdminLessonSummary lesson={lesson} key={lesson.lessonName} />
+				  	<AdminSummary lesson={lesson} key={lesson.lessonName} from="admin" />
 				)}
 				
 				{from === "adminModal" && 
-					<AdminStudentSummary module={module} key={module.moduleName} />
+					<AdminSummary module={module} key={module.moduleName} from="adminModal"/>
 				}
 				
 				{from === "overview" && module.lessons.map((lesson, index) => 

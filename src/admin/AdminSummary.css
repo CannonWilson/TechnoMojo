@@ -1,9 +1,9 @@
-.summaryWrapper {
+.summary-wrapper {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.summaryLessonNameBtn {
+.summary-lesson-name-btn {
 	font-weight: bold;
 	font-size: 15px;
 	padding: 10px;
@@ -11,18 +11,20 @@
 	border: none;
 	background: #efefef;
 	cursor: pointer;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-.summaryLessonNameBtn:hover {
+.summary-lesson-name-btn:hover {
 	background: #dedede
 }
 
-.studentSummaryFlex {
+.student-summary-flex {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 }
 
-.adminStudents {
-	margin-right: 7px;
+.admin-students {
+	margin-left: 7px;
 }

@@ -23,7 +23,7 @@ export default function AdminStudentCard({lessonPlan, username}) {
 					lessonName: 'Intro to CSS', 
 					submittedCode: ''
 				},
-				. . . 
+				. . . more lessons
 			],
 			completionPercent: 0
 		},
@@ -33,6 +33,7 @@ export default function AdminStudentCard({lessonPlan, username}) {
 	const [moduleProgress, setModuleProgress] = useState([])
 	
 	useEffect(() => {
+		
 		let totalLessons = 0
 		let completedLessons = 0
 		

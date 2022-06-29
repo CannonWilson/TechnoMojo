@@ -1,3 +1,28 @@
+/* This is the structure of the components
+in the admin portion of the site: 
+
+Admin
+  |
+  |- Module (inside main accordian, from="admin")
+  |    |
+  |    |- AdminSummary - LessonSummary (from="admin" shows student progress for each 
+  |	                           |        lesson when module is active)
+  |                            |
+  |                            |- AdminUserBlock
+  |
+  |- AdminStudentCard (student names at the bottom of Admin page, 
+	        |          contains a modal that shows modules when clicked)
+			|
+            |- Module (from="adminModal")
+			     |
+			     |- AdminSummary - StudentSummary (from="adminModal" shows progress on all
+					                     |        lessons in a module for one selected student)
+										 |
+				                         |- AdminUserBlock
+*/
+
+
+
 import Header from '../shared/Header.js'
 import Module from '../shared/Module.js' 
 import AdminStudentCard from './AdminStudentCard.js'
@@ -13,6 +38,7 @@ export default function Admin() {
 	const [selectedCohort, setSelectedCohort] = useState(cohorts[0])
 	const [refreshAfterCohortChange, setRefreshAfterCohortChange] = useState(false) // a simple toggle to forcefully rerender the modules once a different cohort has been selected.
 	
+	
 	// Move the user back to the sign in page if they aren't logged in as admin
 	const navigate = useNavigate()
 	useEffect( () => {
@@ -21,8 +47,13 @@ export default function Admin() {
 
 	
 		
-	// want to construct an array that looks like this:
-	/* array = [
+	/* The following useEffect hook starts by making a
+	GET request to the backend to retrieve all of the
+	progress arrays for each student in a given cohort.
+	Next, the lessonPlan array is modified in place to
+	include student progress and it will eventually
+	look like this: 
+	lessonPlan = [
 		{
 			moduleName: 'Intro JavaScript',
 			lessons: [
@@ -40,29 +71,12 @@ export default function Admin() {
 						. . . more studentProgress entries
 					]
 				},
-				{
-					lessonName: 'console.log()',
-					studentProgress: [
-						{
-							username: 'KincannonW',
-							submittedCode: 'console.log("boop")',
-						},
-						{
-							username: 'IsabelleJ',
-							submittedCode: 'console.log("yeet")'
-						},
-						. . . more studentProgress entries
-					]
-				},
 				. . . more lessons
 			]
 		},
 		. . . more modules
 	]
 	*/
-	
-	
-	// start by getting all of the progress arrays and corresponding usernames from backend
 	useEffect( () => {
 				
 		let userProgressObjArray // json is an array of objects where each object has username and progress fields
@@ -72,22 +86,15 @@ export default function Admin() {
 			const response = await fetch('http://localhost:4000/api/allStudentProgress?cohort=' + selectedCohort)
 			userProgressObjArray = await response.json() 
 			modifyLessonPlanToIncludeStudentProgress()
-			setRefreshAfterCohortChange(!refreshAfterCohortChange) // toggle the refresh to force the modules to rerender
+			setRefreshAfterCohortChange(!refreshAfterCohortChange) // toggle the refresh to force the modules to re-render
 		}
 
 		retrieveStudentProgress()
 		
-		
-		/* Next, modify the lessonPlan array to include student progress. This
-		approach is taken because the lessonPlan array serves as the
-		'single source of truth' for all information about the curriculum. */
-		
-		/* Start by loop through all modules and the lesson array for each module, 
-		deleting the fields which we don't need from the lesson array. The following
-		array can be modified based on which fields will not be shown to the admin
-		user on the UI. */
+
 		function modifyLessonPlanToIncludeStudentProgress() {
-			const fieldsToDelete = ['lessonDescription', 'exerciseDescription', 'submissionDescription', 'introVideoUrl', 'codeSandBoxUrl', 'answerVideoUrl', 'quiz']
+			
+			const fieldsToDelete = ['lessonDescription', 'exerciseDescription', 'submissionDescription', 'introVideoUrl', 'codeSandBoxUrl', 'answerVideoUrl', 'quiz'] // delete unnecessary fields to save memory
 			
 			for (const module of lessonPlan) {
 				for (const lesson of module.lessons) {
@@ -98,12 +105,11 @@ export default function Admin() {
 					the array whenever the chosen cohort changes. */
 					lesson['studentProgress'] = []
 					
-					/* Add all of the usernames and submitted code to a new
-					array inside of the lesson if that user has finished 
-					the given lesson. If they haven't finished the
-					given lesson, add an empty string for their 
-					submittedCode instead */
+					/* Add all of the usernames and submitted code (or an 
+					empty string if unfinished) to a new array inside of 
+					the lesson */
 					for (const userProgressObj of userProgressObjArray) {
+						
 						const found = userProgressObj.progress.find(item => item.lessonName === lesson.lessonName)
 						let userCode = ""
 						if (found) {
@@ -121,6 +127,7 @@ export default function Admin() {
 						else {
 							lesson['studentProgress'] = [usernameAndCodeForFinishedUser]
 						}
+						
 					}
 				}
 			}
@@ -129,7 +136,7 @@ export default function Admin() {
 	}, [selectedCohort] ) 
 	
 	
-	return(
+	return (
 		<>
 			
 			{/* Begin Header */}
@@ -154,7 +161,7 @@ export default function Admin() {
 				{/* Begin accordian */}
 				<div className="admin-accordian flex-center">
 					{lessonPlan.map(module => 
-						<Module module={module} key={module.moduleName} refresh={refreshAfterCohortChange} from="admin"/>
+						<Module module={module} key={module.moduleName} refresh={refreshAfterCohortChange} from="admin" />
 					)}
 				</div>
 				{/* End accordian */}

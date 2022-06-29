@@ -79,20 +79,3 @@
 .admin-modal-username, .admin-modal-completion {
 	text-align: center;
 }
-
-.adminModalLesson {
-	margin-left: 7px;
-}
-
-.adminModalModuleHeader {
-	font-weight: bold;
-}
-
-
-.adminModalFinishedSection {
-	margin-bottom: 5px;
-}
-
-.adminModalUnfinishedSection {
-	margin-bottom: 10px;
-}

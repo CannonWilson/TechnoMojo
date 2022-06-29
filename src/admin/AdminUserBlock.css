@@ -1,4 +1,4 @@
-.blockWrapper {
+.block-wrapper {
 	min-height: 50px;
 	min-width: 50px;
 	max-width: 300px;
@@ -10,11 +10,11 @@
 	padding: 15px;
 }
 
-.blockHeader {
+.block-header {
 	font-weight: bold;
 }
 
-.blockCode {
+.block-code {
 	font-family: monospace;
 	text-align: left;
 	white-space: pre-wrap;
