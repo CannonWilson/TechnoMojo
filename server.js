@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 4000
@@ -30,8 +31,6 @@ app.get('/api/signIn', (req, res) => {
 	
 	async function checkUserInfo() {
 
-		// await client.connect()
-		// const collection = client.db('technomojo').collection('test')
 		const userInfoDoc = await collection.findOne({username: usernameInput, password: passwordInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.sendStatus(200)
@@ -52,8 +51,6 @@ app.get('/api/userProgress', (req, res) => {
 	
 	async function checkUserInfo() {
 		
-		// await client.connect()
-		// const collection = client.db('technomojo').collection('test')
 		const userInfoDoc = await collection.findOne({username: usernameInput})
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.send(userInfoDoc.progress) // send progress array to frontend
@@ -106,4 +103,11 @@ app.get('/api/allStudentProgress', (req, res) => {
 	
 	getStudentProgress()
 	
+})
+
+// Serve up the frontend
+app.use(express.static(path.join(__dirname, 'build')))
+
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })

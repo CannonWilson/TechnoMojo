@@ -44,6 +44,17 @@ export default function Lecture() {
 		}
 	}
 	
+	/* This component is having problems when 
+	being loaded by a new user for the first time.
+	Check if there was an error with the page loading
+	(and can't find the element with id="submission-text-area")
+	and prime for a refresh if so. */
+	useEffect(() => {
+		if (!document.getElementById('submission-text-area')) {
+			localStorage.setItem('reload', "true")
+		}
+	}, [])
+	
 	
 	// Variables for quiz logic
 	const [successMessage, setSuccessMessage] = useState("Nice! You got it right, please move on to the next question.")
