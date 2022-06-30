@@ -68,17 +68,17 @@ export default function SignIn() {
 				
 					<div className="username-block">
 						<label htmlFor="username-input" id="username-label">Username: </label>
-						<input name="username-input" id="username-input-elem" placeholder="Username"/>
+						<input name="username-input" id="username-input-elem" placeholder="Username" data-testid="username-input"/>
 					</div>
 					
 					<div className="password-block">
 						<label htmlFor="password-input" id="password-label">Password: </label>
-						<input name="password-input" id="password-input-elem" placeholder="Password"/>
+						<input name="password-input" id="password-input-elem" placeholder="Password" data-testid="password-input"/>
 					</div>
 					
 					<p className="default-error-msg" id="sign-in-error"></p>
 					
-					<button className="default-button" id="log-in-button" onClick={signInUser}>Log in</button>
+					<button className="default-button" id="log-in-button" onClick={signInUser} data-testid="log-in-button">Log in</button>
 				</div>
 				{/* End login box */}
 				

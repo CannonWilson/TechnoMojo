@@ -17,7 +17,6 @@ export default function Lecture() {
 	const moduleName = decodeURIComponent(searchParams.get('moduleName'))
 	const lessonName = decodeURIComponent(searchParams.get('lessonName'))
 	const lessonsInCurrentModule = decodeURIComponent(searchParams.get('lessonsInCurrentModule'))
-	
 	const currentModule = lessonPlan.find(module => module.moduleName === moduleName)
 	const currentLesson = currentModule.lessons.find(lesson => lesson.lessonName === lessonName)
 	const currentLessonIndex = lessonsInCurrentModule.split('-').indexOf(currentLesson.lessonName)
