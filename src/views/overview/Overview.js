@@ -30,7 +30,10 @@ export default function Overview() {
 	
 	/* The following code makes a GET request to the backend to 
 	retrieve the progress array for the user that's currently
-	signed in. */
+	signed in. It also checks to make sure that every module 
+	in the progress array is also in the lesson plan. This
+	comes in handy if the user completed a lesson that is no 
+	longer included in the lessonPlan. */
 	useEffect( () => {
 		
 		async function retrieveUserProgress() {
@@ -38,7 +41,8 @@ export default function Overview() {
 				const username = localStorage.getItem('username')
 				const response = await fetch('http://localhost:4000/api/userProgress?username='+username)
 				const json = await response.json()
-				setProgressArray(json)
+				const stringifiedLessonPlan = JSON.stringify(lessonPlan)
+				setProgressArray(json.filter(module => stringifiedLessonPlan.includes(module.moduleName)))
 			}
 			catch(err) { // above code will fail if the localStorage fails to get the user's username or if the database fails to find the user
 				
@@ -65,9 +69,10 @@ export default function Overview() {
 			lessonPlan.forEach(module => lessonCount += module.lessons.length)
 			let completedLessonCount = progressArray.length
 			setCompletionPercent(String(Math.round(100 * completedLessonCount / lessonCount)))
+
 		}
 		
-	}, [progressArray])
+	}, [progressArray]) 
 		
 	
 	return (
