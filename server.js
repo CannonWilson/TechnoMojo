@@ -1,3 +1,5 @@
+const logger = require('winston') // this is a logger that makes messages show up in heroku logs
+
 const path = require('path');
 const express = require('express')
 const app = express()
@@ -21,7 +23,7 @@ client.connect(function(err) {
   
   collection = client.db('technomojo').collection('test');
   app.listen(port);
-  console.log('Listening on port ' + port);
+  logger.log('Connected to DB. Listening on port ' + port);
 });
 
 
@@ -32,6 +34,7 @@ app.get('/api/signIn', (req, res) => {
 	async function checkUserInfo() {
 
 		const userInfoDoc = await collection.findOne({username: usernameInput, password: passwordInput})
+		logger.log('userInfoDoc in signIn: ', userInfoDoc)
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.sendStatus(200)
 		}
@@ -52,6 +55,7 @@ app.get('/api/userProgress', (req, res) => {
 	async function checkUserInfo() {
 		
 		const userInfoDoc = await collection.findOne({username: usernameInput})
+		logger.log('userInfoDoc in userProgress: ', userInfoDoc)
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.send(userInfoDoc.progress) // send progress array to frontend
 		}
@@ -83,6 +87,7 @@ app.put('/api/updateProgress', (req, res) => {
 				$set: {"progress.$.userCode": code}
 			}
 		)
+		logger.log('result in /updateProgress: ', result)
 		if (result.modifiedCount === 0) { // nothing was modified, no array entry was found. Push a new entry onto the array instead
 			const insertResult = await collection.updateOne({username: username}, {$push: {progress: req.body}})
 		}
@@ -98,7 +103,7 @@ app.get('/api/allStudentProgress', (req, res) => {
 		
 	async function getStudentProgress() {
 		const result = await collection.find({cohort: req.query.cohort}).project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
-		console.log('GOT STUDENT PROGRESS: ', result)
+		logger.log('GOT STUDENT PROGRESS: ', result)
 		res.send(result)
 	}
 	
