@@ -6,9 +6,9 @@ module.exports = {
 			lessonDescription: "Learn how to work with web-based APIs", 
 			exerciseDescription: "Implement the submitName and getJoke functions in script.js. See the comments above the function declarations for more details.",
 			submissionDescription: "Paste the entire contents of script.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/719242987?h=74a103f679&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727904863?h=b5f750593e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/apis-01-external-call-9xh1c7?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/720403297?h=ccaa39d2a3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727904961?h=59cf611e3f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Within regular JavaScript code, the await keyword: ',
@@ -63,9 +63,9 @@ module.exports = {
 			lessonDescription: "Build your own API backend and learn how to access it from your user-facing frontend", 
 			exerciseDescription: "Edit app.js so that you are statically serving up the contents of the public directory. Also, create a new route to handle GET requests at the '/hello' path. See the comments for more details. On this assignment, YOU WILL NEED TO OPEN THE SANDBOX IN THE BROWSER, SIGN INTO YOUR CODESANDBOX ACCOUNT AND FORK THE REPO.",
 			submissionDescription: "Paste the entire contents of app.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/719243010?h=327950ca34&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727904981?h=6f20eefc77&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/apis-02-intro-to-express-n7jm8v?codemirror=1&fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/720403326?h=63f70d84ab&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905088?h=a95f8226ef&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following code snippets correctly imports express and creates a new Express application?',
@@ -150,9 +150,9 @@ const app = express()`
 			lessonDescription: "Learn how to pass data between your frontend and your backend.", 
 			exerciseDescription: "Modify app.js AND /public/script.js while following the comments in these two files as closely as possible, since they describe every step you need to take. The sandbox might display a 502 error until you successfully create your express application. On this assignment, YOU WILL NEED TO OPEN THE SANDBOX IN THE BROWSER, SIGN INTO YOUR CODESANDBOX ACCOUNT AND FORK THE REPO.",
 			submissionDescription: "Paste the entire contents of app.js and /public/script.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/719243038?h=3a124dac14&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905108?h=bd0de3c0f8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/apis-03-passing-data-sdhs8j?codemirror=1&fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/720403351?h=78c788cc3d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905152?h=5fc801353e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following lines of code makes a GET request to the "/hello" path and includes two parameters called firstName and lastName in the request query?',
@@ -286,9 +286,9 @@ fetch('/signup', options)`,
 			lessonDescription: "Learn how to create, read, update, and delete data with MonoDB Atlas, a cloud database service", 
 			exerciseDescription: "Create a new collection in your MongoDB Atlas cluster before starting this exercise. Next, go to app.js and write some code to connect to your database and create some functionality for signing up and signing in. Look at the comments in app.js for more details. You will need to open the sandbox in a browser tab and fork it in order to make edits.",
 			submissionDescription: "Paste the entire contents of app.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/720868862?h=d4de250fea&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905193?h=4f157074bf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/apis-04-mongodb-p1dckl?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/721181947?h=9000aebafe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905271?h=ba1680ffc1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following accurately describes the organizational hierarchy inside MongoDB Atlas?',
@@ -375,7 +375,7 @@ client.connect(() => {
 					answerChoices: [
 						"It takes an object as an argument with keys specifying which field to sort by and either 1 for increasing/alphabetical order or -1 for decreasing/reverse alphabetical order",
 						"By default, it will not include the _id field in any objects returned",
-						"It alwaystakes place after .limit()",
+						"It always takes place after .limit()",
 						"It can be invoked before .find()",
 					],
 					correctAnswerIndex: 0

@@ -6,9 +6,9 @@ module.exports = {
 			lessonDescription: "Learn how to use React components to make your code clean and organized", 
 			exerciseDescription: "Create a new component called Hello inside Hello.js. The component should return the text 'Hello my name is <your name here>' inside of an <h2> tag. Export your Hello component and include it inside the App component.",
 			submissionDescription: "Paste the entire contents of App.js AND Hello.js that you wrote in the above sandbox into the textarea below. Please include some whitespace between your text for the different files. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/718097592?h=cfd2203fa8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905297?h=5c8122eb5b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/01-intro-to-react-ylxz8z?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/719242843?h=19844e7b43&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905343?h=cc8e88d2bb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'What is a reusable bit of code that returns React elements?',
@@ -84,9 +84,9 @@ module.exports = {
 			lessonDescription: "Learn how to pass data from one component down to another", 
 			exerciseDescription: "Use what you just learned about props to modify App.js and Artist.js to show the artist's first name on the screen.",
 			submissionDescription: "Paste the entire contents of App.js AND Artist.js that you wrote in the above sandbox into the textarea below. Please include some whitespace between your text for the different files. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/718097570?h=37c3242229&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905365?h=ac2f3fb632&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-02-props-k5xzuk?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/719242858?h=19fccc55a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905386?h=b41bec6873&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following set of terms is used to describe the hierarchy of components inside React?',
@@ -133,9 +133,9 @@ module.exports = {
 			lessonDescription: "This React hook helps us manage our data and update it all across our application", 
 			exerciseDescription: "Edit App.js to create a new state variable that gets increased by one whenever the button is clicked.",
 			submissionDescription: "Paste the entire contents of App.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/718097628?h=95d40a820e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905410?h=cc4ee2fd26&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-03-usestate-cbz9si?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/719242872?h=b756d419dd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905436?h=302096b1f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following is true?',
@@ -188,9 +188,9 @@ setName='Cannon'`
 			lessonDescription: "Run code selectively based on the component's lifecycle and on values changing", 
 			exerciseDescription: "Modify CounterDisplay.js to use a useEffect hook. This hook should monitor num1 and num2 for changes and set the result message to describe which number/counter is larger.",
 			submissionDescription: "Paste the entire contents of CounterDisplay.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/718462792?h=b6e059190f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905461?h=90464428f9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-04-useeffect-0lt3ud?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/719242887?h=b43ec81fc1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905491?h=4903adb535&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following describes why we would want to use the useEffect hook?',
@@ -253,9 +253,9 @@ setName='Cannon'`
 			lessonDescription: "Learn how to give your single page applications multiple views that your user can navigate between", 
 			exerciseDescription: "Modify App.js to use the routing features provided by react-router-dom so your user can move between the different views already created in the /src/views folder inside the project. Show the NotFound view whenever the user attempts to access an invalid path.",
 			submissionDescription: "Paste the entire contents of App.js that you wrote in the above sandbox into the textarea below. You have unlimited submissions, and only your latest submission will be recorded.",
-			introVideoUrl: "https://player.vimeo.com/video/718097674?h=b5ed3b9b18&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			introVideoUrl: "https://player.vimeo.com/video/727905522?h=29be6a8841&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			codeSandBoxUrl: "https://codesandbox.io/embed/react-05-routing-i9io4q?fontsize=14&hidenavigation=1&theme=dark",
-			answerVideoUrl: "https://player.vimeo.com/video/719242901?h=b3880f56c0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+			answerVideoUrl: "https://player.vimeo.com/video/727905550?h=f467cd17ac&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			quiz: [
 				{
 					question: 'Which of the following commands do you need to run before you can work with React Router in your web app?',
