@@ -74,7 +74,7 @@ export default function Lecture() {
 	whenever the length of the questionIndexesAnsweredCorrectly
 	array changes */
 	useEffect(() => {
-		if (questionIndexesAnsweredCorrectly.length === currentLesson.quiz.length) {
+		if (currentLesson.quiz && questionIndexesAnsweredCorrectly.length === currentLesson.quiz.length) {
 			setIsQuizComplete(true)
 			setSuccessMessage(finishedQuizMessage)
 			setQuestionFeedback(finishedQuizMessage)
