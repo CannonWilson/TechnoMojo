@@ -17,7 +17,7 @@
     "winston": "^3.8.1"
   },
   "scripts": {
-    "start": "node server.js", // use 'react-scripts start' for development
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
