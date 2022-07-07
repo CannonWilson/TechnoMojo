@@ -39,7 +39,7 @@ export default function Overview() {
 		async function retrieveUserProgress() {
 			try {
 				const username = localStorage.getItem('username')
-				const response = await fetch('http://localhost:4000/api/userProgress?username='+username)
+				const response = await fetch('/api/userProgress?username='+username)
 				const json = await response.json()
 				const stringifiedLessonPlan = JSON.stringify(lessonPlan)
 				setProgressArray(json.filter(module => stringifiedLessonPlan.includes(module.moduleName)))

@@ -83,7 +83,7 @@ export default function Admin() {
 		
 		async function retrieveStudentProgress() {
 			
-			const response = await fetch('http://localhost:4000/api/allStudentProgress?cohort=' + selectedCohort)
+			const response = await fetch('/api/allStudentProgress?cohort=' + selectedCohort)
 			userProgressObjArray = await response.json() 
 			modifyLessonPlanToIncludeStudentProgress()
 			setRefreshAfterCohortChange(!refreshAfterCohortChange) // toggle the refresh to force the modules to re-render

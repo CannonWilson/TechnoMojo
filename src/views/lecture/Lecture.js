@@ -195,7 +195,7 @@ export default function Lecture() {
 			console.error('User is not logged in')
 		}
 		try {
-			const response = await fetch('http://localhost:4000/api/updateProgress?username=' + username, requestOptions)
+			const response = await fetch('/api/updateProgress?username=' + username, requestOptions)
 			if (response.ok) {
 				setShowAnswer(true)
 			}

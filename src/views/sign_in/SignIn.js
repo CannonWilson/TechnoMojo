@@ -20,7 +20,7 @@ export default function SignIn() {
 		
 		try {
 
-			const response = await fetch(`http://localhost:4000/api/signIn?username=${usernameInput}&password=${passwordInput}`)
+			const response = await fetch(`/api/signIn?username=${usernameInput}&password=${passwordInput}`)
 			
 			if (response.ok) { // user was found, move to /overview or /admin
 				localStorage.setItem('username', usernameInput)
@@ -58,7 +58,7 @@ export default function SignIn() {
 			
 				{/* Start title and caption */}
 				<h1 className="sign-in-title">Sign in to continue</h1>
-				<p className="sign-in-title-caption">It's members only beyond this point. If you want to get in touch, please 
+				<p className="sign-in-title-caption">It's members only beyond this point. If you want to get in touch, please  
 					<a className="sign-in-link" href="https://www.innovationoutpost.com/career-accelerator">contact us</a>. 
 					If you're ready to start your coding journey with us, 
 					<a className="sign-in-link" href="https://www.actx.edu/forms/amarillo-codes/application_full_stack.php">apply now</a>.
