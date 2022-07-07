@@ -35,24 +35,13 @@ export default function Lecture() {
 	Currently, the reload is handled by the Header 
 	component since this is the only way I could 
 	figure out how to prevent an infinite loop 
-	of refreshes */
+	of refreshes. This system could be improved. */
 	function refreshPageIfNeeded() {
 		if (localStorage.getItem('reload') === "true") {
 			localStorage.setItem('reload', "false")
 			window.location.reload()
 		}
 	}
-	
-	/* This component is having problems when 
-	being loaded by a new user for the first time.
-	Check if there was an error with the page loading
-	(and can't find the element with id="submission-text-area")
-	and prime for a refresh if so. */
-	useEffect(() => {
-		if (!document.getElementById('submission-text-area')) {
-			localStorage.setItem('reload', "true")
-		}
-	}, [])
 	
 	
 	// Variables for quiz logic
@@ -252,38 +241,40 @@ export default function Lecture() {
 					
 					
 					{/* Start quiz section */}
-					<h2 className="lecture-secondary-title">Quiz</h2>
-					<p className="lecture-secondary-subtitle">Please take this short quiz to demonstrate your understanding of this lesson's content. All questions are multiple-choice, and you can submit answers as many times as you need without being penalized for incorrect choices. You must select the correct answer on every question before you can submit your code from the exercise below.</p>
-					<div className="quiz-wrapper">
-					
-						<div className="question-header flex-center">
-							{currentLesson.quiz[currentQuestionIndex].question}
+					{currentLesson.quiz && <>
+						<h2 className="lecture-secondary-title">Quiz</h2>
+						<p className="lecture-secondary-subtitle">Please take this short quiz to demonstrate your understanding of this lesson's content. All questions are multiple-choice, and you can submit answers as many times as you need without being penalized for incorrect choices. You must select the correct answer on every question before you can submit your code from the exercise below.</p>
+						<div className="quiz-wrapper">
+						
+							<div className="question-header flex-center">
+								{currentLesson.quiz[currentQuestionIndex].question}
+							</div>
+							<div className="choice choice1" onClick={() => choiceClicked(1)}>
+								{currentLesson.quiz[currentQuestionIndex].answerChoices[0]}
+							</div>
+							<div className="choice choice2" onClick={() => choiceClicked(2)}>
+								{currentLesson.quiz[currentQuestionIndex].answerChoices[1]}
+							</div>
+							<div className="choice choice3" onClick={() => choiceClicked(3)}>
+								{currentLesson.quiz[currentQuestionIndex].answerChoices[2]}
+							</div>
+							<div className="choice choice4" onClick={() => choiceClicked(4)}>
+								{currentLesson.quiz[currentQuestionIndex].answerChoices[3]}
+							</div>
+							<div className="question-feedback flex-center">
+								{questionFeedback}
+							</div>
+							<div className="submit-choice-btn-wrapper flex-center">
+								<button className="default-button submit-choice-btn" onClick={submitChoiceButtonPressed}>Save answer</button>
+							</div>
+							<div className="quiz-left-arrow flex-center">
+								<svg onClick={() => arrowPressed(-1)} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M20 44 0 24 20 4 22.8 6.85 5.65 24 22.8 41.15Z"/></svg>
+							</div>
+							<div className="quiz-right-arrow flex-center">
+								<svg onClick={() => arrowPressed(1)} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M15.2 43.9 12.4 41.05 29.55 23.9 12.4 6.75 15.2 3.9 35.2 23.9Z"/></svg>
+							</div>
 						</div>
-						<div className="choice choice1" onClick={() => choiceClicked(1)}>
-							{currentLesson.quiz[currentQuestionIndex].answerChoices[0]}
-						</div>
-						<div className="choice choice2" onClick={() => choiceClicked(2)}>
-							{currentLesson.quiz[currentQuestionIndex].answerChoices[1]}
-						</div>
-						<div className="choice choice3" onClick={() => choiceClicked(3)}>
-							{currentLesson.quiz[currentQuestionIndex].answerChoices[2]}
-						</div>
-						<div className="choice choice4" onClick={() => choiceClicked(4)}>
-							{currentLesson.quiz[currentQuestionIndex].answerChoices[3]}
-						</div>
-						<div className="question-feedback flex-center">
-							{questionFeedback}
-						</div>
-						<div className="submit-choice-btn-wrapper flex-center">
-							<button className="default-button submit-choice-btn" onClick={submitChoiceButtonPressed}>Save answer</button>
-						</div>
-						<div className="quiz-left-arrow flex-center">
-							<svg onClick={() => arrowPressed(-1)} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M20 44 0 24 20 4 22.8 6.85 5.65 24 22.8 41.15Z"/></svg>
-						</div>
-						<div className="quiz-right-arrow flex-center">
-							<svg onClick={() => arrowPressed(1)} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M15.2 43.9 12.4 41.05 29.55 23.9 12.4 6.75 15.2 3.9 35.2 23.9Z"/></svg>
-						</div>
-					</div>
+					</>}
 					{/* End quiz section */}
 										
 					

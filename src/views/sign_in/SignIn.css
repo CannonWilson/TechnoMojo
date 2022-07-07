@@ -10,6 +10,14 @@
 	font-size: 18px;
 }
 
+.sign-in-link:hover {
+	color: blue !important;
+}
+
+.sign-in-link:visited {
+	color: black;
+}
+
 .log-in-box {
 	width: 60%;
 	background: #efefef;
@@ -70,3 +78,4 @@ login button bigger and darker */
 #sign-in-error:empty {
 	margin: 0;
 }
+
