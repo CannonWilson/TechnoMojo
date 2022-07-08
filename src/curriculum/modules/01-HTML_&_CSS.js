@@ -4,409 +4,409 @@ module.exports = {
 		{
 			lessonName: 'Basic HTML',
 			lessonDescription: "Default lesson description",
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Intro to CSS', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Intro to CSS', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'The Box Model', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'The Box Model', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Box Model Margins & Padding', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Box Model Margins & Padding', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Box Model Borders', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Box Model Borders', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Semantic HTML', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Semantic HTML', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Classes & IDs', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Classes & IDs', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Spans & DIVs', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Spans & DIVs', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Centering', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Centering', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	
-		}, // MODIFY
+		}, 
 		{
-			lessonName: 'Background Images', // MODIFY
-			lessonDescription: "Default lesson description", // MODIFY 
-			exerciseDescription: "Default exercise description text", // MODIFY
-			submissionDescription: "Paste the entire contents of index.html that you wrote in the above sandbox into the textarea below. You have unlimited submissions, // MODIFY and only your latest submission will be recorded.", // MODIFY
-			introVideoUrl: "https://player.vimeo.com/video/698804582?h=b3f29101c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
-			codeSandBoxUrl: "https://codesandbox.io/embed/brave-archimedes-uo2ucj?fontsize=14&hidenavigation=1&theme=dark", // MODIFY
-			answerVideoUrl: "https://player.vimeo.com/video/698856937?h=892db1de3b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // MODIFY
+			lessonName: 'Background Images', 
+			lessonDescription: "Default lesson description",  
+			exerciseDescription: "Default exercise description text", 
+			submissionDescription: "Default submission description", 
+			introVideoUrl: "https://player.vimeo.com/video/", 
+			codeSandBoxUrl: "https://codesandbox.io/embed/", 
+			answerVideoUrl: "https://player.vimeo.com/video/", 
 			quiz: [
 				{
-					question: 'The first question: ', // MODIFY
+					question: 'The first question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The second question: ', // MODIFY
+					question: 'The second question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
-				}, // MODIFY
+				}, 
 				{
-					question: 'The third question: ', // MODIFY
+					question: 'The third question: ', 
 					answerChoices: [
-						"First answer choice", // MODIFY
-						"Second answer choice", // MODIFY
-						"Third answer choice", // MODIFY
+						"First answer choice", 
+						"Second answer choice", 
+						"Third answer choice", 
 						"Fourth answer choice"
-					], // MODIFY
+					], 
 					correctAnswerIndex: 0
 				}
 			]	

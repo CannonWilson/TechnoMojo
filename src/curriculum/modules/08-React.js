@@ -278,18 +278,44 @@ setName='Cannon'`
 					correctAnswerIndex: 1
 				},
 				{
-					question: 'Which of the following App components lets the user switch between different views and shows a special component when the user attempts to access an invalid path?',
+					question: 'Which of the following App components lets the user switch between different views and shows a component called NotFound when the user attempts to access an invalid path?',
 					answerChoices: [
 						`export default function App() {
 	return (
+		<Routes>
+			<Route to="/" element={NotFound} />
+		</Routes>	
+	)
+}`,
+						`export default function App() {
+	return (
 		<BrowserRouter>
-			<Route to="/" element=
+			<Route to="/" element={Home} />
+			<Route to="/about" element={About} />
+			<Route to="*" element={NotFound} />
 		</BrowserRouter>	
 	)
 }`,
-						"Second answer choice",
-						"Third answer choice",
-						"Fourth answer choice"
+						`export default function App() {
+	return (
+		<BrowserRouter
+			<Routes>
+				<Route to="/" element={ <Home/> } />
+				<Route to="/about" element={ <About/> } />
+				<Route to="*" element={ <NotFound/> } />
+			</Routes>
+		</BrowserRouter>	
+	)
+}`,
+						`export default function App() {
+	return (
+		<BrowserRouter>
+			<Route to="/" element={Home} />
+			<Route to="/about" element={About} />
+			<Route to="*" element={NotFound} />
+		</BrowserRouter>	
+	)
+}`
 					],
 					correctAnswerIndex: 0
 				}

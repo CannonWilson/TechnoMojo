@@ -180,7 +180,7 @@ const app = express()`
 						"const userData = req.query.data",
 						"const userData = req.body.python",
 						"const userData = req.params.data",
-						"const userData = req.query.python",,
+						"const userData = req.query.python",
 					],
 					correctAnswerIndex: 0
 				},

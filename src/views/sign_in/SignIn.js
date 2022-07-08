@@ -20,7 +20,7 @@ export default function SignIn() {
 		
 		try {
 
-			const response = await fetch(`/api/signIn?username=${usernameInput}&password=${passwordInput}`)
+			const response = await fetch(`https://technomojo.herokuapp.com/api/signIn?username=${usernameInput}&password=${passwordInput}`)
 			
 			if (response.ok) { // user was found, move to /overview or /admin
 				localStorage.setItem('username', usernameInput)
