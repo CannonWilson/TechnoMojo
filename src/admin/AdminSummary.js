@@ -63,6 +63,7 @@ function LessonSummary({lesson}) { // shown if from = 'admin'
 							if (usernameAndCode.submittedCode) {
 								return <AdminUserBlock headerText={usernameAndCode.username} code={usernameAndCode.submittedCode} key={usernameAndCode.username} />
 							}
+							return null
 						})}
 					</div>
 					{/* End finished students' code */}

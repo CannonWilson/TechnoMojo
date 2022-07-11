@@ -1,4 +1,3 @@
-import {useEffect} from 'react'
 import "./AdminUserBlock.css"
 
 export default function AdminUserBlock({headerText, code}) {

@@ -13,7 +13,7 @@ export default function Lecture() {
 	the request queries called moduleName and lessonName. They 
 	are decoded and then used to lookup the correct video urls, 
 	quiz info, etc. from /src/data/lessonPlan.js */
-	const [searchParams, setSearchParams] = useSearchParams()
+	const [searchParams] = useSearchParams()
 	const moduleName = decodeURIComponent(searchParams.get('moduleName'))
 	const lessonName = decodeURIComponent(searchParams.get('lessonName'))
 	const lessonsInCurrentModule = decodeURIComponent(searchParams.get('lessonsInCurrentModule'))
@@ -24,11 +24,17 @@ export default function Lecture() {
 	const nextLessonLink = `/lecture?moduleName=${encodeURIComponent(moduleName)}&lessonName=${encodeURIComponent(nextLessonName)}&lessonsInCurrentModule=${encodeURIComponent(lessonsInCurrentModule)}`
 	
 	
-	/* Navigate the user to the next lesson and prime the
-	view to reload and reset this component's state */
+	/* If the nextLessonName variable is not an empty
+	string, navigate the user to the next lesson and 
+	prime the view to reload and reset this component's
+	state. Otherwise, open the Overview view because the
+	user has finished every lesson in the module. */
 	function openNextLesson() {
-		localStorage.setItem('reload', "true")
-		navigate(nextLessonLink)
+		if (nextLessonName) {
+			localStorage.setItem('reload', "true")
+			navigate(nextLessonLink)
+		}
+		else navigate('/overview')
 	}
 	
 	/* Reload the page to reset this component's state.
@@ -195,7 +201,7 @@ export default function Lecture() {
 			console.error('User is not logged in')
 		}
 		try {
-			const response = await fetch('/api/updateProgress?username=' + username, requestOptions)
+			const response = await fetch('https://technomojo.herokuapp.com/api/updateProgress?username=' + username, requestOptions)
 			if (response.ok) {
 				setShowAnswer(true)
 			}
@@ -235,7 +241,7 @@ export default function Lecture() {
 					
 					{/* Start intro video */}
 					<div style={{padding:'56.25% 0 0 0',position:'relative'}}>
-						<iframe src={currentLesson.introVideoUrl} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}></iframe>
+						<iframe src={currentLesson.introVideoUrl} title="intro video" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}></iframe>
 					</div>
 					{/* End intro video */}
 					
@@ -281,7 +287,7 @@ export default function Lecture() {
 					{/* Start exercise section*/}
 					<h2 className="lecture-secondary-title">Exercise</h2>
 					<p className="lecture-secondary-subtitle">{currentLesson.exerciseDescription}</p>
-					<iframe src={currentLesson.codeSandBoxUrl}
+					<iframe src={currentLesson.codeSandBoxUrl} title="code sandbox"
 						 style={{width:'100%', height:'100vh', border:0, borderRadius: '4px', overflow: 'hidden'}}
 						 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
 						 sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
@@ -314,7 +320,7 @@ export default function Lecture() {
 							<p className="lecture-primary-subtitle">You completed this lesson. The solution video is below. Please watch it and feel free to resubmit your code after watching.</p>
 							
 							<div style={{padding:'56.25% 0 0 0',position:'relative'}}>
-								<iframe src={currentLesson.answerVideoUrl} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}} title="Strings"></iframe>
+								<iframe src={currentLesson.answerVideoUrl} title="answer video" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}></iframe>
 							</div>
 							
 							<button className="default-button lecture-submit-btn" onClick={openNextLesson}>Open next lesson</button>

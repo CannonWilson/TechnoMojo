@@ -59,17 +59,6 @@ describe('Test rendering for views', () => {
     expect(container.textContent).toContain('Overall completion')
   }) 
   
-  test("Lecture", () => {
-    act(() => {
-      
-      ReactDOM.createRoot(container).render(
-        <MemoryRouter initialEntries={[ '/lecture?moduleName=07%20-%20APIs&lessonName=External%20APIs&lessonsInCurrentModule=External%20APIs-Intro%20to%20Express-Passing%20Data-Intro%20to%20MongoDB' ]}>
-          <Lecture />
-        </MemoryRouter>)
-    })
-    expect(container.textContent).toContain('External APIs')
-  }) 
-  
   test("Admin", () => {
     act(() => {
       
@@ -78,7 +67,7 @@ describe('Test rendering for views', () => {
           <Admin />
         </MemoryRouter>)
     })
-    expect(container.textContent).toContain('External APIs')
+    expect(container.textContent).toContain('Click on the dropdown below to select a cohort:')
   }) 
   
   test("NotFound", () => {

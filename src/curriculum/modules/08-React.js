@@ -298,7 +298,7 @@ setName='Cannon'`
 }`,
 						`export default function App() {
 	return (
-		<BrowserRouter
+		<BrowserRouter>
 			<Routes>
 				<Route to="/" element={ <Home/> } />
 				<Route to="/about" element={ <About/> } />
@@ -317,7 +317,7 @@ setName='Cannon'`
 	)
 }`
 					],
-					correctAnswerIndex: 0
+					correctAnswerIndex: 2
 				}
 			]	
 		}

@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import {MemoryRouter, BrowserRouter, Routes, Route} from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
-import '@testing-library/jest-dom';
+import '@testing-library/jest-dom'
 import { act } from "react-dom/test-utils"
  
 import SignIn from '../views/sign_in/SignIn.js'
