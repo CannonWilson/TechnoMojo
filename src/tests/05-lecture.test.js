@@ -11,7 +11,7 @@ import Lecture from '../views/lecture/Lecture.js'
 
 const testUsername = 'KincannonW'
 let container = null
-let existingUserCode = FetchUserExistingCodeForLastLesson()
+let existingUserCode = ""
 const lessonPlan = require('../curriculum/lessonPlan.js')
 const lastModule = lessonPlan[lessonPlan.length - 1]
 const lastLesson = lastModule.lessons[lastModule.lessons.length - 1]
@@ -26,8 +26,32 @@ async function FetchUserExistingCodeForLastLesson() {
 	return ""
 }
 
+async function ResetUserCode() {
+	
+	const data = {
+		username: testUsername,
+		moduleName: lastModule.moduleName,
+		lessonName: lastLesson.lessonName,
+		userCode: existingUserCode 
+	}
+	
+	const options = {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(data)
+	}
+	
+	await fetch('https://technomojo.herokuapp.com/api/updateProgress', options)
+	
+}
+
 
 beforeEach(async () => {
+	
+  existingUserCode = FetchUserExistingCodeForLastLesson()
+  
   // setup a DOM element as a render target
   container = document.createElement("div")
   document.body.appendChild(container)
@@ -63,7 +87,7 @@ beforeEach(async () => {
 })
 
 afterEach(() => {
-  // cleanup on exiting
+  ResetUserCode()
   container.remove()
   container = null
   localStorage.removeItem('username') // log out user
@@ -80,6 +104,7 @@ describe('Lecture functionality', () => {
 		const rightArrow = screen.getByTestId('right-arrow')
 		const submitChoiceBtn = screen.getByText('Save answer')
 		
+		
 		// Complete the quiz
 		for (const [index, q] of lastLesson.quiz.entries()) {
 			const correctChoice = container.getElementsByClassName('choice' + (q.correctAnswerIndex + 1))[0]
@@ -94,6 +119,18 @@ describe('Lecture functionality', () => {
 				await new Promise(r => setTimeout(r, 50))
 		}
 		expect(screen.queryByText('Great job! You completed the quiz.')).toBeInTheDocument()
+		
+		
+		// Type in 'code' and submit
+		await act( async () => {
+			await userEvent.type(screen.getByRole('textbox'), '=== This code coming from test ===')
+			await new Promise(r => setTimeout(r, 50))
+			await userEvent.click(screen.getByText('Submit Code'))
+			// Check that answer section has now rendered
+			await new Promise(r => setTimeout(r, 1000))
+		})
+		expect(screen.getByText('Awesome job!')).toBeInTheDocument()
+
   })
   
   

@@ -32,7 +32,6 @@ app.get('/api/signIn', (req, res) => {
 	async function checkUserInfo() {
 
 		const userInfoDoc = await collection.findOne({username: usernameInput, password: passwordInput})
-		console.log('userInfoDoc in signIn: ', userInfoDoc)
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.sendStatus(200)
 		}
@@ -53,7 +52,6 @@ app.get('/api/userProgress', (req, res) => {
 	async function checkUserInfo() {
 		
 		const userInfoDoc = await collection.findOne({username: usernameInput})
-		console.log('userInfoDoc in userProgress: ', userInfoDoc)
 		if (userInfoDoc) { // userInfoDoc is not null, user was found
 			res.send(userInfoDoc.progress) // send progress array to frontend
 		}
@@ -85,14 +83,16 @@ app.put('/api/updateProgress', (req, res) => {
 				$set: {"progress.$.userCode": code}
 			}
 		)
-		console.log('result in /updateProgress: ', result)
 		if (result.modifiedCount === 0) { // nothing was modified, no array entry was found. Push a new entry onto the array instead
 			const insertResult = await collection.updateOne({username: username}, {$push: {progress: req.body}})
 		}
 		res.sendStatus(201)
 	}
 	
-	updateProgress()
+	if (code) { // only try to update progress if the code field is not an empty string or null
+		updateProgress()
+	}
+	else res.sendStatus(400)
 	
 })
 
@@ -101,7 +101,6 @@ app.get('/api/allStudentProgress', (req, res) => {
 		
 	async function getStudentProgress() {
 		const result = await collection.find({cohort: req.query.cohort}).project({username: 1, progress: 1, _id: 0}).sort({username: -1}).toArray()
-		console.log('GOT STUDENT PROGRESS: ', result)
 		res.send(result)
 	}
 	
