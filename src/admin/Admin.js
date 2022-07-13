@@ -150,10 +150,10 @@ export default function Admin() {
 				{/* Begin cohort selection section */}
 				<p className="cohort-select-text"> Click on the dropdown below to select a cohort: </p>
 			
-				<select className="admin-cohort-select" onChange={(event) => setSelectedCohort(event.target.value)}>
-					{cohorts.map(cohort => (
-						<option value={cohort} key={cohort}>{cohort}</option>
-					))}
+				<select className="admin-cohort-select" onChange={(event) => setSelectedCohort(event.target.value)} data-testid="admin-select">
+					{cohorts.map(cohort => 
+						<option value={cohort} key={cohort} data-testid={cohort}>{cohort}</option>
+					)}
 				</select>
 				{/* End cohort selection section*/}
 				

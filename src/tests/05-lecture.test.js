@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import {MemoryRouter, BrowserRouter, Routes, Route} from 'react-router-dom'
+import {MemoryRouter, Routes, Route} from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import '@testing-library/jest-dom'
 import { act } from "react-dom/test-utils"
@@ -26,7 +26,7 @@ async function FetchUserExistingCodeForLastLesson() {
 	return ""
 }
 
-async function ResetUserCode() {
+async function ResetTestUserCode() {
 	
 	const data = {
 		username: testUsername,
@@ -87,7 +87,7 @@ beforeEach(async () => {
 })
 
 afterEach(() => {
-  ResetUserCode()
+  ResetTestUserCode()
   container.remove()
   container = null
   localStorage.removeItem('username') // log out user
@@ -127,7 +127,7 @@ describe('Lecture functionality', () => {
 			await new Promise(r => setTimeout(r, 50))
 			await userEvent.click(screen.getByText('Submit Code'))
 			// Check that answer section has now rendered
-			await new Promise(r => setTimeout(r, 1000))
+			await new Promise(r => setTimeout(r, 2000))
 		})
 		expect(screen.getByText('Awesome job!')).toBeInTheDocument()
 

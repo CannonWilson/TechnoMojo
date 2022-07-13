@@ -2,6 +2,12 @@
 
 ---
 
+General:
+
+• Create shared email and associate it with MongoDB cluster
+
+---
+
 
 /server.js:
 
