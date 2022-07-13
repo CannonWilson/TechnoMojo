@@ -9,7 +9,7 @@ import Overview from '../views/overview/Overview.js'
 import Lecture from '../views/lecture/Lecture.js'
 
 
-let testUsername = 'KincannonW'
+const testUsername = 'KincannonW'
 let container = null
 const lessonPlan = require('../curriculum/lessonPlan.js')
 

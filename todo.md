@@ -14,9 +14,9 @@
 
 • Make font sizes responsive
 • Add tests and comments
+• Remove testid attributes from production code
 
 ---
-
 
 /src/Lecture.js:
 

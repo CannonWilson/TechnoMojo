@@ -9,10 +9,10 @@ import SignIn from '../views/sign_in/SignIn.js'
 import Overview from '../views/overview/Overview.js'
  
 
-let testUsername = 'KincannonW'
-let testPswd = process.env.REACT_APP_TEST_USER_PASSWORD
+const testUsername = 'KincannonW'
+const testPswd = process.env.REACT_APP_TEST_USER_PASSWORD
 
-
+const lessonPlan = require('../curriculum/lessonPlan.js')
 let container = null
 
 beforeEach(() => {
@@ -47,7 +47,7 @@ describe('Test sign in', () => {
 	  await userEvent.click(loginButton)
 	  
 	  // Wait 1 second for request to be made to backend in SignIn component
-	  await new Promise(r => setTimeout(r, 1000))
+	  await new Promise(r => setTimeout(r, 2000))
 	  expect(screen.queryByText("No user found")).toBeInTheDocument()
   })
   
@@ -77,9 +77,9 @@ describe('Test sign in', () => {
 		visible in the document since the Overview view should load  */
 	  	await act( async () => { 
 	  		await userEvent.click(loginButton)
-	  		await new Promise(r => setTimeout(r, 1000))  
+	  		await new Promise(r => setTimeout(r, 2000))  
 	  	})
-	  	expect(screen.queryByText("01 - HTML & CSS")).toBeInTheDocument()
+	  	expect(screen.queryByText(lessonPlan[0].moduleName)).toBeInTheDocument()
   })
   
 })
