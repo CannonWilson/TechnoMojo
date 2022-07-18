@@ -13,7 +13,7 @@ export default function Header({handleReload, leftText, rightText, leftLink, rig
 			</div>
 			<div className="logo-section">
 				<img src={RobotLogo} className="robot-logo" alt="TechnoMojo logo"/>
-				<p>TechnoMojo</p>
+				<p className="logo-text">TechnoMojo</p>
 			</div>
 			<div className="right-link-section">
 				<Link className="right-link" to={rightLink} onClick={() => localStorage.setItem('reload', 'true')}>{rightText}</Link>

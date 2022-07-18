@@ -18,14 +18,14 @@ General:
 
 /src:
 
-• Make font sizes responsive
-• Add tests and comments
+• Make responsive
 • Remove testid attributes from production code
+• Go back through tests and perform cleanup (correct syntax, use of act, etc.)
+• Accessibility
 
 ---
 
 /src/Lecture.js:
 
-• Make data persist on the page if user clicks submit on the quiz or the textarea and then refreshes (implement a saveCodeButtonPressed function)
 • Retrieve user's submitted code and completed quiz from the db if they have already completed the lecture
-• Quiz changes to red on incorrect answers
+• Choice changes to red on incorrect answers
