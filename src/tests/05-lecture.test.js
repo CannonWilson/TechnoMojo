@@ -36,7 +36,7 @@ async function ResetTestUserCode() {
 	}
 	
 	const options = {
-		method: 'POST',
+		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json'
 		},

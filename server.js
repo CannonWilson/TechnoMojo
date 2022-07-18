@@ -83,7 +83,7 @@ app.put('/api/updateProgress', (req, res) => {
 				$set: {"progress.$.userCode": code}
 			}
 		)
-		if (result.modifiedCount === 0) { // nothing was modified, no array entry was found. Push a new entry onto the array instead
+		if (result.modifiedCount === 0 && result.matchedCount === 0) { // nothing was modified and no array entry was found. Push a new entry onto the array instead
 			const insertResult = await collection.updateOne({username: username}, {$push: {progress: req.body}})
 		}
 		res.sendStatus(201)

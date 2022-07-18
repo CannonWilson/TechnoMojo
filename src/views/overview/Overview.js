@@ -69,6 +69,11 @@ export default function Overview() {
 			lessonPlan.forEach(module => lessonCount += module.lessons.length)
 			let completedLessonCount = progressArray.length
 			setCompletionPercent(String(Math.round(100 * completedLessonCount / lessonCount)))
+			
+			console.log("SET COMPLETION PERCENT")
+			console.log("lessonCount: ", lessonCount)
+			console.log("completedLessonCount: ", completedLessonCount)
+			console.log("progressArray: " , progressArray)
 
 		}
 		
