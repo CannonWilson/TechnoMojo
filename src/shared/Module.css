@@ -46,6 +46,7 @@
 
 .module-name {
 	font-size: 20px;
+	font-size: clamp(0.95rem, 2vw, 1.3rem);
 	font-weight: bold;
 }
 
@@ -54,7 +55,9 @@
 	background: #bebebe;
 	color: white;
 	height: 40px;
+	min-height: 40px;
 	width: 40px;
+	min-width: 40px;
 	padding: 0;
 	font-size: 20px;
 	font-weight: bold;
