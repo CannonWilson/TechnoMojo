@@ -220,11 +220,11 @@ export default function Lecture() {
 		
 			{/* Begin header section (loads rightLink if there is a next lesson in the module) */}
 			{nextLessonName !== "" && 
-				<Header handleReload={refreshPageIfNeeded} leftText="← Back to overview" rightText={"Next: " + nextLessonName + " →"} leftLink="/overview" rightLink={nextLessonLink} />
+				<Header handleReload={refreshPageIfNeeded} leftText="← Overview" rightText={nextLessonName + " →"} leftLink="/overview" rightLink={nextLessonLink} />
 			}
 			
 			{nextLessonName === "" &&
-				<Header handleReload={refreshPageIfNeeded} leftText="← Back to overview" rightText="" leftLink="/overview" rightLink="#" />
+				<Header handleReload={refreshPageIfNeeded} leftText="← Overview" rightText="" leftLink="/overview" rightLink="#" />
 			}
 			{/* End header section */}
 			
