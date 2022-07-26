@@ -31,7 +31,7 @@ export default function AdminStudentCard({lessonPlan, username}) {
 	]
 	*/
 	
-	const [moduleProgress] = useState([]) //used to include setModuleProgress
+	const [moduleProgress] = useState([])
 	
 	useEffect(() => {
 		
@@ -61,7 +61,7 @@ export default function AdminStudentCard({lessonPlan, username}) {
 		
 		setOverallCompletion(Math.round(100*(completedLessons/totalLessons)))
 		
-	}, [lessonPlan, moduleProgress, username]) // added these dependencies to avoid linter warning
+	}, [lessonPlan, moduleProgress, username])
 	
 	
 	return (

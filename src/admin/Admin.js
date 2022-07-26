@@ -43,7 +43,7 @@ export default function Admin() {
 	const navigate = useNavigate()
 	useEffect( () => {
 		if (localStorage.getItem('username') !== process.env.REACT_APP_ADMIN_USERNAME) navigate('/')
-	}, [navigate]) // was empty list
+	}, [navigate])
 
 	
 		
@@ -133,7 +133,7 @@ export default function Admin() {
 			}
 		}
 				
-	}, [selectedCohort, lessonPlan, refreshAfterCohortChange] ) // was just selectedCohort
+	}, [selectedCohort, lessonPlan, refreshAfterCohortChange])
 	
 	
 	return (

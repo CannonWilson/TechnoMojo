@@ -85,7 +85,7 @@ export default function Lecture() {
 			setSuccessMessage(finishedQuizMessage)
 			setQuestionFeedback(finishedQuizMessage)
 		}
-	}, [questionIndexesAnsweredCorrectly, currentLesson.quiz]) // was just questionIndexesAnsweredCorrectly
+	}, [questionIndexesAnsweredCorrectly, currentLesson.quiz])
 	
 	
 	/* This function is triggered whenever the user presses
@@ -121,8 +121,7 @@ export default function Lecture() {
 	has finished updating */
 	useEffect( () => {
 		handleChoiceStylingOnCurrentQuestion()
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [currentQuestionIndex])
+	}, [currentQuestionIndex]) // eslint-disable-line react-hooks/exhaustive-deps
 	
 	
 	/* By default, this function will clear out current styling 

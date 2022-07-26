@@ -48,7 +48,7 @@ export default function Module({module, progressArrayForThisModule, from}) {
 			else setFirstLoad(false)
 		}
 		
-	}, [isModuleActive, firstLoad, from, module.moduleName]) // was just isModuleActive as dependency
+	}, [isModuleActive, firstLoad, from, module.moduleName])
 	
 	
 	/* Returns a string of all the lessons in the current  

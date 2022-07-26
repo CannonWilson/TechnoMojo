@@ -1,16 +1,14 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import {MemoryRouter, Routes, Route} from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import '@testing-library/jest-dom'
-import {within} from '@testing-library/dom'
 import { act } from "react-dom/test-utils"
 
 import Admin from '../admin/Admin.js'
 
 const adminUsername = process.env.REACT_APP_ADMIN_USERNAME
 let container = null
-let existingUserCode = ""
 const lessonPlan = require('../curriculum/lessonPlan.js')
 const lastModule = lessonPlan[lessonPlan.length - 1]
 const lastLesson = lastModule.lessons[lastModule.lessons.length - 1]
@@ -52,11 +50,11 @@ describe('Admin tests', () => {
 			await new Promise(r => setTimeout(r, 300))
 			
 			await userEvent.click(screen.getByText(lastLesson.lessonName, {exact: false}))	
-			await new Promise(r => setTimeout(r, 200))
+			await new Promise(r => setTimeout(r, 500))
 		})
 		
 		// Both <b>Finished:</b> and <b>Unfinished</b> should now appear:
-		expect(screen.getAllByText('finished:', {exact: false})).toHaveLength(2)
+		expect(screen.getAllByText('finished', {exact: false})).toHaveLength(2)
 	})
 	
 	test('Check student modal', async () => {

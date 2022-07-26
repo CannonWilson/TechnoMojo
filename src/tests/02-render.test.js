@@ -1,14 +1,12 @@
 import ReactDOM from 'react-dom/client'
 import {MemoryRouter, Routes, Route} from 'react-router-dom'
-import {screen, fireEvent, render} from '@testing-library/react'
-import userEvent from "@testing-library/user-event"
+import {screen} from '@testing-library/react'
 import { act } from "react-dom/test-utils"
-
+import '@testing-library/jest-dom'
 
 import App from "../App.js"
 import SignIn from '../views/sign_in/SignIn.js'
 import Overview from '../views/overview/Overview.js'
-import Lecture from '../views/lecture/Lecture.js'
 import Admin from '../admin/Admin.js'
 import NotFound from '../views/not_found/NotFound.js'
 
@@ -35,7 +33,7 @@ describe('Test rendering for views', () => {
     act(() => {
       ReactDOM.createRoot(container).render(<App />)    
     })
-    expect(container.textContent).toContain('TechnoMojo')
+    expect(screen.queryByText('TechnoMojo')).toBeInTheDocument()
   })
   
   test("SignIn", () => {
@@ -46,7 +44,7 @@ describe('Test rendering for views', () => {
         </MemoryRouter>
       )
     })
-    expect(container.textContent).toContain('Username:') 
+    expect(screen.queryByText('Username:')).toBeInTheDocument()
   })
    
   test("Overview", () => {
@@ -56,7 +54,7 @@ describe('Test rendering for views', () => {
           <Overview />
         </MemoryRouter>)
     })
-    expect(container.textContent).toContain('Overall completion')
+    expect(screen.queryByText('Overall completion', {exact: false})).toBeInTheDocument()
   }) 
   
   test("Admin", () => {
@@ -67,7 +65,7 @@ describe('Test rendering for views', () => {
           <Admin />
         </MemoryRouter>)
     })
-    expect(container.textContent).toContain('Click on the dropdown below to select a cohort:')
+    expect(screen.queryByText('Click on the dropdown below to select a cohort:')).toBeInTheDocument()
   }) 
   
   test("NotFound", () => {
@@ -81,7 +79,7 @@ describe('Test rendering for views', () => {
           </Routes>
         </MemoryRouter>)
     })
-    expect(container.textContent).toContain('404')
+    expect(screen.queryByText('404')).toBeInTheDocument()
   }) 
   
 })
