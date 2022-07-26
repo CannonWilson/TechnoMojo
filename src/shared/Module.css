@@ -9,7 +9,6 @@
 	border-bottom: solid 3px #dedede;
 	box-sizing: border-box;
 	cursor: pointer;
-	outline: 0;
 }
 
 .module-title-wrapper:hover {
