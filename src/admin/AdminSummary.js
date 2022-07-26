@@ -46,10 +46,10 @@ function LessonSummary({lesson}) { // shown if from = 'admin'
 				<div>
 				
 					{/* Start finished students' names */}
-					<p>
+					<p className="admin-text-list">
 						<b>Finished:</b> 
 						{finished.map(usernameAndCode => 
-							<span className="admin-students" key={usernameAndCode.username}>
+							<span className="admin-text" key={usernameAndCode.username}>
 								{usernameAndCode.username}
 							</span>
 						)}
@@ -70,10 +70,10 @@ function LessonSummary({lesson}) { // shown if from = 'admin'
 					
 					
 					{/* Start unfinished students' names */}
-					<p>
+					<p className="admin-text-list">
 						<b>Unfinished:</b> 
 						{unfinished.map(usernameAndCode => 
-							<span className="admin-students" key={usernameAndCode.username}>
+							<span className="admin-text" key={usernameAndCode.username}>
 								{usernameAndCode.username}
 							</span>
 						)}
@@ -99,10 +99,10 @@ function StudentSummary({module}) { // shown if from = 'adminModule'
 		<div>
 		
 			{/* Start finished students' names */}
-			<p>
+			<p className="admin-text-list">
 				<b>Finished:</b> 
 				{finished.map(lesson => 
-					<span className="admin-students" key={lesson.lessonName}>
+					<span className="admin-text" key={lesson.lessonName}>
 						{lesson.lessonName}
 					</span>
 				)}
@@ -120,10 +120,10 @@ function StudentSummary({module}) { // shown if from = 'adminModule'
 			
 			
 			{/* Start unfinished students' names */}
-			<p>
+			<p className="admin-text-list">
 				<b>Unfinished:</b> 
 				{unfinished.map(lesson => 
-					<span className="admin-students" key={lesson.lessonName}>
+					<span className="admin-text" key={lesson.lessonName}>
 						{lesson.lessonName}
 					</span>
 				)}

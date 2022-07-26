@@ -1,7 +1,7 @@
 .sign-in-title {
 	margin-top: 70px;
 	font-size: 35px;
-	font-size: clamp(1.5rem, 3vw, 2.7rem);
+	font-size: clamp(1.5rem, 3vw, 2.6rem);
 }
 
 .sign-in-title-caption {

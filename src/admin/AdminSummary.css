@@ -6,6 +6,7 @@
 .summary-lesson-name-btn {
 	font-weight: bold;
 	font-size: 15px;
+	font-size: clamp(0.7rem, 1.5vw, 1rem);
 	padding: 10px;
 	border-radius: 5px;
 	border: none;
@@ -25,6 +26,12 @@
 	gap: 30px;
 }
 
-.admin-students {
+.admin-text {
 	margin-left: 7px;
+	display: inline-block;
+}
+
+.admin-text-list {
+	font-size: 0.8rem;
+	font-size: clamp(0.6rem, 1.4vw, 1rem);
 }
