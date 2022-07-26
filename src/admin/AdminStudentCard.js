@@ -30,14 +30,15 @@ export default function AdminStudentCard({lessonPlan, username}) {
 		. . . more modules
 	]
 	*/
-	const [moduleProgress, setModuleProgress] = useState([])
+	
+	const [moduleProgress] = useState([]) //used to include setModuleProgress
 	
 	useEffect(() => {
 		
 		let totalLessons = 0
 		let completedLessons = 0
 		
-		for (const [moduleIndex, module]  of lessonPlan.entries()) {
+		for (const [moduleIndex, module] of lessonPlan.entries()) {
 			
 			moduleProgress.push({moduleName: module.moduleName, lessons: [], completionPercent: 0})
 			
@@ -60,28 +61,28 @@ export default function AdminStudentCard({lessonPlan, username}) {
 		
 		setOverallCompletion(Math.round(100*(completedLessons/totalLessons)))
 		
-	}, [])
+	}, [lessonPlan, moduleProgress, username]) // added these dependencies to avoid linter warning
 	
 	
 	return (
 		<div className="admin-card">
 				
 			{/* Start card header */}
-			<div className="admin-card-header" onClick={() => setShowingModal(true)}> 
+			<div className="admin-card-header" onClick={() => setShowingModal(true)} onKeyDown={() => setShowingModal(true)} role="button" tabIndex="0"> 
 				{username} - {overallCompletion}%
 			</div>
 			{/* End card header */}
 			
 			
 			{/* Start modal (black background) */}
-			{showingModal && <div className="admin-modal" onClick={() => setShowingModal(false)}>
+			{showingModal && <div className="admin-modal" onClick={() => setShowingModal(false)} onKeyDown={() => setShowingModal(false)} role="button" tabIndex="0">
 				
 				
 				{/* Stopping the propagation of the event is necessary here.
 				Otherwise, the modal could be closed by clicking anywhere inside 
 				its content */}
 				{/* Start modal content*/}
-				<div className="admin-modal-content" onClick={(event) => event.stopPropagation()} >
+				<div className="admin-modal-content" onClick={(event) => event.stopPropagation()} onKeyDown={(event) => event.stopPropagation()} role="button" tabIndex="0">
 				
 				
 					{/* Start modal header section */}

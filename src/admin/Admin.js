@@ -43,7 +43,7 @@ export default function Admin() {
 	const navigate = useNavigate()
 	useEffect( () => {
 		if (localStorage.getItem('username') !== process.env.REACT_APP_ADMIN_USERNAME) navigate('/')
-	}, [])
+	}, [navigate]) // was empty list
 
 	
 		
@@ -133,14 +133,14 @@ export default function Admin() {
 			}
 		}
 				
-	}, [selectedCohort] ) 
+	}, [selectedCohort, lessonPlan, refreshAfterCohortChange] ) // was just selectedCohort
 	
 	
 	return (
 		<>
 			
 			{/* Begin Header */}
-			<Header leftText="← Back to sign in" rightText="" leftLink="/" rightLink="#"/>
+			<Header leftText="← Sign in" rightText="" leftLink="/" rightLink="#"/>
 			{/* End Header */}
 			
 			

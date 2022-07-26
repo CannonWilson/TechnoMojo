@@ -5,23 +5,15 @@
 General:
 
 • Create shared email and associate it with MongoDB cluster
-
----
-
-
-/server.js:
-
-• Add try/catch block to handle when connection to db fails
-• Add more nuanced sendStatus behavior in '/api/updateProgress'
+• Add documentation
 
 ---
 
 /src:
 
-• Make responsive
+• Styling
 • Remove testid attributes from production code
 • Go back through tests and perform cleanup (correct syntax, use of act, etc.)
-• Accessibility
 
 ---
 

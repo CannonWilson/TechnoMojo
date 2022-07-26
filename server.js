@@ -17,12 +17,14 @@ let collection
 const client = new MongoClient(url)
 
 client.connect(function(err) {
-  if(err) throw err;
   
-  collection = client.db('technomojo').collection('test');
-  app.listen(port);
-  console.log('Connected to DB. Listening on port ' + port);
-});
+  if(err) throw err
+  
+  collection = client.db('technomojo').collection('test')
+  app.listen(port)
+  console.log('Connected to DB. Listening on port ' + port)
+  
+})
 
 
 app.get('/api/signIn', (req, res) => {
@@ -68,7 +70,6 @@ app.get('/api/userProgress', (req, res) => {
 app.put('/api/updateProgress', (req, res) => {
 	
 	const username = req.query.username
-	const module = req.body.moduleName
 	const lesson = req.body.lessonName
 	const code = req.body.userCode
 	
@@ -84,7 +85,7 @@ app.put('/api/updateProgress', (req, res) => {
 			}
 		)
 		if (result.modifiedCount === 0 && result.matchedCount === 0) { // nothing was modified and no array entry was found. Push a new entry onto the array instead
-			const insertResult = await collection.updateOne({username: username}, {$push: {progress: req.body}})
+			await collection.updateOne({username: username}, {$push: {progress: req.body}})
 		}
 		res.sendStatus(201)
 	}

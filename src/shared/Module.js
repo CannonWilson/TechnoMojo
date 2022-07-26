@@ -48,7 +48,7 @@ export default function Module({module, progressArrayForThisModule, from}) {
 			else setFirstLoad(false)
 		}
 		
-	}, [isModuleActive])
+	}, [isModuleActive, firstLoad, from, module.moduleName]) // was just isModuleActive as dependency
 	
 	
 	/* Returns a string of all the lessons in the current  
@@ -68,8 +68,10 @@ export default function Module({module, progressArrayForThisModule, from}) {
 		
 			{/* Begin module header section */}
 			<div className="module-title-wrapper" 
-				onClick={() => setIsModuleActive(!isModuleActive)}
-				style={{backgroundColor: isModuleActive ? "#efefef" : ""}}>
+				onClick={() => setIsModuleActive(!isModuleActive)} 
+				onKeyDown={() => setIsModuleActive(!isModuleActive)}
+				style={{backgroundColor: isModuleActive ? "#efefef" : ""}}
+				role="button" tabIndex="0">
 				
 				<div className={`module-plus-minus ${isModuleActive ? "plus-minus-rotated" : ""}`}>↓</div>
 				

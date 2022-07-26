@@ -167,10 +167,10 @@ const app = express()`
 				{
 					question: 'Given two existing JavaScript variables, phone and email, which of the following lines of code makes a GET request to the "/signup" path and correctly assigns the userPhone and userEmail request query parameters to the values of the two variables?',
 					answerChoices: [
-						"fetch(`/signup${phone}=userPhone${email}=userEmail`)",
+						"fetch(`/signup${phone}=userPhone${email}=userEmail`)", // eslint-disable-line no-template-curly-in-string
 						"fetch(`/signup&userPhone={phone}&userEmail={email}`)",
 						"fetch(`/signup?email={userEmail}&phone={userPhone}`)",
-						"fetch(`/signup?userPhone=${phone}&userEmail=${email}`)"
+						"fetch(`/signup?userPhone=${phone}&userEmail=${email}`)" // eslint-disable-line no-template-curly-in-string
 					],
 					correctAnswerIndex: 3
 				},

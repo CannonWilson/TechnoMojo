@@ -85,7 +85,7 @@ export default function Lecture() {
 			setSuccessMessage(finishedQuizMessage)
 			setQuestionFeedback(finishedQuizMessage)
 		}
-	}, [questionIndexesAnsweredCorrectly])
+	}, [questionIndexesAnsweredCorrectly, currentLesson.quiz]) // was just questionIndexesAnsweredCorrectly
 	
 	
 	/* This function is triggered whenever the user presses
@@ -121,6 +121,7 @@ export default function Lecture() {
 	has finished updating */
 	useEffect( () => {
 		handleChoiceStylingOnCurrentQuestion()
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [currentQuestionIndex])
 	
 	
@@ -254,16 +255,32 @@ export default function Lecture() {
 							<div className="question-header flex-center">
 								{currentLesson.quiz[currentQuestionIndex].question}
 							</div>
-							<div className="choice choice1" onClick={() => choiceClicked(1)}>
+							<div className="choice choice1" 
+								onClick={() => choiceClicked(1)}
+								onKeyDown={() => choiceClicked(1)}
+								role="button"
+								tabIndex="0">
 								{currentLesson.quiz[currentQuestionIndex].answerChoices[0]}
 							</div>
-							<div className="choice choice2" onClick={() => choiceClicked(2)}>
+							<div className="choice choice2" 
+								onClick={() => choiceClicked(2)}
+								onKeyDown={() => choiceClicked(2)}
+								role="button"
+								tabIndex="0">
 								{currentLesson.quiz[currentQuestionIndex].answerChoices[1]}
 							</div>
-							<div className="choice choice3" onClick={() => choiceClicked(3)}>
+							<div className="choice choice3" 
+								onClick={() => choiceClicked(3)}
+								onKeyDown={() => choiceClicked(3)}
+								role="button"
+								tabIndex="0">
 								{currentLesson.quiz[currentQuestionIndex].answerChoices[2]}
 							</div>
-							<div className="choice choice4" onClick={() => choiceClicked(4)}>
+							<div className="choice choice4" 
+								onClick={() => choiceClicked(4)}
+								onKeyDown={() => choiceClicked(4)}
+								role="button"
+								tabIndex="0">
 								{currentLesson.quiz[currentQuestionIndex].answerChoices[3]}
 							</div>
 							<div className="question-feedback flex-center">
