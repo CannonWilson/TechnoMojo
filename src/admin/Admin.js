@@ -33,7 +33,8 @@ import './Admin.css'
 export default function Admin() {
 	
 	const lessonPlan = require('../curriculum/lessonPlan.js')
-	
+
+	// Edit the line below whenever a new cohort is added!
 	const cohorts = ['2022-01', '2021']
 	const [selectedCohort, setSelectedCohort] = useState(cohorts[0])
 	const [refreshAfterCohortChange, setRefreshAfterCohortChange] = useState(false) // a simple toggle to forcefully rerender the modules once a different cohort has been selected.
