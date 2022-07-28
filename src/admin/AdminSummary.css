@@ -33,5 +33,5 @@
 
 .admin-text-list {
 	font-size: 0.8rem;
-	font-size: clamp(0.6rem, 1.4vw, 1rem);
+	font-size: clamp(0.75rem, 1.4vw, 1rem);
 }

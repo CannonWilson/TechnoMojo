@@ -9,7 +9,7 @@
 	margin-top: -5px;
 	text-align: center;
 	font-size: 1.125rem;
-	font-size: clamp(0.8rem, 1vw, 1.7rem);
+	font-size: clamp(0.8rem, 1.3vw, 1.15rem);
 }
 
 .sign-in-link {
