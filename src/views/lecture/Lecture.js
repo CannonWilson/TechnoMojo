@@ -13,14 +13,14 @@ export default function Lecture() {
 	for the very first time ever, the view only partially loads, and 
 	the video, lesson description, and exercise are not shown. The 
 	following useEffect hook checks to see if the primary subtitle
-	failed to be filled with text and primes the header component
-	to refresh the page if so. */
+	failed to be filled with text and refreshes the page if so. */
 	useEffect( () => {
 		setTimeout( () => {
 			const subtitleElem = document.getElementsByClassName('lecture-primary-subtitle')[0]
 			if (subtitleElem.textContent === "") {
 				console.error('Page failed to load. Triggering hard refresh.')
 				localStorage.setItem('reload', "true")
+				refreshPageIfNeeded()
 			}
 		}, 100)
 	}, [])
