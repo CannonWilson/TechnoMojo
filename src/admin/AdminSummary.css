@@ -5,7 +5,7 @@
 
 .summary-lesson-name-btn {
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 0.95rem;
 	font-size: clamp(0.7rem, 1.5vw, 1rem);
 	padding: 10px;
 	border-radius: 5px;

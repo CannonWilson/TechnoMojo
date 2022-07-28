@@ -1,14 +1,14 @@
 .sign-in-title {
 	margin-top: 70px;
-	font-size: 35px;
-	font-size: clamp(1.5rem, 3vw, 2.6rem);
+	font-size: 2.19rem;
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .sign-in-title-caption {
-	max-width: 40%;
+	max-width: 50%;
 	margin-top: -5px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-size: clamp(0.8rem, 1vw, 1.7rem);
 }
 
@@ -68,14 +68,14 @@
 }
 
 #username-label, #password-label {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-size: clamp(1rem, 1.2vw, 1.9rem);
 	/* width: 100px; */
 	font-weight: bold;
 }
 
 #username-input-elem, #password-input-elem {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-size: clamp(1rem, 1.2vw, 1.9rem);
 	border-radius: 10px;
 	height: 40px;
@@ -90,7 +90,7 @@ login button bigger and darker */
 	width: 160px;
 	width: clamp(100px, 10vw, 200px);
 	border-radius: 10px;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-size: clamp(1rem, 1.2vw, 1.9rem);
 	background: #cfcfcf;
 	margin-top: 10px;

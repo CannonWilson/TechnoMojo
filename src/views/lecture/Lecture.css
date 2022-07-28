@@ -5,8 +5,9 @@
 }
 
 .lecture-primary-title {
-	font-size: 50px;
-	font-size: clamp(30px, 4vw, 50px);
+	min-height: 40px;
+	font-size: 3.125rem;
+	font-size: clamp(1.4rem, 3vw, 2.8rem);
 }
 
 .lecture-primary-subtitle {
@@ -18,14 +19,14 @@
 
 .lecture-secondary-title {
 	margin-top: 130px;
-	font-size: 30px;
-	font-size: clamp(1.5rem, 3vw, 2.1rem);
+	font-size: 1.875rem;
+	font-size: clamp(1.3rem, 2.6vw, 2.1rem);
 }
 
 .lecture-secondary-subtitle {
 	margin-bottom: 40px;
 	font-size: 1rem;
-	font-size: clamp(0.8rem, 2vw, 1.2rem);
+	font-size: clamp(0.7rem, 1.85vw, 1.15rem);
 }
 
 
@@ -66,7 +67,7 @@
 	grid-area: questionHeader;
 	padding: 30px;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 1rem;
 	font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
@@ -81,8 +82,8 @@
 	min-height: 50px;
 	border: solid 3px white;
 	overflow-wrap: break-word;
-	font-size: 16px;
-	font-size: clamp(0.6rem, 1.7vw, 1.1rem);
+	font-size: 1rem;
+	font-size: clamp(0.7rem, 1.7vw, 1.1rem);
 }
 
 .choice:hover {
@@ -182,7 +183,7 @@ and the default-button class */
 	margin-top: 40px;
 	min-width: 200px;
 	border-radius: 10px !important;
-	font-size: 25px !important;
+	font-size: 3.44rem !important;
 	font-size: clamp(1rem, 2vw, 1.5rem) !important;
 	padding: 15px 25px 15px 25px !important;
 }

@@ -10,8 +10,8 @@
 
 .left-link, .right-link {
 	color: black;
-	font-size: 20px;
-	font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+	font-size: 1.25rem;
+	font-size: clamp(0.8rem, 1.4vw, 1.3rem);
 	font-weight: bold;
 }
 
@@ -35,6 +35,24 @@
 	text-align: right;
 }
 
+.large-right-text {
+	display: inline-block;
+}
+
+.small-right-text {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.large-right-text {
+		display: none;
+	}
+	
+	.small-right-text {
+		display: inline-block;
+	}
+}
+
 .logo-section {
 	display: flex;
 	align-items: center;
@@ -44,7 +62,7 @@
 
 .logo-text {
 	font-size: 1.7rem;
-	font-size: clamp(1.2rem, 2vw, 2rem);
+	font-size: clamp(1.2rem, 2.2vw, 1.7rem);
 	font-weight: bold;
 }
 

@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  color: black;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -24,7 +28,7 @@ a {
 
 .default-button {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.95rem;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -37,7 +41,7 @@ a {
 }
 
 .default-error-msg {
-  font-size: 15px;
+  font-size: 0.95rem;
   font-weight: bold;
   color: red;
 }

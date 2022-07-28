@@ -9,6 +9,23 @@ export default function Lecture() {
 	const navigate = useNavigate()
 	
 	
+	/* KNOWN BUG: Sometimes, when a user is loading the lecture view 
+	for the very first time ever, the view only partially loads, and 
+	the video, lesson description, and exercise are not shown. The 
+	following useEffect hook checks to see if the primary subtitle
+	failed to be filled with text and primes the header component
+	to refresh the page if so. */
+	useEffect( () => {
+		setTimeout( () => {
+			const subtitleElem = document.getElementsByClassName('lecture-primary-subtitle')[0]
+			if (subtitleElem.textContent === "") {
+				console.error('Page failed to load. Triggering hard refresh.')
+				localStorage.setItem('reload', "true")
+			}
+		}, 100)
+	}, [])
+	
+	
 	/* The useSearchParams hook is used to get the value of 
 	the request queries called moduleName and lessonName. They 
 	are decoded and then used to lookup the correct video urls, 
@@ -304,7 +321,6 @@ export default function Lecture() {
 					<p className="lecture-secondary-subtitle">{currentLesson.exerciseDescription}</p>
 					<iframe src={currentLesson.codeSandBoxUrl} title="code sandbox"
 						 style={{width:'100%', height:'100vh', border:0, borderRadius: '4px', overflow: 'hidden'}}
-						 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
 						 sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
 					   ></iframe>
 					{/* End exercise section */}

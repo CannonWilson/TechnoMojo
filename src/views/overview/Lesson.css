@@ -22,7 +22,7 @@
 	min-width: 40px;
 	height: 40px;
 	height: clamp(40px, 3vw, 50px);
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-size: clamp(1.1rem, 1.7vw, 1.4rem);
 	display: flex;
 	align-items: center;
@@ -51,7 +51,7 @@
 
 .lesson-name {
 	margin-left: 20px;
-	font-size: 17px;
-	font-size: clamp(0.9rem, 3vw, 1.1rem);
+	font-size: 1.06rem;
+	font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 	font-weight: bold;
 }
